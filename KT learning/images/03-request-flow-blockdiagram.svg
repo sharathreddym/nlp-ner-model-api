@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1080" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a3" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker>
+    <style>
+      .title{font-size:23px;font-weight:700;fill:#1a2b4a}
+      .b{font-size:14px;font-weight:600;fill:#1a2b4a}
+      .s{font-size:12px;fill:#333}
+      .y{font-size:12px;fill:#7a5b00;font-weight:600}
+      .edge{stroke:#444;stroke-width:2.2;fill:none;marker-end:url(#a3)}
+      .gx{stroke:#3a8f3a;stroke-width:2.2;fill:none;marker-end:url(#a3)}
+    </style>
+  </defs>
+  <rect width="900" height="1080" fill="#f7f9fc"/>
+  <text x="36" y="42" class="title">Request Flow — run_ner() decision &amp; pipeline</text>
+
+  <!-- start -->
+  <rect x="320" y="70" width="260" height="54" rx="27" fill="#e8edf5" stroke="#8aa" stroke-width="2"/>
+  <text x="450" y="103" text-anchor="middle" class="b">🌐 request {data, user_type}</text>
+
+  <!-- score.run -->
+  <rect x="300" y="150" width="300" height="58" rx="10" fill="#eef2f9" stroke="#3a6" stroke-width="2"/>
+  <text x="450" y="175" text-anchor="middle" class="b">score.py · run()</text>
+  <text x="450" y="195" text-anchor="middle" class="s">parse JSON → query + user_type</text>
+
+  <!-- fastpath decision -->
+  <polygon points="450,235 660,310 450,385 240,310" fill="#fff7df" stroke="#d90" stroke-width="2.2"/>
+  <text x="450" y="300" text-anchor="middle" class="y">⚡ FAST-PATH?</text>
+  <text x="450" y="320" text-anchor="middle" class="s">SAP id / FEATURE / GRADE /</text>
+  <text x="450" y="337" text-anchor="middle" class="s">COMPETITOR / AUTO_CERT exact?</text>
+
+  <!-- fast path return -->
+  <rect x="690" y="282" width="185" height="56" rx="10" fill="#d9f7d9" stroke="#3a3" stroke-width="2"/>
+  <text x="782" y="306" text-anchor="middle" class="b" font-size="13">return immediately</text>
+  <text x="782" y="325" text-anchor="middle" class="s">(AI never called)</text>
+
+  <!-- clean -->
+  <rect x="300" y="420" width="300" height="58" rx="10" fill="#e0f7e0" stroke="#3a3" stroke-width="2"/>
+  <text x="450" y="445" text-anchor="middle" class="b">🧹 pre_processing.data_preprocessing()</text>
+  <text x="450" y="465" text-anchor="middle" class="s">→ cleaned text + normalized text</text>
+
+  <!-- choose deployment -->
+  <rect x="300" y="505" width="300" height="50" rx="10" fill="#eef2f9" stroke="#778" stroke-width="2"/>
+  <text x="450" y="535" text-anchor="middle" class="s">choose deployment (NPROD/PROD) + fallback</text>
+
+  <!-- AI -->
+  <rect x="300" y="580" width="300" height="64" rx="10" fill="#cce5ff" stroke="#36c" stroke-width="2.2"/>
+  <text x="450" y="606" text-anchor="middle" class="b">🧠 get_entities() → Azure OpenAI</text>
+  <text x="450" y="626" text-anchor="middle" class="s">temperature=0.01 · seed=12 · returns dict</text>
+
+  <!-- rules -->
+  <rect x="270" y="680" width="360" height="120" rx="10" fill="#ffe1e1" stroke="#c33" stroke-width="2.2"/>
+  <text x="450" y="705" text-anchor="middle" class="b">🔧 business rules</text>
+  <text x="450" y="727" text-anchor="middle" class="s">unit conversion (GPa→MPa)</text>
+  <text x="450" y="745" text-anchor="middle" class="s">UL number → PLC category</text>
+  <text x="450" y="763" text-anchor="middle" class="s">eco-/UV → FEATURE · spelling · industry</text>
+  <text x="450" y="781" text-anchor="middle" class="s">fuzzy GRADE↔COMPETITOR (thefuzz)</text>
+
+  <!-- oos -->
+  <rect x="300" y="835" width="300" height="58" rx="10" fill="#ffe1e1" stroke="#c33" stroke-width="2"/>
+  <text x="450" y="860" text-anchor="middle" class="b">🚫 identify_out_of_scope_items()</text>
+  <text x="450" y="880" text-anchor="middle" class="s">depends on user_type (internal/external)</text>
+
+  <!-- dedup -->
+  <rect x="320" y="920" width="260" height="50" rx="10" fill="#eef2f9" stroke="#778" stroke-width="2"/>
+  <text x="450" y="950" text-anchor="middle" class="s">🧽 deduplicate every entity list</text>
+
+  <!-- end -->
+  <rect x="320" y="998" width="260" height="54" rx="27" fill="#eef3ec" stroke="#8a8" stroke-width="2"/>
+  <text x="450" y="1031" text-anchor="middle" class="b">📦 structured JSON</text>
+
+  <!-- edges -->
+  <path class="edge" d="M450 124 V148"/>
+  <path class="edge" d="M450 208 V233"/>
+  <path class="gx" d="M660 310 H688"/>
+  <text x="668" y="300" class="s" fill="#3a8f3a">YES</text>
+  <path class="gx" d="M782 338 V1010 H582"/>
+  <path class="edge" d="M450 385 V418"/>
+  <text x="462" y="406" class="s">NO</text>
+  <path class="edge" d="M450 478 V503"/>
+  <path class="edge" d="M450 555 V578"/>
+  <path class="edge" d="M450 644 V678"/>
+  <path class="edge" d="M450 800 V833"/>
+  <path class="edge" d="M450 893 V918"/>
+  <path class="edge" d="M450 970 V996"/>
+</svg>

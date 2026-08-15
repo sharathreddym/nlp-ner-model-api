@@ -1,0 +1,7 @@
+﻿f"Show me an offset to {variable_values['competitor_grade']}"
+f"Show me an offset to {variable_values['grade1']}"
+f"i want {variable_values['grade1']} grades"
+f"show me {variable_values['grade1']} grades"
+f"Show me {variable_values['competitor_grade']} grades"
+f"{variable_values['grade1']} grade"
+

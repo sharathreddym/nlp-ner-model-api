@@ -1,0 +1,80 @@
+{
+  "acids": [
+    {
+      "sub_category": "formic acid",
+      "resistance_level": "limited resistance, short-term exposure",
+      "synonyms": [
+        "methanoic acid",
+        "hcooh",
+        "concentrated formic acid >85%",
+        "dilute formic acid solutions",
+        "industrial-grade formic acid"
+      ],
+      "temperature": "23"
+    },
+    {
+      "sub_category": "hydrochloric acid",
+      "resistance_level": "limited resistance, short-term exposure",
+      "synonyms": [
+        "muriatic acid",
+        "hcl",
+        "concentrated hcl (37%)",
+        "dilute hydrochloric acid (5–20%)",
+        "hydrogen chloride solution"
+      ],
+      "temperature": "23"
+    }
+  ],
+  "alcohols": [
+    {
+      "sub_category": "long-chain alcohols (> c4)",
+      "resistance_level": "resistant, long-term exposure",
+      "synonyms": [
+        "higher alcohols",
+        "fatty alcohols",
+        "hexanol",
+        "octanol",
+        "lauryl alcohol (dodecanol)"
+      ],
+      "temperature": "23"
+    },
+    {
+      "sub_category": "short-chain alcohols (c1-c4)",
+      "resistance_level": "limited resistance, short-term exposure",
+      "synonyms": [
+        "lower alcohols",
+        "light alcohols",
+        "methanol",
+        "ethanol (denatured alcohol, bioethanol)",
+        "isopropanol (ipa)"
+      ],
+      "temperature": "23"
+    }
+  ],
+  "alkalies/bases": [
+    {
+      "sub_category": "strong (ph 11-14)",
+      "resistance_level": "resistant, long-term exposure",
+      "synonyms": [
+        "caustic solutions",
+        "alkali hydroxides",
+        "sodium hydroxide (naoh, caustic soda)",
+        "potassium hydroxide (koh)",
+        "calcium hydroxide (lime slurry) (ca(oh)2)"
+      ],
+      "temperature": "23"
+    },
+    {
+      "sub_category": "weak",
+      "resistance_level": "resistant, long-term exposure",
+      "synonyms": [
+        "mild alkaline solutions",
+        "sodium bicarbonate (nahco3)",
+        "sodium carbonate (soda ash)",
+        "dilute ammonia solutions",
+        "mild alkaline media"
+      ],
+      "temperature": "23"
+    }
+  ]
+}

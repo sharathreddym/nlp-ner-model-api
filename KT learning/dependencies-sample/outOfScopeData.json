@@ -1,0 +1,62 @@
+{
+  "grades": [
+    "celanyla3wj8nc11021",
+    "vemt1340",
+    "zythtn53g50lrbn517",
+    "pultrusiondevppgf400414er221black",
+    "cspomgf3504af3001"
+  ],
+  "gradesExternal": [
+    "celanyla3wj8nc11021",
+    "vemt1340",
+    "zythtn53g50lrbn517",
+    "pultrusiondevppgf400414er221black",
+    "cspomgf3504af3001"
+  ],
+  "brands": [
+    "vitaldose",
+    "pipelon",
+    "vandar",
+    "blueridge",
+    "omnicarb"
+  ],
+  "brands_internal": [],
+  "brands_commerical": [
+    "vitaldose",
+    "pipelon",
+    "clarifoil",
+    "ecomid",
+    "pip"
+  ],
+  "brands_not_in_scope": [
+    "po",
+    "ff",
+    "vandar",
+    "blueridge",
+    "omnicarb"
+  ],
+  "polymers": [
+    "olefinicthermoplasticelastomer",
+    "tpo",
+    "pvdf",
+    "polyetheretherketone",
+    "pa12"
+  ],
+  "fillers": [
+    "natural organic fiber"
+  ],
+  "gradesInScope": [
+    "celanylb2wgf20bk90052",
+    "lftppgf600403p1010",
+    "fortron1200l1",
+    "kepts25a",
+    "ryn545nc010"
+  ],
+  "gradesInScopeExternal": [
+    "lftppgf600403p1010",
+    "fortron1200l1",
+    "kepts25a",
+    "ryn545nc010",
+    "lp83ka00a20neutro"
+  ]
+}

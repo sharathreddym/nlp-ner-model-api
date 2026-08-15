@@ -1,0 +1,61 @@
+@startuml NER_API_Sequence
+title Celanese NER Service - API Sequence
+
+' --- layout tuning so nothing overlaps ---
+skinparam backgroundColor #FFFFFF
+skinparam maxMessageSize 170
+skinparam wrapWidth 170
+skinparam ParticipantPadding 24
+skinparam BoxPadding 12
+skinparam sequenceMessageAlign center
+skinparam shadowing false
+skinparam ArrowColor #333333
+skinparam sequence {
+  LifeLineBorderColor #B8C0CF
+  ParticipantBorderColor #33507F
+  ParticipantBackgroundColor #EEF2FA
+}
+autonumber
+
+actor Client
+participant "Azure ML\nEndpoint" as AML
+participant "score.py" as Score
+participant "ner_helper" as Helper
+participant "pre_processing" as Pre
+participant "Azure OpenAI\nGPT-4.1-mini" as GPT
+participant "post_processing" as Post
+
+== Startup (once) ==
+AML -> Score : init()
+note right of Score : loads DEPENDENCIES\n(CSV/JSON/XLSX) + .env
+Score --> AML : ready
+
+== Per request ==
+Client -> AML : POST /score\n{data, user_type}
+AML -> Score : run(raw_data)
+Score -> Score : parse JSON ->\nquery, user_type
+Score -> Helper : run_ner(query,\nDEPENDENCIES, user_type)
+
+alt exact match -> skip LLM
+  Helper --> Score : result (LLM not called)
+  note right of Helper : exact GRADE / SAP id /\nFEATURE / COMPETITOR / AUTO_CERT
+else full pipeline
+  Helper -> Pre : data_preprocessing()
+  Pre --> Helper : cleaned + normalized
+  Helper -> GPT : get_entities()\ntemp=0.01, seed=12
+  GPT --> Helper : raw entities\n(fallback deployment on fail)
+  Helper -> Post : modifier_unit_conversion()
+  Post --> Helper : units standardized
+  Helper -> Helper : business rules\n(UL->PLC, eco/UV, fuzzy)
+  Helper -> Post : identify_out_of_scope_items(user_type)
+  Post --> Helper : in-scope vs out-of-scope
+  Helper -> Helper : deduplicate lists
+  Helper --> Score : structured result
+end
+
+Score --> AML : NER JSON\n(entities, outOfScope, versions)
+AML --> Client : 200 OK + JSON
+
+note over Score : On exception, run() returns a\ndefault empty-entities response\n(endpoint never hard-fails)
+
+@enduml

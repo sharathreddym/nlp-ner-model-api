@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 820" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="t9" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L9,5 L0,10 z" fill="#777"/></marker>
+    <style>
+      .title{font-size:24px;font-weight:700;fill:#1a2b4a}
+      .sub{font-size:13px;fill:#5a6b8a}
+      .root{font-size:16px;font-weight:700;fill:#fff}
+      .node{font-size:13px;font-weight:700;fill:#fff}
+      .leaf{font-size:11.5px;fill:#222}
+      .cap{font-size:11px;fill:#666}
+      .ln{stroke:#9aa;stroke-width:1.6;fill:none;marker-end:url(#t9)}
+    </style>
+  </defs>
+  <rect width="1240" height="820" fill="#f7f9fc"/>
+  <text x="36" y="40" class="title">Domain Knowledge — Celanese materials taxonomy</text>
+  <text x="36" y="62" class="sub">Real values pulled from the data sources (SPT / COMPETITOR_DATA). A GRADE belongs to a BRAND and is made of a POLYMER + FILLERS + FEATURES.</text>
+
+  <!-- root -->
+  <rect x="520" y="90" width="200" height="56" rx="12" fill="#2c3e6b"/><text x="620" y="125" text-anchor="middle" class="root">Material Grade</text>
+
+  <!-- five branches -->
+  <!-- POLYMER -->
+  <rect x="40" y="210" width="210" height="40" rx="8" fill="#2980b9"/><text x="145" y="236" text-anchor="middle" class="node">POLYMER (base plastic)</text>
+  <g class="leaf">
+    <rect x="40" y="262" width="210" height="300" rx="8" fill="#eaf3fa" stroke="#9fc4e0"/>
+    <text x="56" y="286">PA66 / PA6 / PA666  (nylon)</text>
+    <text x="56" y="308">POM  (acetal)</text>
+    <text x="56" y="330">PBT / PCT / PET</text>
+    <text x="56" y="352">PPS</text>
+    <text x="56" y="374">LCP</text>
+    <text x="56" y="396">PPA</text>
+    <text x="56" y="418">PP  (polypropylene)</text>
+    <text x="56" y="440">PE-UHMW / PE-HMW / PE-HD</text>
+    <text x="56" y="462">TPU  (thermoplastic PU)</text>
+    <text x="56" y="484">TPV  (thermoplastic vulc.)</text>
+    <text x="56" y="520" class="cap">out-of-scope ex:</text>
+    <text x="56" y="540" class="cap">PVDF, PEEK, PA12, ASA…</text>
+  </g>
+
+  <!-- BRAND -->
+  <rect x="270" y="210" width="210" height="40" rx="8" fill="#27ae60"/><text x="375" y="236" text-anchor="middle" class="node">BRAND (trade name)</text>
+  <g class="leaf">
+    <rect x="270" y="262" width="210" height="300" rx="8" fill="#e9f7ef" stroke="#a3d9bd"/>
+    <text x="286" y="286">Celanex  (PBT)</text>
+    <text x="286" y="308">Celcon / Hostaform  (POM)</text>
+    <text x="286" y="330">Fortron  (PPS)</text>
+    <text x="286" y="352">Vectra / Zenite  (LCP)</text>
+    <text x="286" y="374">Celanyl / Frianyl  (PA)</text>
+    <text x="286" y="396">Ecomid  (PA, recycled)</text>
+    <text x="286" y="418">GUR  (PE-UHMW)</text>
+    <text x="286" y="440">Celstran  (long-fiber)</text>
+    <text x="286" y="462">Santoprene  (TPV)</text>
+    <text x="286" y="484">Coolpoly  (thermally cond.)</text>
+    <text x="286" y="506">Thermx  (PCT)</text>
+    <text x="286" y="528">Kepital → mapped to Celcon</text>
+  </g>
+
+  <!-- FILLER -->
+  <rect x="510" y="210" width="210" height="40" rx="8" fill="#7a3e8a"/><text x="615" y="236" text-anchor="middle" class="node">FILLER (reinforcement)</text>
+  <g class="leaf">
+    <rect x="510" y="262" width="210" height="300" rx="8" fill="#f3eaf6" stroke="#cdaad6"/>
+    <text x="526" y="286">Glass fiber (short)</text>
+    <text x="526" y="308">Glass fiber (long)</text>
+    <text x="526" y="330">Glass fiber (continuous)</text>
+    <text x="526" y="352">Glass bead</text>
+    <text x="526" y="374">Carbon fiber</text>
+    <text x="526" y="396">Aramid fiber</text>
+    <text x="526" y="418">Mineral filler</text>
+    <text x="526" y="440">Graphite filler</text>
+    <text x="526" y="462">PTFE filler</text>
+    <text x="526" y="484">Conductive filler</text>
+    <text x="526" y="506">Stainless steel fiber</text>
+    <text x="526" y="528">Specialty filler</text>
+    <text x="526" y="550" class="cap">+ total_load %</text>
+  </g>
+
+  <!-- FEATURE -->
+  <rect x="750" y="210" width="210" height="40" rx="8" fill="#9a6b1c"/><text x="855" y="236" text-anchor="middle" class="node">FEATURE (characteristic)</text>
+  <g class="leaf">
+    <rect x="750" y="262" width="210" height="300" rx="8" fill="#f7f0de" stroke="#dcc488"/>
+    <text x="766" y="286">Flame retardant</text>
+    <text x="766" y="308">UV resistant / stabilized</text>
+    <text x="766" y="330">Heat / wear / chemical resist</text>
+    <text x="766" y="352">Glass / mineral reinforced</text>
+    <text x="766" y="374">High flow · Low warpage</text>
+    <text x="766" y="396">Impact modified</text>
+    <text x="766" y="418">Recycled content (eco-r)</text>
+    <text x="766" y="440">Bio-content (eco-b)</text>
+    <text x="766" y="462">Carbon capture (eco-c)</text>
+    <text x="766" y="484">Laser markable / LDS</text>
+    <text x="766" y="506">Medical / Healthcare</text>
+    <text x="766" y="528">Thermally / elec. conductive</text>
+  </g>
+
+  <!-- GRADE example -->
+  <rect x="990" y="210" width="220" height="40" rx="8" fill="#8a3030"/><text x="1100" y="236" text-anchor="middle" class="node">GRADE (concrete product)</text>
+  <g class="leaf">
+    <rect x="990" y="262" width="220" height="300" rx="8" fill="#f7e9e9" stroke="#d9a9a9"/>
+    <text x="1006" y="288" font-weight="700">Example breakdown:</text>
+    <text x="1006" y="312">"Celanex 2302 GV1/30"</text>
+    <text x="1006" y="338">  BRAND   = Celanex</text>
+    <text x="1006" y="360">  POLYMER = PBT</text>
+    <text x="1006" y="382">  FILLER  = glass fiber 30%</text>
+    <text x="1006" y="410">"PA66-GF30 UV eco-r"</text>
+    <text x="1006" y="432">  POLYMER = PA66</text>
+    <text x="1006" y="454">  FILLER  = glass fiber 30%</text>
+    <text x="1006" y="476">  FEATURE = UV stabilized</text>
+    <text x="1006" y="498">  FEATURE = recycled content</text>
+    <text x="1006" y="528" class="cap">COMPETITOR_GRADE maps</text>
+    <text x="1006" y="546" class="cap">rivals → Celanese equivalent</text>
+  </g>
+
+  <!-- connectors -->
+  <path class="ln" d="M560 146 C300 175 200 185 145 208"/>
+  <path class="ln" d="M580 146 C470 180 420 190 375 208"/>
+  <path class="ln" d="M620 146 V208"/>
+  <path class="ln" d="M660 146 C770 180 820 190 855 208"/>
+  <path class="ln" d="M700 146 C950 175 1050 185 1100 208"/>
+
+  <rect x="40" y="600" width="1170" height="180" rx="12" fill="#fff" stroke="#cdd" stroke-width="1.6"/>
+  <text x="58" y="628" class="node" fill="#1a2b4a">How the code uses this knowledge</text>
+  <text x="58" y="656" class="leaf">• Exact GRADE / COMPETITOR_GRADE matches against these known lists drive the ⚡ fast-path (skip the AI).</text>
+  <text x="58" y="680" class="leaf">• "Celstran" brand → fillers become the LONG-fiber variant (e.g. glass fiber → long glass fiber).</text>
+  <text x="58" y="704" class="leaf">• "Kepital"/"kep" is normalized to "Celcon"; eco-r/eco-b/eco-c suffixes are stripped from the grade and turned into FEATUREs.</text>
+  <text x="58" y="728" class="leaf">• Out-of-scope polymers/brands/grades/fillers (PVDF, PEEK, etc.) are hidden depending on internal vs external user_type.</text>
+  <text x="58" y="752" class="leaf">• Abbreviations expand domain shorthand: gf→glass fiber, tm→tensile modulus, sg1.4→"sg of 1.4".</text>
+</svg>

@@ -1,0 +1,9 @@
+Incoming Unit,ceed_unit,formula
+gpa,MPa,(x)*1000
+psi,MPa,(x)*0.00689476
+ºf,°C,((x) - 32)*(5/9)
+g/cm3,kg/m³,(x)*1000
+ft-lb/in2,kJ/m²,(x)*2.10152
+in/in,%,(x)*100
+gpa,MPa,(x)*1000
+in/in,%,(x)*100

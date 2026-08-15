@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 760" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a2" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker>
+    <style>
+      .title{font-size:24px;font-weight:700;fill:#1a2b4a}
+      .sub{font-size:13px;fill:#5a6b8a}
+      .file{font-size:15px;font-weight:700}
+      .fn{font-size:12.5px;fill:#222}
+      .cap{font-size:11.5px;fill:#666}
+      .edge{stroke:#444;stroke-width:2;fill:none;marker-end:url(#a2)}
+      .dash{stroke:#888;stroke-width:1.6;fill:none;stroke-dasharray:5 4;marker-end:url(#a2)}
+    </style>
+  </defs>
+  <rect width="1150" height="760" fill="#f7f9fc"/>
+  <text x="36" y="44" class="title">Low-Level Component / Module View</text>
+  <text x="36" y="66" class="sub">Files (boxes), their key functions (rows), and the calls between them.</text>
+
+  <!-- score.py -->
+  <rect x="40" y="100" width="300" height="180" rx="12" fill="#eef2f9" stroke="#3a6" stroke-width="2.5"/>
+  <text x="55" y="126" class="file" fill="#176">🚪 score.py  (entry point)</text>
+  <line x1="40" y1="136" x2="340" y2="136" stroke="#cdd"/>
+  <text x="55" y="160" class="fn">init() — load all data → DEPENDENCIES</text>
+  <text x="55" y="184" class="fn">run(raw_data) — per request</text>
+  <text x="55" y="208" class="fn">   parse JSON → query + user_type</text>
+  <text x="55" y="232" class="fn">   try: run_ner(...)  except: empty</text>
+  <text x="55" y="258" class="cap">__main__ block (lines 350-354) = local test</text>
+
+  <!-- ner_helper -->
+  <rect x="420" y="100" width="330" height="300" rx="12" fill="#fff3d6" stroke="#d99" stroke-width="2.5"/>
+  <text x="436" y="126" class="file" fill="#8a6d00">🧠 ner_helper.py  (orchestrator)</text>
+  <line x1="420" y1="136" x2="750" y2="136" stroke="#e3d9b5"/>
+  <text x="436" y="160" class="fn">run_ner(query, DEPENDENCIES, user_type)</text>
+  <text x="436" y="182" class="cap">  ① fast-path returns</text>
+  <text x="436" y="202" class="cap">  ② call pre_processing</text>
+  <text x="436" y="222" class="cap">  ③ get_entities() → AI</text>
+  <text x="436" y="242" class="cap">  ④ business rules</text>
+  <text x="436" y="262" class="cap">  ⑤ out-of-scope + dedup</text>
+  <line x1="420" y1="278" x2="750" y2="278" stroke="#e3d9b5"/>
+  <text x="436" y="300" class="fn">get_entities() — Azure OpenAI call</text>
+  <text x="436" y="322" class="fn">replace_abbreviation()</text>
+  <text x="436" y="344" class="fn">cti/hai/hwi/hvar/hvtr/arc_value_convertion()</text>
+  <text x="436" y="366" class="fn">validate_auto_cert(), get_industry()</text>
+  <text x="436" y="388" class="fn">check_for_terms(), update_auto_cert()</text>
+
+  <!-- pre_processing -->
+  <rect x="40" y="430" width="300" height="180" rx="12" fill="#e0f7e0" stroke="#3a3" stroke-width="2.5"/>
+  <text x="55" y="456" class="file" fill="#176">🧹 pre_processing.py</text>
+  <line x1="40" y1="466" x2="340" y2="466" stroke="#bfe3bf"/>
+  <text x="55" y="490" class="fn">data_preprocessing()  ← main</text>
+  <text x="55" y="512" class="fn">add_spaces(), trim()</text>
+  <text x="55" y="534" class="fn">remove_brackets/hyphens/chars()</text>
+  <text x="55" y="556" class="fn">convert_property_shortforms_with_values()</text>
+  <text x="55" y="578" class="fn">normalize_query()</text>
+  <text x="55" y="600" class="cap">returns: cleaned text + normalized text</text>
+
+  <!-- post_processing -->
+  <rect x="420" y="450" width="330" height="220" rx="12" fill="#ffe1e1" stroke="#c33" stroke-width="2.5"/>
+  <text x="436" y="476" class="file" fill="#922">🔍 post_processing.py</text>
+  <line x1="420" y1="486" x2="750" y2="486" stroke="#f0c6c6"/>
+  <text x="436" y="510" class="fn">validate_result_dict()  ← schema check</text>
+  <text x="436" y="532" class="fn">validate_property / filler / *_cert()</text>
+  <text x="436" y="554" class="fn">modifier_unit_conversion()</text>
+  <text x="436" y="576" class="fn">modifier_unit_conversion_identifier()</text>
+  <text x="436" y="598" class="fn">power_numbers_to_proper_format()</text>
+  <text x="436" y="620" class="fn">string_to_number()</text>
+  <text x="436" y="642" class="fn">identify_out_of_scope_items()</text>
+
+  <!-- Azure OpenAI -->
+  <rect x="830" y="150" width="280" height="150" rx="12" fill="#cce5ff" stroke="#36c" stroke-width="2.5"/>
+  <text x="846" y="178" class="file" fill="#15467f">☁ Azure OpenAI</text>
+  <line x1="830" y1="188" x2="1110" y2="188" stroke="#bcd"/>
+  <text x="846" y="212" class="fn">client.chat.completions.create()</text>
+  <text x="846" y="234" class="fn">model = GPT_DEPLOYMENT (NPROD/PROD)</text>
+  <text x="846" y="256" class="fn">temperature=0.01  ·  seed=12</text>
+  <text x="846" y="282" class="cap">creds from .env (azure_openai_*_aif)</text>
+
+  <!-- DEPENDENCIES -->
+  <rect x="830" y="430" width="280" height="240" rx="12" fill="#eceff4" stroke="#778" stroke-width="2.5"/>
+  <text x="846" y="456" class="file" fill="#445">📦 DEPENDENCIES (in memory)</text>
+  <line x1="830" y1="466" x2="1110" y2="466" stroke="#d3d8e0"/>
+  <text x="846" y="490" class="fn">UNIT_CONVERSION_TABLE_*</text>
+  <text x="846" y="512" class="fn">UNIQUE_VALUES, GRADE_NAMES</text>
+  <text x="846" y="534" class="fn">NORMALIZED_UNIQUE_VALUES</text>
+  <text x="846" y="556" class="fn">NORMALIZED_COMPETITOR_NAMES</text>
+  <text x="846" y="578" class="fn">OUT_OF_SCOPE_DATA</text>
+  <text x="846" y="600" class="fn">ABBREVIATIONS, UL_TERMS</text>
+  <text x="846" y="622" class="fn">GPT deployment names + prompt</text>
+  <text x="846" y="644" class="fn">MODEL_VERSION, API_VERSION</text>
+
+  <!-- edges -->
+  <path class="edge" d="M340 220 H418"/>
+  <text x="350" y="212" class="cap">run_ner()</text>
+  <path class="edge" d="M470 400 V428"/>
+  <text x="478" y="420" class="cap">data_preprocessing()</text>
+  <path class="edge" d="M585 400 V448"/>
+  <text x="592" y="420" class="cap">unit conv + scope</text>
+  <path class="edge" d="M750 230 H828"/>
+  <text x="758" y="222" class="cap">get_entities()</text>
+  <path class="dash" d="M340 150 C700 60 900 250 828 430"/>
+  <text x="600" y="80" class="cap">init() fills DEPENDENCIES</text>
+  <path class="dash" d="M830 540 C790 470 770 430 752 400"/>
+  <text x="600" y="700" class="cap">DEPENDENCIES is passed to run_ner() and read by pre/post-processing</text>
+</svg>

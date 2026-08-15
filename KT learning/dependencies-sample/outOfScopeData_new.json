@@ -1,0 +1,62 @@
+{
+  "grades": [
+    "celanex6500lm",
+    "vee845ildser293",
+    "crastinsk652frbl503",
+    "celanylb3j10nc1102efa",
+    "pf5000v0afepgrigio7123"
+  ],
+  "gradesExternal": [
+    "celanex6500lm",
+    "vee845ildser293",
+    "crastinsk652frbl503",
+    "celanylb3j10nc1102efa",
+    "pf5000v0afepgrigio7123"
+  ],
+  "brands": [
+    "cecopoly",
+    "kepital",
+    "pibifor",
+    "forprene",
+    "clarifoil"
+  ],
+  "brands_internal": [],
+  "brands_commerical": [
+    "ecomid",
+    "pipelon",
+    "vitaldose",
+    "clarifoil",
+    "neolast"
+  ],
+  "brands_not_in_scope": [
+    "cecopoly",
+    "kepital",
+    "cl",
+    "pibifor",
+    "forprene"
+  ],
+  "polymers": [
+    "copolyester",
+    "polyetheretherketone",
+    "polyether",
+    "tpo",
+    "smah"
+  ],
+  "fillers": [
+    "natural organic fiber"
+  ],
+  "gradesInScope": [
+    "kepitaluv140lg",
+    "hfc13021ecoc872",
+    "zytelst801awbk195",
+    "lfrtppgf300455p1010",
+    "omniprocppgrc20"
+  ],
+  "gradesInScopeExternal": [
+    "kepitaluv140lg",
+    "hfc13021ecoc872",
+    "zytelst801awbk195",
+    "lfrtppgf300455p1010",
+    "omniprocppgrc20"
+  ]
+}

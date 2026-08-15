@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 560" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a1" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+    <marker id="a1o" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c8860d"/>
+    </marker>
+    <style>
+      .title{font-size:26px;font-weight:700;fill:#1a2b4a}
+      .sub{font-size:14px;fill:#5a6b8a}
+      .lbl{font-size:16px;font-weight:700}
+      .small{font-size:12.5px;fill:#333}
+      .cap{font-size:11.5px;fill:#666}
+      .edge{stroke:#444;stroke-width:2.2;fill:none;marker-end:url(#a1)}
+      .skip{stroke:#c8860d;stroke-width:2.2;fill:none;stroke-dasharray:7 5;marker-end:url(#a1o)}
+      .badge{font-size:11px;font-weight:600}
+      .leg{font-size:12px;fill:#425}
+    </style>
+  </defs>
+  <rect width="1280" height="560" fill="#f7f9fc"/>
+
+  <text x="40" y="46" class="title">Retrieval-Based NER — the simple picture</text>
+  <text x="40" y="72" class="sub">Look the entities up in a catalog instead of memorising them in model weights.</text>
+
+  <!-- legend -->
+  <rect x="905" y="34" width="13" height="13" rx="3" fill="#e8edf5" stroke="#8aa" stroke-width="1.6"/>
+  <text x="925" y="45" class="leg">unchanged</text>
+  <rect x="1010" y="34" width="13" height="13" rx="3" fill="#d9f7d9" stroke="#2f8a3f" stroke-width="1.6"/>
+  <text x="1030" y="45" class="leg">NEW</text>
+  <rect x="1090" y="34" width="13" height="13" rx="3" fill="#cce5ff" stroke="#36c" stroke-width="1.6"/>
+  <text x="1110" y="45" class="leg">changed</text>
+
+  <!-- 1. query -->
+  <rect x="40" y="180" width="170" height="150" rx="12" fill="#eef1f5" stroke="#8aa" stroke-width="2"/>
+  <text x="125" y="216" text-anchor="middle" class="lbl" fill="#234">🔎 Query</text>
+  <text x="125" y="248" text-anchor="middle" class="small">"30% gf uv</text>
+  <text x="125" y="270" text-anchor="middle" class="small">nylon66 ul94v0"</text>
+  <text x="125" y="296" text-anchor="middle" class="cap">messy human words</text>
+
+  <!-- 2. clean -->
+  <rect x="245" y="180" width="180" height="150" rx="12" fill="#e8edf5" stroke="#8aa" stroke-width="2"/>
+  <text x="335" y="216" text-anchor="middle" class="lbl" fill="#234">1 · CLEAN</text>
+  <text x="335" y="246" text-anchor="middle" class="small">pre_processing.py</text>
+  <text x="335" y="268" text-anchor="middle" class="small">abbreviations · symbols</text>
+  <text x="335" y="288" text-anchor="middle" class="cap">normalized no-space form</text>
+  <rect x="290" y="300" width="90" height="20" rx="10" fill="#dfe6ef" stroke="#8aa"/>
+  <text x="335" y="314" text-anchor="middle" class="badge" fill="#456">unchanged</text>
+
+  <!-- 3. retrieve -->
+  <rect x="460" y="180" width="250" height="150" rx="12" fill="#d9f7d9" stroke="#2f8a3f" stroke-width="2.6"/>
+  <text x="585" y="216" text-anchor="middle" class="lbl" fill="#1c6b2c">2 · LOOK IT UP</text>
+  <text x="585" y="246" text-anchor="middle" class="small">🔎 Elasticsearch catalog</text>
+  <text x="585" y="268" text-anchor="middle" class="small">every grade · brand · filler ·</text>
+  <text x="585" y="288" text-anchor="middle" class="small">feature · cert + synonyms</text>
+  <rect x="545" y="300" width="80" height="20" rx="10" fill="#bfeec4" stroke="#2f8a3f"/>
+  <text x="585" y="314" text-anchor="middle" class="badge" fill="#1c6b2c">NEW</text>
+
+  <!-- 4. llm -->
+  <rect x="745" y="180" width="210" height="150" rx="12" fill="#cce5ff" stroke="#36c" stroke-width="2.6"/>
+  <text x="850" y="216" text-anchor="middle" class="lbl" fill="#15467f">3 · FILL THE GAPS</text>
+  <text x="850" y="246" text-anchor="middle" class="small">stock GPT-4.1-mini</text>
+  <text x="850" y="268" text-anchor="middle" class="small">sees the candidates +</text>
+  <text x="850" y="288" text-anchor="middle" class="small">similar solved queries</text>
+  <rect x="785" y="300" width="130" height="20" rx="10" fill="#a9d2fb" stroke="#36c"/>
+  <text x="850" y="314" text-anchor="middle" class="badge" fill="#15467f">no fine-tuning</text>
+
+  <!-- 5. rules -->
+  <rect x="990" y="180" width="190" height="150" rx="12" fill="#ffd9d9" stroke="#c33" stroke-width="2"/>
+  <text x="1085" y="216" text-anchor="middle" class="lbl" fill="#922">4 · FIX &amp; CHECK</text>
+  <text x="1085" y="246" text-anchor="middle" class="small">post_processing.py</text>
+  <text x="1085" y="268" text-anchor="middle" class="small">units · UL→PLC · scope</text>
+  <text x="1085" y="288" text-anchor="middle" class="cap">validate · dedup</text>
+  <rect x="1040" y="300" width="90" height="20" rx="10" fill="#fbc4c4" stroke="#c33"/>
+  <text x="1085" y="314" text-anchor="middle" class="badge" fill="#922">unchanged</text>
+
+  <!-- edges -->
+  <path class="edge" d="M210 255 H243"/>
+  <path class="edge" d="M425 255 H458"/>
+  <path class="edge" d="M710 255 H743"/>
+  <path class="edge" d="M955 255 H988"/>
+
+  <!-- skip arc -->
+  <path class="skip" d="M585 178 C585 108 1085 108 1085 176"/>
+  <text x="835" y="100" text-anchor="middle" class="small" fill="#8a5f06">⚡ if the catalog already explains the whole query → the LLM is never called</text>
+
+  <!-- output -->
+  <rect x="460" y="400" width="720" height="80" rx="12" fill="#eef3ec" stroke="#8a8" stroke-width="2"/>
+  <text x="820" y="430" text-anchor="middle" class="small" fill="#234">📦 The same 17-key entity JSON as today — plus, for every entity:</text>
+  <text x="820" y="456" text-anchor="middle" class="small" fill="#234">a confidence score and the evidence (which catalog entry matched, and how)</text>
+  <path class="edge" d="M1085 332 V398"/>
+
+  <text x="40" y="432" class="small" fill="#1c6b2c">✔ A new grade goes live by</text>
+  <text x="40" y="452" class="small" fill="#1c6b2c">   indexing one document —</text>
+  <text x="40" y="472" class="small" fill="#1c6b2c">   no retrain, no redeploy.</text>
+
+  <text x="40" y="524" class="cap">Stations 1 and 4 are today's code, untouched. Station 2 is new. Station 3 keeps the same model family but drops the fine-tune.</text>
+</svg>

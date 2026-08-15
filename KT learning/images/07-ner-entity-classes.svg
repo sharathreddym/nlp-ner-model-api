@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 760" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <style>
+      .title{font-size:24px;font-weight:700;fill:#1a2b4a}
+      .sub{font-size:13px;fill:#5a6b8a}
+      .cat{font-size:15px;font-weight:700;fill:#fff}
+      .e{font-size:13px;font-weight:600;fill:#16314f}
+      .d{font-size:10.5px;fill:#555}
+    </style>
+  </defs>
+  <rect width="1180" height="760" fill="#f7f9fc"/>
+  <text x="36" y="40" class="title">The 17 NER Entity Classes — grouped by category</text>
+  <text x="36" y="62" class="sub">Every search query is broken down into these labelled entities (the "output form").</text>
+
+  <!-- helper: each entity card -->
+  <!-- Cat 1: Material identity -->
+  <rect x="30" y="90" width="360" height="40" rx="8" fill="#2c3e6b"/><text x="48" y="116" class="cat">🆔 Material Identity (who/what is it)</text>
+  <g>
+    <rect x="30" y="140" width="172" height="64" rx="8" fill="#dfe7f6" stroke="#9fb2d8"/><text x="44" y="164" class="e">GRADE</text><text x="44" y="184" class="d">specific Celanese product code</text>
+    <rect x="218" y="140" width="172" height="64" rx="8" fill="#dfe7f6" stroke="#9fb2d8"/><text x="232" y="164" class="e">BRAND</text><text x="232" y="184" class="d">Celanex, Hostaform, Fortron…</text>
+    <rect x="30" y="214" width="172" height="64" rx="8" fill="#dfe7f6" stroke="#9fb2d8"/><text x="44" y="238" class="e">POLYMER</text><text x="44" y="258" class="d">PA66, POM, PBT, PPS…</text>
+    <rect x="218" y="214" width="172" height="64" rx="8" fill="#dfe7f6" stroke="#9fb2d8"/><text x="232" y="238" class="e">MATERIAL_ID</text><text x="232" y="258" class="d">8-digit SAP id</text>
+    <rect x="30" y="288" width="360" height="64" rx="8" fill="#dfe7f6" stroke="#9fb2d8"/><text x="44" y="312" class="e">COMPETITOR_GRADE</text><text x="44" y="332" class="d">rival product code → find Celanese equivalent</text>
+  </g>
+
+  <!-- Cat 2: Composition / specs -->
+  <rect x="410" y="90" width="360" height="40" rx="8" fill="#7a3e8a"/><text x="428" y="116" class="cat">🧪 Composition &amp; Specs</text>
+  <g>
+    <rect x="410" y="140" width="360" height="64" rx="8" fill="#efe2f4" stroke="#c9a6d4"/><text x="424" y="164" class="e">PROPERTY *nested</text><text x="424" y="184" class="d">name + modifier{value,min,max,unit} + type</text>
+    <rect x="410" y="214" width="360" height="64" rx="8" fill="#efe2f4" stroke="#c9a6d4"/><text x="424" y="238" class="e">FILLER *nested</text><text x="424" y="258" class="d">filler_name[] + total_load{value,min,max}</text>
+    <rect x="410" y="288" width="360" height="64" rx="8" fill="#efe2f4" stroke="#c9a6d4"/><text x="424" y="312" class="e">FEATURE</text><text x="424" y="332" class="d">UV stabilized, flame retardant, recycled content…</text>
+  </g>
+
+  <!-- Cat 3: Manufacturing -->
+  <rect x="790" y="90" width="360" height="40" rx="8" fill="#1d6b5a"/><text x="808" y="116" class="cat">🏭 Manufacturing</text>
+  <g>
+    <rect x="790" y="140" width="360" height="64" rx="8" fill="#dcf0ea" stroke="#9fcdbf"/><text x="804" y="164" class="e">PROCESSING</text><text x="804" y="184" class="d">injection molding, extrusion…</text>
+    <rect x="790" y="214" width="360" height="64" rx="8" fill="#dcf0ea" stroke="#9fcdbf"/><text x="804" y="238" class="e">DELIVERY_FORM</text><text x="804" y="258" class="d">pellets, powder…</text>
+  </g>
+
+  <!-- Cat 4: Certifications -->
+  <rect x="410" y="380" width="360" height="40" rx="8" fill="#9a6b1c"/><text x="428" y="406" class="cat">📜 Certifications (*nested)</text>
+  <g>
+    <rect x="410" y="430" width="172" height="64" rx="8" fill="#f6ecd6" stroke="#d8be84"/><text x="424" y="454" class="e">AUTO_CERT</text><text x="424" y="474" class="d">{oem, certs[]}</text>
+    <rect x="598" y="430" width="172" height="64" rx="8" fill="#f6ecd6" stroke="#d8be84"/><text x="612" y="454" class="e">RAILWAY_CERT</text><text x="612" y="474" class="d">standard, hazard, req_set</text>
+    <rect x="410" y="504" width="172" height="64" rx="8" fill="#f6ecd6" stroke="#d8be84"/><text x="424" y="528" class="e">WATER_CERT</text><text x="424" y="548" class="d">{standard, temp[]}</text>
+    <rect x="598" y="504" width="172" height="64" rx="8" fill="#f6ecd6" stroke="#d8be84"/><text x="612" y="528" class="e">NSF_CERT</text><text x="612" y="548" class="d">NSF 42/51/61…</text>
+  </g>
+
+  <!-- Cat 5: Context -->
+  <rect x="790" y="380" width="360" height="40" rx="8" fill="#8a3030"/><text x="808" y="406" class="cat">🌍 Context</text>
+  <g>
+    <rect x="790" y="430" width="360" height="64" rx="8" fill="#f6e0e0" stroke="#d8a3a3"/><text x="804" y="454" class="e">APPLICATION</text><text x="804" y="474" class="d">connector, medical bed, busbar…</text>
+    <rect x="790" y="504" width="172" height="64" rx="8" fill="#f6e0e0" stroke="#d8a3a3"/><text x="804" y="528" class="e">INDUSTRY</text><text x="804" y="548" class="d">automotive, E&amp;E…</text>
+    <rect x="978" y="504" width="172" height="64" rx="8" fill="#f6e0e0" stroke="#d8a3a3"/><text x="992" y="528" class="e">REGION</text><text x="992" y="548" class="d">geography</text>
+  </g>
+
+  <!-- out of scope -->
+  <rect x="30" y="600" width="1120" height="120" rx="12" fill="#fff" stroke="#bbb" stroke-width="2"/>
+  <text x="48" y="628" class="e" fill="#922">＋ Out-of-Scope bucket (parallel to the 17 entities)</text>
+  <text x="48" y="652" class="d">outOfScope.active (true/false) and outOfScope.entities = { GRADE, BRAND, POLYMER, FILLER, OTHERS }</text>
+  <text x="48" y="676" class="d">Entities that exist but should be hidden for this user_type (internal vs external) are moved here instead of the main output.</text>
+  <text x="48" y="700" class="d">OTHERS also captures flagged terms: FDA / food contact, medical (ISO 10993), crosslinked, amorphous, FMVSS, CFR 21, USP, Toyota…</text>
+</svg>

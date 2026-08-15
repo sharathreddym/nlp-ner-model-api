@@ -1,0 +1,602 @@
+{
+  "columnstoIgnore": [
+    "bev",
+    "min58",
+    "mineral71",
+    "ppa",
+    "44glass"
+  ],
+  "GRADE": [
+    "frianylb3wgf30v0ebk9004yg",
+    "thermxte1001bk010",
+    "eahbk90042",
+    "zytelt70ecor311blk1",
+    "polifor15t40nerox2"
+  ],
+  "COMPETITOR_GRADE": [
+    "750ld",
+    "wicpa6620n",
+    "ap163",
+    "schulamid6gf30h",
+    "loxiamidpa6mr20gf10hs2bk030403030"
+  ],
+  "columnsforSubstringCheck": [
+    "comparativetrackingplc4",
+    "nonstatic",
+    "flameresistant",
+    "ulv0",
+    "powerapproximationconstantb"
+  ],
+  "BRAND": [
+    "at",
+    "ateva",
+    "celanex",
+    "celanyl",
+    "celcon"
+  ],
+  "FEATURE": [
+    [
+      "anti-static",
+      [
+        "anti-static",
+        "static resistant",
+        "static",
+        "static resistance",
+        "antistatic",
+        "avoid static",
+        "avoid static build",
+        "avoid static build up"
+      ]
+    ],
+    [
+      "bio-content",
+      [
+        "bio-content",
+        "bio-based",
+        "bio",
+        "biobased",
+        "eco-b"
+      ]
+    ],
+    [
+      "carbon capture",
+      [
+        "carbon capture",
+        "reduce carbon capture",
+        "reduced carbon footprint",
+        "carbon footprint",
+        "carbon footprint",
+        "iso 14067",
+        "carbon capture and utilization",
+        "ccu",
+        "eco-c"
+      ]
+    ],
+    [
+      "recycled content",
+      [
+        "recycled content",
+        "contains recycle",
+        "recycle",
+        "recycled",
+        "eco-r",
+        "post consumer recycle",
+        "post-consumer recycle",
+        "pcr",
+        "pir",
+        "post industrial recycle",
+        "post-industrial recycle"
+      ]
+    ],
+    [
+      "flame retardant",
+      [
+        "flame retardant",
+        "flameretardent",
+        "fr",
+        "flame retarding agent",
+        "flamret",
+        "flamretag",
+        "flame resistant",
+        "flame resistance",
+        "halogenated fr",
+        "halogenated",
+        "halogenated flame retardant"
+      ]
+    ]
+  ],
+  "MEDICAL_CERT": [
+    [
+      "cytotoxicity",
+      [
+        "cytotoxicity",
+        "cell toxicity",
+        "cellular toxicity",
+        "cell viability",
+        "cell viability testing",
+        "in vitro cytotoxicity",
+        "cell compatibility",
+        "biocompatibility cytotoxicity",
+        "toxicity to cells",
+        "cell culture toxicity",
+        "cyto",
+        "cytotox"
+      ]
+    ],
+    [
+      "dermal_irritation",
+      [
+        "dermal irritation",
+        "skin irritation",
+        "skin irritation testing",
+        "cutaneous irritation",
+        "skin compatibility",
+        "skin contact safety",
+        "irritation potential",
+        "dermatological irritation",
+        "primary skin irritation",
+        "skin reactivity",
+        "intracutaneous reactivity",
+        "intracutaneous",
+        "intracutaenous test"
+      ]
+    ],
+    [
+      "genetoxicity",
+      [
+        "genotoxicity",
+        "genetic toxicity",
+        "mutagenicity",
+        "mutagenic potential",
+        "dna damage assessment",
+        "genetic damage testing",
+        "ames test compliance",
+        "chromosomal aberration testing",
+        "genotoxic safety",
+        "gene tox",
+        "geno",
+        "ames"
+      ]
+    ],
+    [
+      "hemolysis",
+      [
+        "hemolysis",
+        "haemolysis",
+        "blood compatibility",
+        "red blood cell compatibility",
+        "rbc compatibility",
+        "red blood cell lysis",
+        "blood cell damage testing",
+        "hemocompatibility"
+      ]
+    ],
+    [
+      "muscle_implantation",
+      [
+        "muscle implantation",
+        "intramuscular implantation",
+        "implantation test",
+        "implant compatibility",
+        "local tissue response",
+        "tissue implantation",
+        "muscle tissue compatibility",
+        "implantation biocompatibility",
+        "in vivo implantation",
+        "implantation"
+      ]
+    ]
+  ],
+  "CHEMICAL_RESISTANCE": [
+    [
+      "acids",
+      [
+        [
+          "formic acid",
+          "limited resistance, short-term exposure",
+          [
+            "methanoic acid",
+            "hcooh",
+            "concentrated formic acid >85%",
+            "dilute formic acid solutions",
+            "industrial-grade formic acid",
+            "formate acid",
+            "hydrogen carboxylic acid",
+            "formylic acid",
+            "formic acid solution",
+            "ant sting acid",
+            "red ant acid"
+          ],
+          "23"
+        ],
+        [
+          "hydrochloric acid",
+          "limited resistance, short-term exposure",
+          [
+            "muriatic acid",
+            "hcl",
+            "concentrated hcl (37%)",
+            "dilute hydrochloric acid (5â€“20%)",
+            "hydrogen chloride solution",
+            "aqueous hydrogen chloride",
+            "chlorohydric acid",
+            "hydronium chloride solution",
+            "hydrochloride acid",
+            "hydrogen chloride aqueous"
+          ],
+          "23"
+        ],
+        [
+          "strong (ph 0-3)",
+          "resistant, long-term exposure",
+          [
+            "mineral acids",
+            "inorganic acids",
+            "nitric acid (hnoâ‚ƒ)",
+            "phosphoric acid (hâ‚ƒpoâ‚„)",
+            "perchloric acid (hcloâ‚„)",
+            "hydrofluoric acid (hf)",
+            "highly acidic media",
+            "low-ph acids",
+            "aggressive acid systems",
+            "strong proton donors",
+            "acidic process fluids",
+            "high-acidity solutions",
+            "corrosive acid mixtures",
+            "low-ph chemicals",
+            "industrial strong acids",
+            "severe acidic environments",
+            "chromic acid solution (h2cro4)",
+            "hydrobromic acid (hbr)",
+            "hydriodic acid (hi)",
+            "chloric acid (hclo3)"
+          ],
+          "23"
+        ],
+        [
+          "sulfuric acid",
+          "resistant, long-term exposure",
+          [
+            "oil of vitriol",
+            "hâ‚‚soâ‚„",
+            "concentrated sulfuric acid (95â€“98%)",
+            "battery acid (~30â€“40%)",
+            "oleum (fuming sulfuric acid)",
+            "dihydrogen sulfate",
+            "hydrogen sulfate acid",
+            "sulphuric acid",
+            "sulfuric acid solution",
+            "diprotic sulfur acid",
+            "strong sulfate acid",
+            "electrolyte acid (20-30%)",
+            "spirit of sulfur",
+            "diluted sulfuric acid"
+          ],
+          "23"
+        ],
+        [
+          "weak",
+          "limited resistance, short-term exposure",
+          [
+            "organic acids",
+            "mild acids",
+            "acetic acid (vinegar)",
+            "citric acid",
+            "lactic acid",
+            "carbonic acid",
+            "mild acidic media",
+            "low-strength acids",
+            "buffered acid systems",
+            "partially dissociated acids",
+            "moderately acidic solutions",
+            "weak proton donors",
+            "mild organic acid blends",
+            "dilute acidic media",
+            "ph 3-6",
+            "boric acid (h3bo3)",
+            "benzoic acid (c6h5cooh)",
+            "carboxybenzene (c6h5cooh)",
+            "phenylformic acid (c6h5cooh)",
+            "benzene carboxylic acid (c6h5cooh)",
+            "hypochlorous acid (hclo)"
+          ],
+          "23"
+        ]
+      ]
+    ],
+    [
+      "alcohols",
+      [
+        [
+          "long-chain alcohols (> c4)",
+          "resistant, long-term exposure",
+          [
+            "higher alcohols",
+            "fatty alcohols",
+            "hexanol",
+            "octanol",
+            "lauryl alcohol (dodecanol)",
+            "stearyl alcohol",
+            "extended-chain alcohols",
+            "c5+ alcohols",
+            "alkanols above c4",
+            "hydrophobic alcohols",
+            "fatty alkanols",
+            "long-carbon alcohols",
+            "industrial fatty alcohol blends",
+            "high-molecular-weight alcohols",
+            "wax alcohols",
+            "aliphatic alcohol",
+            "cyclohexane (c6h12)",
+            "cetyl alcohol, c16",
+            "stearyl alcohol, c18",
+            "lauryl alcohol",
+            "lignoceryl alcohol, c24 (wood creosote)",
+            "ceryl alcohol, c26 (beeswax alcohol)"
+          ],
+          "23"
+        ],
+        [
+          "short-chain alcohols (c1-c4)",
+          "limited resistance, short-term exposure",
+          [
+            "lower alcohols",
+            "light alcohols",
+            "methanol",
+            "ethanol (denatured alcohol, bioethanol)",
+            "isopropanol (ipa)",
+            "butanol",
+            "c1-c4 alkanols",
+            "volatile alcohols",
+            "light alkanols",
+            "monohydric short alcohols",
+            "low-molecular-weight alcohols",
+            "short-carbon alcohols",
+            "primary solvent alcohols",
+            "industrial light alcohols",
+            "simple alcohols",
+            "ethylene glycol (eg, meg)",
+            "propylene glycol",
+            "butanediol (butane-1,2-diol)",
+            "isopropyl alcohol (ipa)",
+            "propan-2-ol (ipa)",
+            "n-propanol"
+          ],
+          "23"
+        ]
+      ]
+    ],
+    [
+      "alkalies/bases",
+      [
+        [
+          "strong (ph 11-14)",
+          "resistant, long-term exposure",
+          [
+            "caustic solutions",
+            "alkali hydroxides",
+            "sodium hydroxide (naoh, caustic soda)",
+            "potassium hydroxide (koh)",
+            "calcium hydroxide (lime slurry) (ca(oh)2)",
+            "highly alkaline media",
+            "caustic alkalis",
+            "strong alkaline solutions",
+            "high-ph bases",
+            "alkaline process chemicals",
+            "corrosive bases",
+            "strong proton acceptors",
+            "industrial alkali systems",
+            "severe alkaline environments",
+            "concentrated bases",
+            "barium hydroxide (ba(oh2))",
+            "tetramethylammonium hydroxide (tmah)",
+            "tetrabutylammonium hydroxide (tbah)",
+            "tetraethyl ammonium hydroxide (teah)",
+            "25% ethylenediamine (eda) solution"
+          ],
+          "23"
+        ],
+        [
+          "weak",
+          "resistant, long-term exposure",
+          [
+            "mild alkaline solutions",
+            "sodium bicarbonate (nahco3)",
+            "sodium carbonate (soda ash)",
+            "dilute ammonia solutions",
+            "mild alkaline media",
+            "low-strength bases",
+            "moderately alkaline solutions",
+            "weak proton acceptors",
+            "buffered alkaline systems",
+            "low-causticity bases",
+            "mild alkalis",
+            "partially ionized bases",
+            "dilute alkaline chemicals",
+            "soft alkaline solutions",
+            "ammonium hydroxide",
+            "ammonia water",
+            "ammonia aqueous",
+            "sodium acetate",
+            "aniline (aminobenzene)",
+            "dimethylamine (dma)",
+            "trimethylamine",
+            "diethylamine",
+            "triethylamine (tea, et3n, net3)",
+            "ethylenediamine (eda)",
+            "ammonium hydroxide solution",
+            "amines (organic bases)"
+          ],
+          "23"
+        ]
+      ]
+    ],
+    [
+      "coolants",
+      [
+        [
+          "aqueous glycol-based coolant",
+          "limited resistance, short-term exposure",
+          [
+            "antifreeze solutions",
+            "radiator fluids",
+            "ethylene glycol + water mixtures",
+            "propylene glycol coolants",
+            "corrosion-inhibited glycol fluids",
+            "water-glycol coolants",
+            "glycol-water coolants",
+            "liquid cooling mixtures",
+            "heat-transfer antifreeze",
+            "engine coolant mixtures",
+            "aqueous thermal fluids",
+            "waterborne coolants",
+            "glycol heat-transfer media",
+            "cooling loop fluids",
+            "water-diluted antifreeze",
+            "coolant glysantin g48, 1:1 in water",
+            "g12e 050 z3",
+            "valeo service g13",
+            "g30",
+            "g48",
+            "g12",
+            "g12 evo",
+            "byd antifreeze coolant",
+            "lopal e8107",
+            "nissan long-life antifreeze l255n-c",
+            "lopal coolant series (e31, e32, e701, e380, c05, c08, c31)",
+            "coolion se01",
+            "total coolelf series",
+            "mobil delvacâ„¢ extended life coolant/antifreeze series"
+          ],
+          "23"
+        ],
+        [
+          "non-aqueous coolant",
+          "resistant, long-term exposure",
+          [
+            "dielectric coolants",
+            "synthetic heat transfer fluids",
+            "silicone oils",
+            "fluorinated fluids (e.g., 3m fluorinert)",
+            "mineral oil-based coolants",
+            "water-free coolants",
+            "anhydrous coolants",
+            "non-water thermal fluids",
+            "dry cooling media",
+            "waterless heat-transfer fluids",
+            "electrical cooling fluids",
+            "anhydrous thermal media",
+            "closed-loop synthetic coolants",
+            "nonpolar coolants"
+          ],
+          "23"
+        ]
+      ]
+    ],
+    [
+      "fuels",
+      [
+        [
+          "diesel fuel",
+          "resistant, long-term exposure",
+          [
+            "gas oil",
+            "automotive diesel",
+            "ultra-low sulfur diesel (ulsd)",
+            "biodiesel (fame blends like b20)",
+            "marine diesel",
+            "compression-ignition fuel",
+            "diesel oil",
+            "middle-distillate fuel",
+            "road diesel",
+            "diesel blendstock",
+            "distillate diesel fuel",
+            "no. 2 diesel",
+            "compression engine fuel",
+            "automotive gasoil",
+            "diesel hydrocarbon fuel",
+            "no. 1 diesel",
+            "bs vi diesel",
+            "no. 0 diesel (china)",
+            "no. -10 diesel (china)",
+            "diesel fuel (pref. iso 1817 liquid f)",
+            "diesel en 590",
+            "iso 1817 liquid f (iso-octane/toluene = 60/40)",
+            "iso 1817 liquid h (c12-c18/tetralin = 80/20)",
+            "mobil synergy diesel efficient series",
+            "mobil diesel efficient series"
+          ],
+          "23"
+        ],
+        [
+          "gasoline fuel",
+          "resistant, long-term exposure",
+          [
+            "petrol",
+            "motor fuel",
+            "e10/e15 ethanol-blended gasoline",
+            "reformulated gasoline",
+            "aromatic-rich gasoline blends",
+            "spark-ignition fuel",
+            "motor gasoline",
+            "petrol fuel",
+            "gasoline blendstock",
+            "automotive gasoline",
+            "gasoline hydrocarbons",
+            "fuel-grade gasoline",
+            "road gasoline",
+            "gasoline blend",
+            "standard fuel without alcohol (pref. iso 1817 liquid c)",
+            "standard fuel without alcohol (pref. iso 1817 liquid c)",
+            "iso 1817 liquid 1 - e5",
+            "iso 1817 liquid 2 - m15e4",
+            "iso 1817 liquid 3 - m3e7",
+            "iso 1817 liquid 4 - m15",
+            "iso 1817 fuel g - e15",
+            "iso 1817 fuel h - e15",
+            "iso 1817 fuel i - m15",
+            "iso 1817 fuel k - m85",
+            "iso 1817 liquid a - 100% iso-octane",
+            "iso 1817 liquid b - iso-octane/toluene = 70/30",
+            "iso 1817 liquid c - iso-octane/toluene = 50/50",
+            "iso 1817 liquid d - iso-octane/toluene = 50/50",
+            "iso 1817 liquid e - iso-octane/toluene = 60/40",
+            "iso 1817 liquid g - 100% toluene",
+            "mobil synergy series",
+            "mobil synergy supreme+ series"
+          ],
+          "23"
+        ]
+      ]
+    ]
+  ],
+  "AUTO_CERT": [
+    [
+      "tl52281btpcet",
+      "vw group"
+    ],
+    [
+      "gmw16733ppbtgf15",
+      "general motors (gm)"
+    ],
+    [
+      "msdb570cpn3502",
+      "stellantis-chrysler"
+    ],
+    [
+      "ms500017pa662810f6ihs",
+      "stellantis"
+    ],
+    [
+      "msdb21cpn3608",
+      "stellantis-chrysler"
+    ]
+  ],
+  "COMPETITOR_BRAND": [
+    "titanlene",
+    "apinat",
+    "surpass",
+    "onflexv",
+    "tisarbon"
+  ]
+}

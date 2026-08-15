@@ -1,0 +1,878 @@
+﻿idx,query,filler_names,load_value,load_min,load_max
+27,material with mf,mineral,,,
+39,pa66 with 30%glas,glass fiber,30,25,35
+55,td 36carbonpowder,mineral | carbon powder,36,31,41
+71,materials with total load min 54,,54,54,
+81,pa6 gf30 with 20% recycling,glass fiber,30,25,35
+114,lasermark glass flake,glass flake,,,
+115,laf + metal dbl5410.00pa6gf15 daimler-benz,long aramid fiber | metal,,,
+123,"65% glass fiber/mineral pps, gmw17521p-pps-gf40-type2",glass fiber | mineral,65,60,70
+159,combined fill max 72 carbon fiber va available in eu,carbon fiber,72,,72
+181,fiber,glass fiber,,,
+189,a unfilled material for use in a suspension,unfilled,,,
+198,total filler load <65 laf reep resistance nylon,long aramid fiber,65,,65
+205,pa66 with 25% glass fiber,glass fiber,25,20,30
+216,30% glass filled pa66 zytel,glass fiber,30,25,35
+247,"nylon 10,10 carbon fibre total filler load 34 - 80%",carbon fiber,34,34,80
+249,aramid fiber metal total load of 36 - 92 compressive / bending,aramid fiber | metal,36,36,92
+267,58% sebs,,58,53,63
+274,pa6 30 glas fibre,glass fiber,30,25,35
+283,"a material with 50% glass fiber, water absorption of 2.9% , flexural modulus of 18000 mpa, and service temperature of greater than 130°c",glass fiber,50,45,55
+306,material with total fill 25 to 71,,25,25,71
+320,materials with total load 45,,45,40,50
+325,metal and aramid fiber load with range of 23 - 73% hyundai,metal | aramid fiber,23,23,73
+350,"pa66+ptfe, gf, tailgate spring sleeve application",glass fiber,,,
+358,"pa 6,6 af glass beads thermal shock",aramid fiber | glass beads,,,
+379,"relative permittivity = standard vr 1.99e+15ohm.m not hygroscopic glass fibre 32%, mineral 23%",glass fiber | mineral,55,50,60
+385,continuous carbon fiber less than 93,continuous carbon fiber,93,,93
+405,material with glass fiber or whisker,glass fiber | whisker,,,
+417,"combined load of 35, glasss fiber",glass fiber,35,30,40
+435,( gf + md ) 65 shrinkage 0.3-0.5,glass fiber | mineral,65,60,70
+462,glass 50 lft,long glass fiber,50,45,55
+463,looking for a pom gb25% modulus approx. 3700mpa,glass beads,25,20,30
+493,cope cft glass beads at least 60% with good plateable,long glass fiber | glass beads,60,60,
+540,pa66+33%gf,glass fiber,33,28,38
+541,md long aramid fiber filler load greater than 53% water resistant average temperature of deflection under load 8.0 mpa and relative permittivity at 60hz tensile stress (break) = 303.86 mpa,mineral | long aramid fiber,53,53,
+558,"hytrel, thermx, talc long carbon fiber42%",mineral | long carbon fiber,42,37,47
+572,pp gf30 that comply with gmw15890p,glass fiber,30,25,35
+573,strain at yield 50 mm/min (moderate) tape flex str 7.20e+08 creep resistance longss >57%,long metal fiber,57,57,
+580,material with md 62,mineral,62,57,67
+584,25% glass filled frianyl,glass fiber,25,20,30
+604,"looking for a nylon 10,10 sf greater than 79 with heavy = moderate",metal,79,79,
+606,need a carbon powder pom material,carbon powder,,,
+610,stronger than 30% glass filled pbt,glass fiber,30,25,35
+613,plc4 high amperage arc ignition category gs,glass flake,,,
+624,celanyl with lower contents of glass fiber reinforced grade,glass fiber,,,
+649,combined load ranging between 35 - 55 glow wire more than or eaual to 162°c,,35,35,55
+650,"dtul (good), thermal conductivity of approximately 30.17, esd modified, no filler",unfilled,,,
+655,"need to identify an unfilled material with a density of 0.95, and a molecular weight of 600,000",unfilled,,,
+658,gs mineral combined load max 76 dbl5410.01pa6-i,glass flake | mineral,76,,76
+660,"sf, 88 ve available in north america",metal,88,83,93
+669,gf 50 lft materials,long glass fiber,50,45,55
+690,no load gmw17327p-tpc-et-type 3m2h general motors (gm),unfilled,,,
+698,"looking for a pa6,10 total filler load max 16 with dk at 60hz - 2.7",,16,,16
+706,"vectra low clte, graphite fibres",graphite fiber,,,
+736,pbt gf15 v-0 heat shock ,glass fiber,15,10,20
+774,unfilled pom with sg of 1.4 and mvr of 8.4 cm3/10 min,unfilled,,,
+786,what grades do we have that are 25% graphite fiber loading,graphite fiber,25,20,30
+810,pps with 40% of glass fiber,glass fiber,40,35,45
+854,nominal strain at break = lowest 72 total load,,72,67,77
+859,antistatic polyamide 6 long fibreglass,long glass fiber,,,
+871,glass fiber max filler 90%,glass fiber,90,,90
+899,looking for a eva aramide fibre in the range of 38 - 94 with η: 2450.62,aramid fiber,38,38,94
+904,no fill flame resistant pa6-10,unfilled,,,
+912,"full load 85% nylon 66,6",,85,80,90
+924,i want a graphite fiber filled vectra grade that has a clte (parallel) of 9e-6 cm/cm/degc for a part in a beer machine,graphite fiber,,,
+931,pa66 with 30%glas,glass fiber,30,25,35
+941,unnotched izod of approximately 276 kj/m² and high lead-free solderability highest mechanical performance or bulk density iso 60 (kg/m³) with fiberglass min 58,glass fiber,58,58,
+956,cf + aramid fiber,carbon fiber | aramid fiber,,,
+957,pom reinforced with 10% fiberglass,glass fiber,10,5,15
+966,pps 65% w filler glass mineral,glass fiber | mineral,65,60,70
+971,54% polyoxymethylene,,54,49,59
+1001,15% gf filled; flexural strength 158mpa; lds,glass fiber,15,10,20
+1006,material with af carbon fiber full load <71,aramid fiber | carbon fiber,71,,71
+1020,nylon 6/6 40 filler load with im,,40,35,45
+1050,what frianyl grades are 25% filled and include glass fiber,glass fiber,25,20,30
+1061,"can you let me know the grades meet all of the following requirements? 1.25% filler load, 2. graphite fiber?",graphite fiber,1.25,-3.75,6.25
+1066,un-filled relative thermal index mechanical from 163-210,unfilled,,,
+1074,please list materials that are 25% graphite fiber filled,graphite fiber,25,20,30
+1084,gf / cd 40  long fiber,long glass fiber | carbon powder,40,35,45
+1094,22% geolast,,22,17,27
+1097,gf reinforced pps for tm in nev,glass fiber,,,
+1104,32%lft,,32,27,37
+1116,frianyl pa66 gf washing machine pump,glass fiber,,,
+1122,a pa66 gf30 for radator end tank,glass fiber,30,25,35
+1127,"pps, 40% gf, =mercedes dbl 5420, water pump impeller",glass fiber,40,35,45
+1131,glass filled hostaform,glass fiber,,,
+1153,material with gb 4% - 58%,glass beads,4,4,58
+1178,"long metal fiber, long aramid fiber",long metal fiber | long aramid fiber,,,
+1196,pbt+30%gf,glass fiber,30,25,35
+1218,polyamide 6/10 long glass fiber range 22 to 42,long glass fiber,22,22,42
+1219,housing for a tailgate spring using a gf reinforced ptfe,glass fiber,,,
+1221,general motors (gm) combined fill >73 carbon,carbon,73,73,
+1227,combined load upto 48 grades,,48,,48
+1246,"strong charpy impact strength notched and effective thermal diffusivity and viscosity number >2035 cm³/g high low viscosity with aramide reinforced, 54",aramid fiber,54,49,59
+1275,"rockwell, r 98 and high low formaldehyde excellent hdt 8.0mpa with sf and whisker",metal | whisker,,,
+1291,stellantis-chrysler lcf total filler load at least 55,long carbon fiber,55,55,
+1294,find unfilled acetal copo with gmw16924p-pom-c2 approval,unfilled,,,
+1323,coef. of lin. therm expansion - excellent notched izod impact - 109 kj/m² water resistance long fiberglass and natural organic fiber,long glass fiber | natural organic fiber,,,
+1330,looking for a pps total content of 58 with vicat =weak,,58,53,63
+1347,electrostatic dissipation polyamide 1010 long stainless steel fiber total load range 64 to 74,long metal fiber,64,64,74
+1356,25% glass fiber filled material for ev connector that requires electric strength (ac) of 45 and meets renault ub22c,glass fiber,25,20,30
+1362,sf and long carbon fiber full load 24 - 74% in ld-pe,metal | long carbon fiber,24,24,74
+1401,ppa gf30% ul94 v0,glass fiber,30,25,35
+1411,polytetrafluoroethylene carbon enhanced gloss,carbon,,,
+1452,gf + metal stress-strain curve,glass fiber | metal,,,
+1459,total load <19,,19,,19
+1481,looking for a pvdf laf or long glass fiber with perpendicular break stress =6.74mpa,long aramid fiber | long glass fiber,,,
+1486,eva 10%,,10,5,15
+1497,sf 26 and long glass fiber 7% carbon footprint pa 6t/66,metal | long glass fiber,33,28,38
+1499,contains gf+min reinforced 35%,glass fiber | mineral,35,30,40
+1530,fiber 26 natural organic fiber 28 insect resistant,glass fiber | natural organic fiber,54,49,59
+1548,material with non filler,unfilled,,,
+1553,"full load <57 min thickness 3, plc 0 high current arc ignition",,57,,57
+1555,"please list material with tensile modulus 21500, comparative tracking plc4, glass finer and mineral filled, application automotive camera base",glass fiber | mineral,,,
+1593,material with glass reinforcement 33 long metal fiber 30%,glass fiber | long metal fiber,63,58,68
+1599,a pa10-10 with glass fiber glass beads 66 with range 17,glass fiber | glass beads,66,49,83
+1625,polyetheretherketone gs or metal with good lasertr,glass flake | metal,,,
+1643,glass run channel extrusion,glass fiber,,,
+1647,65% reinforced high flow for automotive camera base,,65,60,70
+1658,eva carbon,carbon,,,
+1659,weak mvr + full load max 48% laf,long aramid fiber,48,,48
+1676,sf carbonfiber >90 grades,metal | carbon fiber,90,90,
+1704,long metal fiber aramid fiber upto 80,long metal fiber | aramid fiber,80,,80
+1705,i am looking for a gf filled zenite with a flexural strength ~ 158 and special appearance,glass fiber,,,
+1720,asa carbon 38 with range +/-21% bio,carbon,38,17,59
+1732,glass fiber filled material for oil pan,glass fiber,,,
+1739,need a pa6 with the hot-wire ignition (hwi) at a thickness of 0.025 to 0.028 mm and no filler for a dosing pump for chemicals,unfilled,,,
+1741,50%ecomid,,50,45,55
+1790,material with nylon 6-6 sf and mineral 57% with +/-24% range,metal | mineral,57,33,81
+1794,akroloy carbon fiber pa6 alternative,carbon fiber,,,
+1810,short fiber polypropylene,glass fiber,,,
+1826,pa6 gf flame retardant 5va,glass fiber,,,
+1836,what is unfilled porous sintering grade that is chemically resistant and can be used in a li-ion battery separator?,unfilled,,,
+1838,glass fiber filled pom,glass fiber,,,
+1847,full load upto 50%,,50,,50
+1848,glass fiber within range of 20 to 40,glass fiber,20,20,40
+1849,22% geolast,,22,17,27
+1860,pa6.6 gf reinforced with a red phosphour based flame retardant,glass fiber,,,
+1912,static nylon 6 without glass fiber,unfilled,,,
+1917,"hot wire ignition (hwi) plc-5, 0.7mm thickness combined load min 53%",,53,53,
+1934,unnotched charpy impact =moderate vicat softening temperature iso 306 50°c/h 50n (°c) of 120 within 5% margin silicone glass fiber + long carbon fiber,glass fiber | long carbon fiber,,,
+1937,nylon 66 with 30% glass,glass fiber,30,25,35
+1948,non halogenated pa66 with 30% glas,glass fiber,30,25,35
+1956,"unfilled, gmw16924p-pom-c2, mvr of 8.4, specific gravity of 1.4",unfilled,,,
+1986,gf and 25% filler grade,glass fiber,25,20,30
+1993,lcf greater than 53,long carbon fiber,53,53,
+2003,elec diss copolyester long aramide fiber carbon fiber combined fill of 41 with range 7%,long aramid fiber | carbon fiber,41,34,48
+2020,nylon 15%,,15,10,20
+2025,materials with carbon filled naturalorganicfiber <66,carbon fiber | natural organic fiber,66,,66
+2040,sf,metal,,,
+2056,gf30,glass fiber,30,25,35
+2065,"non filled uv stability nylon 66,6",unfilled,,,
+2096,cpn 4449 ms 50091 mineral,mineral,,,
+2098,pa66 glass fiber,glass fiber,,,
+2105,25% reinforced plastic with graphite fiber for a part in a beer machine,graphite fiber,25,20,30
+2113,please provide the list of v0 glass fiber and mineral materials having a cti plc 3 which can be used in a microwave oven,glass fiber | mineral,,,
+2114,pa6 with 30% glass for visible interior parts,glass fiber,30,25,35
+2117,af lftr available in asia,aramid fiber,,,
+2120,pa66gf30 halogen free,glass fiber,30,25,35
+2204,can you recommend a uv resistant long fiber reinforced pp grade that is approved for auto interior,long glass fiber,,,
+2228,gf30 tf,glass fiber,30,25,35
+2232,"glass fiber, mvr = 15cc/10min, ball indention hardness = 145mpa, tailgate protective tube housing",glass fiber,,,
+2235,material with total filler load 32% to 88%,,32,32,88
+2247,"abistir, blueridge, whisker",whisker,,,
+2265,"fm >= 18gpa, celanyl, 50% filler",,50,45,55
+2279,pom gf10 (type: long fiber),long glass fiber,10,5,15
+2283,looking for a styrene-butadiene-styrene fibre 21glass beads with maximum dielectric loss 100hz 15.57,glass fiber | glass beads,21,16,26
+2289,celstran long glass fiber products,long glass fiber,,,
+2296,vectra graphite fiber 25% wear,graphite fiber,25,20,30
+2300,strong mv and loi + unfilled,unfilled,,,
+2303,hostaform  carbon filler,carbon fiber,,,
+2322,pom gf/min,glass fiber | mineral,,,
+2367,"pip, omnilon, fibreglass, 37%",glass fiber,37,32,42
+2384,pps gf,glass fiber,,,
+2386,list unfilled grades of pom,unfilled,,,
+2394,longaramidfiber whisker total fill >93 cross-link,long aramid fiber | whisker,93,93,
+2398,carbon filled and metal 52 materials,carbon fiber | metal,52,47,57
+2401,conductive filler 29 - 51 flameclassification @ 0.6 of 5 vb,metal,29,29,51
+2444,laser markable load 55,,55,50,60
+2452,looking for an lcp 45% gf/md,glass fiber | mineral,45,40,50
+2463,nylon 66 frianyl glass fiber,glass fiber,,,
+2480,abistir 15%,,15,10,20
+2510,"pa6t,66 mf long glass fiber full load 39% to 57% with lasertr",mineral | long glass fiber,39,39,57
+2514,glass fiber and mineral filled grade to use in a microwave oven that has a v0 flammability rating and a cti of plc 3,glass fiber | mineral,,,
+2572,combined fill 28 - 78% pa10-10,,28,28,78
+2615,pa66 load 41 with 15% range,,41,26,56
+2622,pa 666 glass reinforcement 13 whisker 37,glass fiber | whisker,50,45,55
+2624,"need a recommendation for a pom ( celcon ) glass filled at 25% , and low warpage.",glass fiber,25,20,30
+2645,"15% glass fiber, laser direct structuring, flexural strength ≥150mpa",glass fiber,15,10,20
+2657,peek with 30-40%gf reinforced,glass fiber,30,30,40
+2674,hot wire ignition @ 2.2 of plc 4 cfr/cf,cfr-cf,,,
+2675,"unfilled, thermally conductive, v0, light weighting",unfilled,,,
+2677,what grade of pps gf40 is suitable for water immersion?,glass fiber,40,35,45
+2687,looking for aramid filler free alternatives,unfilled,,,
+2697,full load 48% grades,,48,43,53
+2722,polytetrafluoroethylene35%,,35,30,40
+2727,pbt unreinforced,unfilled,,,
+2792,"grades with glass content, mineral 34",glass fiber | mineral,34,29,39
+2803,ve 25%,,25,20,30
+2814,pp-lgf30 for ip,long glass fiber,30,25,35
+2826,long fiber glass glow-wire flammability in the range of 390 to 1090 °c,long glass fiber,,,
+2835,carbon fiber filled pom with specific resistivity of 20 for machine slide guide application,carbon fiber,,,
+2881,unreinforced lasertransparent polytetrafluoroethylene,unfilled,,,
+2883,"full load 57 anti chemical pa 66,6t",,57,52,62
+2887,material with laf,long aramid fiber,,,
+2894,customer looking for a glass and ptfe filled celanyl with a total filler content of 45% requested density of 1.48 grams/cm cubed and charpy impact strength > 50 kilojoules / meter^2,glass fiber,45,40,50
+2948,pa6-12 carbon fibre filler load of 37 with +/-28 range lasertransparent,carbon fiber,37,9,65
+2953,material with full load <71%,,71,,71
+2956,full load at least 66 vectra available in eu,,66,66,
+2960,cd in nylon 6/6,carbon powder,,,
+2977,provide me a polyester grade with a comparative tracking index rating of at least plc 1 and 30% glass fiber,glass fiber,30,25,35
+2984,"maximid, zyt, laf 34 carbon fiber 31",long aramid fiber | carbon fiber,65,60,70
+2990,metal x,metal,,,
+2991,selar tx and cd combined fill <62,carbon powder,62,,62
+3000,pps cd10,carbon powder,10,5,15
+3003,40% pa 1010,,40,35,45
+3017,"i want a chemically resistant, unfilled grade that can be used in a libs and processed via porous sintering.",unfilled,,,
+3027,"cs lgf, gf30% , automotive seat head cover box",glass fiber | long glass fiber,30,25,35
+3035,pa6 gf flame retardant 5va,glass fiber,,,
+3045,aramid reinforced,aramid fiber,,,
+3066,impet27%,,27,22,32
+3071,low density polyethylene carbon filled + natural organic fiber with good heat resistance,carbon fiber | natural organic fiber,,,
+3082,pom 30%,,30,25,35
+3086,"oc, ze, 35% load",,35,30,40
+3092,"looking for a pa 6t,6i un filled with tapeflexuralstrength=791",unfilled,,,
+3108,"36 glass reinforced, 32% longcarbonfiber general motors (gm)",glass fiber | long carbon fiber,68,63,73
+3109,"charpydoublenotchedimpactstrengthiso21304-223°c(kj/m²)=low, minimum vicat softing temp 70, lasermark, long steel fiber",long metal fiber,,,
+3139,"21% long steel, 14% long aramid fiber 6t6i",long metal fiber | long aramid fiber,35,30,40
+3142,gs total load max 49 celanyl available in north america,glass flake,49,,49
+3155,cs rynite 61 total load,,61,56,66
+3169,rti str max 161 long glass fiber with total content 56%,long glass fiber,56,51,61
+3173,"pa66 material with 25% glass fiber filler, electric strength (ac) of 45. needs auto approval for renault ub22c.",glass fiber,25,20,30
+3176,material with glass beads total content min 72%,glass beads,72,72,
+3181,food contact pbt unfilled injection moldable,unfilled,,,
+3220,please find a glass and mineral filled pps.  acceptable shrinkage range is 0.3-0.5% and tensile modulus must be >= 21500,glass fiber | mineral,,,
+3225,long carbon fiber glass fiber total fill upto 74% cpn 2270 ms-db-448,long carbon fiber | glass fiber,74,,74
+3242,sf + glass fiber grades,metal | glass fiber,,,
+3244,"looking for a polymer with a high tensile modulus (>= 21000 mpa) that is both glass fiber and mineral filled, meets auto spec gmw17521p-pps-gf40-type 2 to use in an automotive camera base.",glass fiber | mineral,,,
+3247,td 31 with range 22,mineral,31,9,53
+3253,total fill 53% to 81% stable to heat eva,,53,53,81
+3273,lft grade with glass 50%,long glass fiber,50,45,55
+3284,looking for a nylon 66-6t aramide fibre and carbon fiber 32 with +/-15% with d - 62,aramid fiber | carbon fiber,32,17,47
+3325,polyoxymethylene total fill 81,,81,76,86
+3356,31%sikamid,,31,26,36
+3364,carbon pps,carbon,,,
+3368,opp maximid td 30 and long glass fiber 40,mineral | long glass fiber,70,65,75
+3384,pa66 with gf30 ecomid,glass fiber,30,25,35
+3406,"what pps grades have mold shrinkage from 0.3 - 0.5%, cti plc 4, and total filler content of 65% ?",,65,60,70
+3433,unfilled pps extrusion,unfilled,,,
+3436,looking for a nylon 6t/xt laf whisker total fill upto 51 with tg-111,long aramid fiber | whisker,51,,51
+3437,material with stainless steel combined fill ranging between 28 - 84,metal,28,28,84
+3457,lcp gf dielectric constant of 3.7,glass fiber,,,
+3461,40lft filler grades,long glass fiber,40,35,45
+3475,sofprene 15% lcp,,15,10,20
+3514,material with td 30% - 52%,mineral,30,30,52
+3515,50% glass filled pa6,glass fiber,50,45,55
+3542,"25% glass bead pom, shrinkage ≤1.4% ，celcon grade",glass beads,25,20,30
+3545,pps gf md 65% shrinkage cti,glass fiber | mineral,65,60,70
+3551,rti ele: 60°c from 42 - 82 mf filler load max 29,mineral,29,,29
+3568,styrene-butadiene-styrene total load greater than 51 cf whisker esd,carbon fiber | whisker,51,51,
+3569,pbt 30% glass fiber,glass fiber,30,25,35
+3576,looking for a 55d hytrel that is loaded with carbon black at levels >10% up to 25%.,carbon,10,10,25
+3586,"recommend lcp material that meets the following requirements (application microwave oven):, 45% reinforced, cti of plc3, mineral/glass reinforced",mineral | glass fiber,45,40,50
+3592,44% pa66-6,,44,39,49
+3596,glass - filled grade for tailgate protective tube housing with vw50125 cert,glass fiber,,,
+3624,fiberglass and whisker nhfr tensile mod tape = medium rockwell hardness r-scale 75-131,glass fiber | whisker,,,
+3642,long glass fibre,long glass fiber,,,
+3651,"i want a grade with 25% glass bead filler, a mold shrinkage <1.4 and a tensile mod > 3700 that could be used in a paint can nozzle",glass beads,25,20,30
+3657,gf-30 uv,glass fiber,30,25,35
+3661,pa6 gf20 gb10 natural,glass fiber,20,15,25
+3669,grades with gs total content at least 74,glass flake,74,74,
+3673,lowest nominal break strain or coefficient of linear thermal expansion (clte) short fibre long aramid fiber,glass fiber | long aramid fiber,,,
+3676,grades with filler load <42,,42,,42
+3690,excellent pcr ball pressure test average and elongational stress f iso 21304-2 150/10 (mpa) in the range of 0.07-0.13mpa with combined load <58%,,58,,58
+3737,a polyamide 666 with total content less than 46 long aramid fibre,long aramid fiber,46,,46
+3747,cf mineral less than 32,carbon fiber | mineral,32,,32
+3780,19%cnl,,19,14,24
+3786,pbt long steel fiber,long metal fiber,,,
+3791,"frianyl, glass fiber, dtul 230, water absorption 1",glass fiber,,,
+3804,total filler load greater than 59% gb long carbon fiber coolpoly available in europe middle east africa,glass beads | long carbon fiber,59,59,
+3817,"i""d like to check all grades contain gf less than 30%, v0 haogen free, cti 0class,",glass fiber,30,,30
+3856,glass filled pom with fuel resistance,glass fiber,,,
+3857,material with glass filled carbon fiber greater than 68,glass fiber | carbon fiber,68,68,
+3868,suggest some  grade which is mineral free,unfilled,,,
+3896,"vectra, glass fiber, mineral filler, fr, lead-free soldering",glass fiber | mineral,,,
+3927,glass fibre pp,glass fiber,,,
+3944,"unfilled, approval wss-m98p14-a7",unfilled,,,
+3962,nylon 12 45%,,45,40,50
+3979,material with filler load of 33 with +/-22,,33,11,55
+3983,santoprene hostaform and long glass fiber 35 with range +/-10,long glass fiber,35,25,45
+4004,"standard hardness, rockwell m-scale maximum temperature of deflection under load iso 75-1/-2 8 mpa (°c) 92 °c recycle total fill at least 82 organic fiber aramid fiber",natural organic fiber | aramid fiber,82,82,
+4008,gs materials,glass flake,,,
+4009,polyamide 66 gf30,glass fiber,30,25,35
+4010,"+ 30% lgf, = gmw15890p-pp-gf30e, = automotive seat head cover box",long glass fiber,30,25,35
+4016,"cnl, hyt, 32 fibreglass 11% aramid fiber",glass fiber | aramid fiber,43,38,48
+4029,"oc, ecomid, long metal fiber",long metal fiber,,,
+4037,fo forprene and total fill 27 - 67,,27,27,67
+4047,stable to light peld long ss and long aramid fiber with 48 combined load,long metal fiber | long aramid fiber,48,43,53
+4086,glass - filled zenite with 5g antenna performance,glass fiber,,,
+4088,lowest tensile stress at 100% strain and effective thermal diffusivity iso 22007-4 through plane (m²/s) and no load,unfilled,,,
+4137,polyamide 66/6 short fiber,glass fiber,,,
+4147,"""light weight"" ""thermally conductive"" ""unfilled""",unfilled,,,
+4152,"looking for a polymer, gf-15-min30 filled reinforced",glass fiber | mineral,45,40,50
+4198,load >87 grades,,87,87,
+4226,pa66 gf30 for glycol contact,glass fiber,30,25,35
+4238,which hostaform grades are carbon filled,carbon fiber,,,
+4243,i would be looking for frianyl pa66 with glass fiber for application pump in a washing machine.,glass fiber,,,
+4265,grades with full load of 75% with td,mineral,75,70,80
+4272,short glass pp,glass fiber,,,
+4274,glass fiber filled grade with recycled content and a melt volume rate of 15cm3/10min for a tailgate protective tube housing,glass fiber,,,
+4276,metal-detectable grade,metal,,,
+4297,"unfilled, density - 0.950, mw 600000",unfilled,,,
+4346,can you recommend a u.v. stabilized without filled pa 6-12 grade that is approved for travel restrictor for chassis,unfilled,,,
+4355,charpy impact strength unnotch = lowest total fill range 28 to 48%,,28,28,48
+4368,15 glass 27 long metal fiber grades,glass fiber | long metal fiber,42,37,47
+4370,40% glass filled pps nsf,glass fiber,40,35,45
+4375,fiber grades,glass fiber,,,
+4381,"pps, carbon",carbon,,,
+4388,pa 30% glass,glass fiber,30,25,35
+4408,"pps, gb20, tf",glass beads,20,15,25
+4416,"pps, 40% glass - filled, water pump impeller application",glass fiber,40,35,45
+4468,looking for an unfilled celcon (pom) material with a notched charpy impact of 7 kj per m²,unfilled,,,
+4469,short fiber polypropylene,glass fiber,,,
+4471,"appearence, glass fiber,molding",glass fiber,,,
+4476,materials with long aramide fibre whisker >34%,long aramid fiber | whisker,34,34,
+4479,looking for pa66 shrt glass fibers,glass fiber,,,
+4503,"pps, gf40.",glass fiber,40,35,45
+4506,ld-pe no fill visual fx,unfilled,,,
+4515,"find pps with glass fiber and mineral filled with total filler content of 65% and mold shrinkage between 0.3% and 0.5% with comparative tracking plc 4,",glass fiber | mineral,65,60,70
+4523,min+gf30 ,mineral | glass fiber,30,25,35
+4527,a part for a beer machine requires 25% graphite fiber content and good wear resistance. what materials can you suggest?,graphite fiber,25,20,30
+4529,"gf, cd 40 (long fiber)",long glass fiber | carbon powder,40,35,45
+4531,combined fill at least 98% carbon mineral in nylon 66,carbon | mineral,98,98,
+4533,do you have a glass and mineral filled pps approved to gmw12345,glass fiber | mineral,,,
+4542,pa6-gf20,glass fiber,20,15,25
+4550,how will i know the glass-filled content in your zytel grades?,glass fiber,,,
+4576,"what grades do you have that are wear resistant, have 25% graphite fiber content and could be used in a beer machine part?",graphite fiber,25,20,30
+4603,highgloss total content min 40%,,40,40,
+4614,gb long aramid fiber <65% ev02b,glass beads | long aramid fiber,65,,65
+4636,65% filled pps requested,,65,60,70
+4676,41% long fibre glass + 13% metal materials,long glass fiber | metal,54,49,59
+4683,high flow 65% reinforced (gf + mineral) pps with mold shrinkage between 0.3 and 0.5%,glass fiber | mineral,65,60,70
+4687,"pp with gf30, approved gmw15890p",glass fiber,30,25,35
+4688,whisker total content min 78 food grade,whisker,78,78,
+4690,looking for a pps gf40 with mercedes dbl5420 approval,glass fiber,40,35,45
+4700,looking for a 6txt af load 51 - 85 with clte81.64,aramid fiber,51,51,85
+4711,lcp and 25% filled and tribo prop.,,25,20,30
+4718,lftr blueridge aramid fibre 19 whisker 13%,aramid fiber | whisker,32,27,37
+4724,without filled dbl5562.aa41 tpv daimler mercedes-benz,unfilled,,,
+4729,"gb, long metal fiber materials",glass beads | long metal fiber,,,
+4733,"ecomid pa6 heat deflection, gf",glass fiber,,,
+4740,pbt gf30 black v0,glass fiber,30,25,35
+4768,pps with 40% glassfiber and low wear,glass fiber,40,35,45
+4808,aramid fiber around 30% to 40%,aramid fiber,30,30,40
+4815,glass reinforced am available in europe,glass fiber,,,
+4818,i am searching fo a pa66 gf50 containing no halogens,glass fiber,50,45,55
+4826,teflon 36%,,36,31,41
+4861,food contact pbt unfilled injection moldable,unfilled,,,
+4866,recommend grades that are specifically without aramid,unfilled,,,
+4869,material with longssfiber / glass beads,long metal fiber | glass beads,,,
+4880,list of materials which are without graphite fiber,unfilled,,,
+4896,high heat performance pa 6t-xt glass flake / carbon powder,glass flake | carbon powder,,,
+4919,looking for an lcp 45% gf / md,glass fiber | mineral,45,40,50
+4930,total filler load in the range of 30 - 68% appearance notch izod = good average molecular weight margolies' equation (g/mol) - 1.71e+06 g/mol,,30,30,68
+4942,mf long carbon fiber total fill of 21 - 71 water resistant polyamide 612,mineral | long carbon fiber,21,21,71
+4945,unfilled pom with specific gravity of 1.4 and mvr 8.4 cc/10 min.,unfilled,,,
+4962,material with nylon 6t/66 total filler load greater than 66 md aramidfiber,mineral | aramid fiber,66,66,
+4968,looking for a thermoplastic rubber vulcanisate td + long aramid fiber with compressive stress at 1% strain = weak,mineral | long aramid fiber,,,
+4989,combined fill upto 19 carbon fibre glass beads,carbon fiber | glass beads,19,,19
+4993,looking for a low density polyethylene cd greater than 79 with strain yield 50 mm/min max 22.72 %,carbon powder,79,79,
+5000,lcp gf30,glass fiber,30,25,35
+5016,zyt 30%,,30,25,35
+5099,stainless steel fiber,metal,,,
+5109,"what material has a filler content of 25% , electric strength of 45, polyamide 55, glass fiber and meets renault ub22c auto spec",glass fiber,25,20,30
+5159,polyamide 6-10 gr with total fill 55 with improved toughness,glass fiber,55,50,60
+5160,ss fiber drug master file,metal,,,
+5162,rti imp 176 1.2mm thick. mf,mineral,,,
+5188,looking for a pa 66/6 lcf or long metal fiber with flow 240.18 g/10min,long carbon fiber | long metal fiber,,,
+5203,"gmw16924p-pom-c2, uv, nat, unfilled",unfilled,,,
+5228,stp stp and stainless steel fiber,metal,,,
+5236,customer requests a 30% lgf celstran grade to use in an auto seat head cover box,long glass fiber,30,25,35
+5251,"long glass fiber 26 / whisker 45 hydrostable pa 6t,6i",long glass fiber | whisker,71,66,76
+5278,hdpe total content less than 80% gr,glass fiber,80,,80
+5290,mf relative thermal index @ 3.5 75 °c,mineral,,,
+5309,pa666gf15,glass fiber,15,10,20
+5324,unfilled pom with specific gravity of 1.4 and mvr of 8.4,unfilled,,,
+5361,"unfilled grade with v0 rating, flex mod = 10300 mpa, and k = 1.3 w/m/k",unfilled,,,
+5366,what grades of unfilled celcon are wear resistant,unfilled,,,
+5382,plating grade copolyester gs >64%,glass flake,64,64,
+5396,pa66 gf30 blow molding,glass fiber,30,25,35
+5431,nylon 10-10 cf longaramidfiber load with range of 54 - 76% with medgrade,carbon fiber | long aramid fiber,54,54,76
+5433,sp factor combined load of 23,,23,18,28
+5451,thermoplastic copolyester ss mineral greater than 83 with silicon oil concentrate,metal | mineral,83,83,
+5456,pps gf+mineral 65% black,glass fiber | mineral,65,60,70
+5498,"pa 66 unfilled, impact modified, recycle, black",unfilled,,,
+5512,min+gf 40,mineral | glass fiber,40,35,45
+5516,combined load >76 crush test,,76,76,
+5546,which fiber filled grades meet the vw50125 standard?,glass fiber,,,
+5557,"what pe materials are unfilled, have molecular weight of about 600,000 and a particle size of 120?",unfilled,,,
+5582,pp lgf 30 recycled,long glass fiber,30,25,35
+5612,combined load 25 - 41%,,25,25,41
+5614,cpn 2125 ms 50017 cft total content 37 with 24 range,long glass fiber,37,13,61
+5623,41%opp,,41,36,46
+5627,"looking for material , unfilled, desity ca 1410 kg/m2, ford wss-m98p14-a7, tensile modulus >= 2750 mpa",unfilled,,,
+5643,do you have a glass and mineral filled pps approved to gmw12345?,glass fiber | mineral,,,
+5649,i am looking for a pa66 frianyl glass fiber filled grade,glass fiber,,,
+5653,pa6 gf30,glass fiber,30,25,35
+5677,material with thermoplastic rubber vulcanisate mf carbon powder total fill less than 62,mineral | carbon powder,62,,62
+5702,polyetheretherketone52%,,52,47,57
+5714,unfilled and kepital,unfilled,,,
+5717,long carbon fiber carbon powder 63 with +/-28% range hffr ethylene methylacrylate,long carbon fiber | carbon powder,63,35,91
+5750,"po, compel, without filled",unfilled,,,
+5770,vw auto spec - 15% gf pps,glass fiber,15,10,20
+5780,material with pa6/10 lcf,long carbon fiber,,,
+5781,"application is water meter housing , pa66 glass fiber filled,  50% filler , flexural modulus at least 18000",glass fiber,50,45,55
+5789,abrasion resistant lgf 72carbon fiber,long glass fiber | carbon fiber,72,67,77
+5817,gmw15816p-tpv-epdm+pp-class-i-type-6 general motors (gm) without filler,unfilled,,,
+5818,"applications: washing machine pump, material fulfilling:, -v0 , -filler content 25%, -laser markable , -glass fiber filled",glass fiber,25,20,30
+5835,"pa66,6t 19%",,19,14,24
+5842,long fiber reinforced (30wt%) celstran for automotive seat head box.,long glass fiber,30,25,35
+5846,"dbl540506pomc metal, mineral",metal | mineral,,,
+5859,"tensile mod = standard, 30% lcf, 22% long aramid fiber",long carbon fiber | long aramid fiber,52,47,57
+5862,graphite fiber vectra clte parallel of(..) for use in beer machine part,graphite fiber,,,
+5891,find grades without carbon fiber filler,unfilled,,,
+5892,"mw 600000, unfilled, ps(avg) 120, high mw",unfilled,,,
+5893,material with long fibreglass 9 to 65,long glass fiber,9,9,65
+5902,pom with 30% glas fibre,glass fiber,30,25,35
+5922,need a pc with an rti imp at a thickness of 0.150 mm and no filler for a wombat cage.,unfilled,,,
+5938,pps fiber grade with flame retardance,glass fiber,,,
+5939,natural organic fiber usp 88,natural organic fiber,,,
+5944,ve 25% pbt,,25,20,30
+5964,pet gr load upto 92 eco,glass fiber,92,,92
+5980,gb grades,glass beads,,,
+6001,material with 49% combined fill with laf,long aramid fiber,49,44,54
+6011,material with long fibreglass and long metal fiber total load of 56 with range 6,long glass fiber | long metal fiber,56,50,62
+6024,suggest a material with 25% graphite fiber load,graphite fiber,25,20,30
+6035,polybutylene terephthalate total load in the range of 30 - 74% water resistance,,30,30,74
+6064,pa 6/10 conductive filler aramidfiber load upto 67% low friction,metal | aramid fiber,67,,67
+6066,25% reinforced plastic for nozzle for spray paint that contains glass beads and has tensile modulus higher than 3700 and mold shrinkage below 1.4%,glass beads,25,20,30
+6082,"25% gf, = renault ub22c, ds ( ac ) 45, electrical vehicle connector",glass fiber,25,20,30
+6114,gf25 v0,glass fiber,25,20,30
+6117,total fill range 34 to 74 v2,,34,34,74
+6120,"show tribologically modified, glass fiber reeinforced pa66",glass fiber,,,
+6142,pbt gf eco-r,glass fiber,,,
+6149,which grades of celstran pp gf30 are low emission,long glass fiber,30,25,35
+6183,md 40 with +/-20 lt lowest flexural modulus astm d 790 tape 0° (mpa) and young's modulus minimum of izod impact unnotch 71 kj/m²,mineral,40,20,60
+6186,pa6 30% glass fiber with impact modified,glass fiber,30,25,35
+6197,water resistance semi aromatic polyamide total load range 27 to 45,,27,27,45
+6231,electdiss gs 54,glass flake,54,49,59
+6276,non-filler grades,unfilled,,,
+6301,pa66 gf25% renault ub22c electric strength of 45,glass fiber,25,20,30
+6345,"density of .85 to 1.05 g/cm^3, unfilled, mw of 600,000, average particle size of 120",unfilled,,,
+6372,carbon fiber should not be greater than 40% filler load,carbon fiber,40,,40
+6373,cf and aramid fiber,carbon fiber | aramid fiber,,,
+6420,pip vitaldose and sf total load of 50 with range +/-17%,metal,50,33,67
+6426,material with total content >60% long aramid fiber glass beads,long aramid fiber | glass beads,60,60,
+6431,25% graphite fiber filled grade,graphite fiber,25,20,30
+6435,cf and carbonpowder dbl5403pa66gf20 daimler-benz,carbon fiber | carbon powder,,,
+6445,zytel lp and natural organic fiber + mineral,natural organic fiber | mineral,,,
+6446,"sf, long glass fiber pa 6,6",metal | long glass fiber,,,
+6454,"customer ctqs , light weight, thermally conductive, unfilled.",unfilled,,,
+6458,"akroloy carbon fiber 40, pa6",carbon fiber,40,35,45
+6463,"uv stabilise pa 10,10 lgf - 30%",long glass fiber,30,25,35
+6464,a filler with min30-gf15 is required,glass fiber | mineral,45,40,50
+6467,rti str at a thickness of 3.0 mm for hot dog compressor with filler content of 80%,,,,
+6477,"unfilled pom, wss-m98p14-a7 qualified",unfilled,,,
+6492,gf / metal,glass fiber | metal,,,
+6500,stellantis-chrysler metal and carbonpowder 26,metal | carbon powder,26,21,31
+6516,flame classification 1.5mm of hb75 mineral 42,mineral,42,37,47
+6539,without glass fibre qmtt2 listed,unfilled,,,
+6540,unfilled material meets ford wss-m98p14-a7,unfilled,,,
+6544,medical/healthcare pa* filler load range 11 to 67%,,11,11,67
+6583,looking for a glass/mineral free  grade,unfilled,,,
+6586,polyamide 6/6 gs silicone,glass flake,,,
+6588,"seeking gf/mf reinforced grades with tensile modulus 21500mpa, cti = plc4. applicable for auto camera base",glass fiber | mineral,,,
+6592,find grades without carbon fiber filler,unfilled,,,
+6596,"i""d like to check all grades contain gf less than 30%, v0 haogen free, cti 0class,",glass fiber,30,,30
+6650,pa66 with gf30,glass fiber,30,25,35
+6669,forprene 18%,,18,13,23
+6687,gf filled contains reccycled conetent with mv 15cm3/10min,glass fiber,,,
+6709,gf (long fiber) and cd 40,long glass fiber | carbon powder,40,35,45
+6723,izod notch impact =75kj/m2 and high silicone weak flex or mv with combined load 55% to 71%,,55,55,71
+6731,zytel g30,glass fiber,30,25,35
+6736,pa66 with 30%glas,glass fiber,30,25,35
+6759,pa 6 gf 30 0.8mm v1 fr uv impact ,glass fiber,30,25,35
+6777,"excellent charpy notched impact strength and dk 1mhz, charpy unnotched impact of min 196 kj/m², anti-hydrolysis, lcf <53",long carbon fiber,53,,53
+6791,i would be looking for pa66 with glass fiber and ptfe for application tailgate spring sleeve.,glass fiber,,,
+6794,pp gf30 v0,glass fiber,30,25,35
+6795,sofprene 15%,,15,10,20
+6803,"total content less than 95 gr whisker min thickness 3, plc 4 high amp arc ignition",glass fiber | whisker,95,,95
+6805,materials with total load of 61% with metal,metal,61,56,66
+6806,suggest filler like min15,mineral,15,10,20
+6833,glass filled pom,glass fiber,,,
+6837,31% pa 66/6t,,31,26,36
+6867,combined fill max 47 compressive / bending,,47,,47
+6912,pbt gf30 with fr,glass fiber,30,25,35
+6931,hydrolysis resistant pbt gf30,glass fiber,30,25,35
+6938,gwit 1.6mm of 780°c combined fill <49,,49,,49
+6967,38 sf 44 glass beads grades,metal | glass beads,82,77,87
+6970,cf glass fiber min 70,carbon fiber | glass fiber,70,70,
+6980,looking for a pa 10-10 un-filled with relative permittivity 60hz (2.54) in the range of 10%,unfilled,,,
+6982,akroloy carbon fiber pa6 material,carbon fiber,,,
+7000,"stp, litepol, full load of 70 with longglassfibre",long glass fiber,70,65,75
+7028,graphite fiber 25%,graphite fiber,25,20,30
+7080,"looking for a material with the following ctq low specific gravity, thermally conductive and unfilled",unfilled,,,
+7081,high - temp. of deflection under load 1.80 mpa relative permittivity 1mhz in the range of 7.57 to 10.6 good electrostatic dissipative gr 19 / aramid fiber 23,glass fiber | aramid fiber,42,37,47
+7085,"moderate flex mod tape and volres, long stainless steel / long carbon fiber",long metal fiber | long carbon fiber,,,
+7115,nylon 6t-6i md / carbon fiber improved toughness,mineral | carbon fiber,,,
+7122,balanced ratio of 15% to 20% of carbon fiber,carbon fiber,15,15,20
+7127,need a 30% lgf pp material that does / will meet gmw15890.,long glass fiber,30,25,35
+7130,td whisker combined fill <62,mineral | whisker,62,,62
+7134,load 35 671 °c gwit @ 0.5mm,,35,30,40
+7154,"applications part in a beer machine , material full filing , -filler content 25% , -graphite filler",graphite fiber,25,20,30
+7163,carbon fiber pbt,carbon fiber,,,
+7168,pa10-10 non-filler,unfilled,,,
+7169,"24% continuous carbon fiber, 19% longcarbonfiber high-current arc ignition (hai): plc 1 (60 - 119)",continuous carbon fiber | long carbon fiber,43,38,48
+7171,laser markable unfilled nylon,unfilled,,,
+7173,long glass fibre 64 crosslinking,long glass fiber,64,59,69
+7185,pa6 30 glas fibre recycle content,glass fiber,30,25,35
+7191,pom/mf30,mineral,30,25,35
+7193,"material with gf, long carbon fiber",glass fiber | long carbon fiber,,,
+7194,"polyoxymethylene (acetal) 40 gb, 33% long aramid fiber",glass beads | long aramid fiber,73,68,78
+7262,cra elvamide total fill range 33 to 75%,,33,33,75
+7283,glass reinforced lcp,glass fiber,,,
+7285,pa66 lgf20,long glass fiber,20,15,25
+7302,need a pa6 with the hot-wire ignition ( hwi ) at a thickness of 0.025 to 0.028 mm and no filler for a dosing pump for chemicals,unfilled,,,
+7331,glow wire temp @ 5 of 625 sf with total content 64,metal,64,59,69
+7334,"pa 6t,6i laf <50 with good anti-warp",long aramid fiber,50,,50
+7363,i am looking for a gf filled zenite with a flexural strength - 158 and special appearance,glass fiber,,,
+7368,"pbt, unfilled",unfilled,,,
+7371,crastin omnicarb 75 load,,75,70,80
+7378,cnl 25% tpv,,25,20,30
+7380,"searching for an acetal, melt volume rate 8,4, unfilled, approved by gmw16924p-pom-c2 auto spec, offset of delrin 527uv nc010.",unfilled,,,
+7398,pp long fibre 30%,long glass fiber,30,25,35
+7413,general motors (gm) without filler,unfilled,,,
+7430,glass 50% lfrt materials,long glass fiber,50,45,55
+7436,looking for a pa66-6t total fill at least 69 with low tensile stress at yield iso 527-1/-2 50mm/min (mpa) and perpendicular stress at break,,69,69,
+7438,material with cf + glass beads,carbon fiber | glass beads,,,
+7467,ppa gf30 ul94 v0,glass fiber,30,25,35
+7468,unfilled pa66 with an rv between 41 and 45,unfilled,,,
+7499,frianyl pa66 glass reinforced connector,glass fiber,,,
+7520,material with full load of 57 with carbon,carbon,57,52,62
+7545,pa66 gf15,glass fiber,15,10,20
+7611,cf 15% and aramide 10%,carbon fiber | aramid fiber,25,20,30
+7650,total load min 47% md natural organic fiber materials,mineral | natural organic fiber,47,47,
+7661,need a material with 15min,mineral,15,10,20
+7696,can you recommend a hydrolysis 19% long carbon fiber 18% long glass fiber polycarbonate grade that is approved for microwave oven component,long carbon fiber | long glass fiber,37,32,42
+7697,long fiber reinforced ( 30wt% ) celstran for automotive seat head box.,long glass fiber,30,25,35
+7702,"unfilled grade that meets the gmw16924p-pom-c2 spec, mvr = 8.4, and specific gravity = 1.4",unfilled,,,
+7746,pa 6-12 37%,,37,32,42
+7750,coefficient of linear thermal expansion = moderate + 40 full load with fibre glass,glass fiber,40,35,45
+7756,materials with long fiber glass total filler load >74%,long glass fiber,74,74,
+7819,long chain pa stainlesssteel 65 - 75 plasticiser,metal,65,65,75
+7834,mf 15% aramide 20%,mineral | aramid fiber,35,30,40
+7849,unfilled material for a suspension bellow,unfilled,,,
+7874,materials with mf,mineral,,,
+7884,lfrt grade with gf 50,long glass fiber,50,45,55
+7923,pbt gf eco-r,glass fiber,,,
+7938,td long glass fiber combined load upto 51% 192 rtie @ 0.9mm,mineral | long glass fiber,51,,51
+7949,non filled low ion elution,unfilled,,,
+7950,gf and cd 40 (long fiber),long glass fiber | carbon powder,40,35,45
+7955,"fortron, glass fiber, 40%",glass fiber,40,35,45
+7961,"for terminal block application, we require an unfilled pa66 with ul listing@0,4mm v0",unfilled,,,
+7963,looking for a polyphenylene sulphide long fibre glass with e-mod of 2.75e+08,long glass fiber,,,
+7975,unfilled grade to use in a suspension bellow,unfilled,,,
+7978,lead-free soldered and flame - retardant vectra grade with filler content of 45% ( preferably mineral and glass fiber ),mineral | glass fiber,45,40,50
+7989,polytetrafluoroethylene af long metal fiber with 65% load static resistant,aramid fiber | long metal fiber,65,60,70
+7996,materials with gr with filler load 87,glass fiber,87,82,92
+8015,58% sbs,,58,53,63
+8034,laf total content range 27 to 41%,long aramid fiber,27,27,41
+8058,peek with carbon fiber,carbon fiber,,,
+8075,"which grade can be used for laser direct structuring with a flexural strength of 158 megapascals, gf 15%.",glass fiber,15,10,20
+8103,flame retardant unreinforced density,unfilled,,,
+8104,do we have pp 30% gf with at least 30% recycled content,glass fiber,30,25,35
+8109,need to find a material with 25% graphite fiber filler with compressive modulus of 9000mpa and clte of 9.0e-6/c,graphite fiber,25,20,30
+8113,v0 pa66-gf30,glass fiber,30,25,35
+8121,65% reinforced pps containing glass fiber and mineral,glass fiber | mineral,65,60,70
+8127,pa + gf + ptfe,glass fiber,,,
+8168,haogen free td long glass fiber upto 47%,mineral | long glass fiber,47,,47
+8176,material with cf and natural organic fiber 34 to 48,carbon fiber | natural organic fiber,34,34,48
+8231,static resistant total fill >47,,47,47,
+8236,pa6tgf30,glass fiber,30,25,35
+8240,nylon 6-12 long metal fibre and glass beads,long metal fiber | glass beads,,,
+8274,"pa 10,10 full load greater than 20 heat stabilized",,20,20,
+8282,"nylon 6,10 full load of 62 with +/-10% range",,62,52,72
+8283,loss angle at 1mhz - good without glass,unfilled,,,
+8292,frianyl a gf,glass fiber,,,
+8298,celcon unfilled,unfilled,,,
+8310,"pom, celcon, 25% glass bead, low warpage",glass beads,25,20,30
+8314,material with md,mineral,,,
+8344,lt cfr cf combined load min 35%,cfr-cf,35,35,
+8350,polyamide glass reinforced with good hydrolysis resistance,glass fiber,,,
+8374,lcp with gr,graphite fiber,,,
+8383,lcp filler glass fiber mineral 45% cti plc3,glass fiber | mineral,45,40,50
+8407,35% abs,,35,30,40
+8446,i am looking for a pps product with 65% filler load based on glass fiber and mineral filler.,glass fiber | mineral,65,60,70
+8482,load <28%,,28,,28
+8487,looking for a nylon 6-10 continuous fiber with charpy impact unnotch (299.47) between 226-349,long glass fiber,,,
+8491,flame retardant pa with 30 gf,glass fiber,30,25,35
+8493,mineral free grade,unfilled,,,
+8507,unreinforced pa,unfilled,,,
+8514,"nylon 6t,xt without filler",unfilled,,,
+8522,pbt with 20-30% glass v0,glass fiber,20,20,30
+8542,pa 6 un-filled,unfilled,,,
+8550,looking for a grade that does not contain carbon fiber,unfilled,,,
+8559,glass fiber mvr 15,glass fiber,,,
+8580,pa66g30,glass fiber,30,25,35
+8584,hytrel keploy and lcf metal total fill min 86%,long carbon fiber | metal,86,86,
+8588,short fibre or glass beads anti-creep pa 6t-xt,glass fiber | glass beads,,,
+8644,glass and mineral filled pps meet gmw17521p-pps-gf40-type 2,glass fiber | mineral,,,
+8647,find a celcon pom grade with 25 percent glass bead filler,glass beads,25,20,30
+8654,tds zytel ppa 30% gf,glass fiber,30,25,35
+8665,pp+40%gf,glass fiber,40,35,45
+8695,"40% glass fiber filled, pps, mercedes dbl 5420, water pump impeller",glass fiber,40,35,45
+8712,cfr gf aramid fiber combined load at least 49%,cfr-gf | aramid fiber,49,49,
+8713,20min+gf,mineral | glass fiber,20,15,25
+8716,"nylon 10,10 cft and metal with tribology",long glass fiber | metal,,,
+8732,material with long aramid fiber combined fill max 63,long aramid fiber,63,,63
+8745,a pom with 20% glass beads,glass beads,20,15,25
+8771,search lft40%,long glass fiber,40,35,45
+8789,low density polyethylene total filler load <51 with low mv,,51,,51
+8799,"pp, 30lgf, =gmw15890p-pp-gf30e",long glass fiber,30,25,35
+8800,un filled cfr 21,unfilled,,,
+8806,"unfilled, light weight and thermally conductive grade",unfilled,,,
+8817,pa66 gf35 heat resistant,glass fiber,35,30,40
+8824,"material with uhmwpe cf, long metal fiber with combined fill 22%",carbon fiber | long metal fiber,22,17,27
+8832,pa6-cf passion ratio and stress-strain curves,carbon fiber,,,
+8835,af long glass fiber total filler load less than 36 materials,aramid fiber | long glass fiber,36,,36
+8838,gs natural organic fiber full load greater than 15% in copolyester elastomer,glass flake | natural organic fiber,15,15,
+8839,a nylon 6-12 with total fill 40%,,40,35,45
+8922,"v0 pa66-gf30, v0 @ 1.5mm, orange color for hv connectors",glass fiber,30,25,35
+8925,polifor br filler load of 45 - 91,,45,45,91
+8978,pa 6t-6i cfr/cf max 42% plasti,cfr-cf,42,,42
+8983,38%paste,,38,33,43
+8997,looking for a nylon 66/6t total load at least 32 with dielectric loss 60hz 2.45 within 30% margin,,32,32,
+9002,excellent alogen free excellent tangent delta at 1mhz and rockwell hardness 94 from 56 - 139 with non-filler,unfilled,,,
+9013,material with glass beads <85,glass beads,85,,85
+9028,pa66-gf30 flame retardant,glass fiber,30,25,35
+9043,un filled lead-free soldering resistance peld,unfilled,,,
+9057,16% full load pipelon available in eu,,16,11,21
+9063,pa66 gf7%,glass fiber,7,2,12
+9075,gf55,glass fiber,55,50,60
+9111,"cn, coolpoly, 26 carbon powder and 45 metal",carbon powder | metal,71,66,76
+9114,"neo, talcoprene, sf",metal,,,
+9117,litepol pb and longfibreglass metal 58 with +/-19,long glass fiber | metal,58,39,77
+9122,please find pps containing 65% ( total ) glass and mineral fillers with mold shrinkage 0.3-0.5% and cti - plc 4,glass fiber | mineral,65,60,70
+9134,gf - long fiber cd 40,long glass fiber | carbon powder,40,35,45
+9177,grade of frianyl with pa66 and glass fiber,glass fiber,,,
+9186,30% glas filled pp grade,glass fiber,30,25,35
+9193,long steel total content 32 to 86 lowemiss pa 610,long metal fiber,32,32,86
+9204,pa6t gf40,glass fiber,40,35,45
+9205,polyester 30% glass,glass fiber,30,25,35
+9210,"pa66 fr, material characteristic , - glass fiber content, - laser mark able",glass fiber,,,
+9216,"unfilled, suspension bellow",unfilled,,,
+9225,25% graphite fiber filled material with wear resistance for a beer machine part.,graphite fiber,25,20,30
+9237,pp with an hb75 flammability classification at a thickness of 1.5 mm with filler content of 50%,,50,45,55
+9239,"vw50125, pa6 with gf, tube housing application",glass fiber,,,
+9241,combined load greater than 40 continuous carbon fiber aramidfiber,continuous carbon fiber | aramid fiber,40,40,
+9257,without glass fibre iso 10993,unfilled,,,
+9260,material with glas fiber natural organic fiber load of 68 with +/-10% range,glass fiber | natural organic fiber,68,58,78
+9269,g/mineral with total filler load of 60,glass fiber | mineral,60,55,65
+9348,"19 lcf 23 metal static pa 6t,66",long carbon fiber | metal,42,37,47
+9349,bf 30%,,30,25,35
+9353,"flex mod 158mpa, 15%gf, lasermarking",glass fiber,15,10,20
+9364,glass sphere grades,glass beads,,,
+9367,md + long carbon fiber,mineral | long carbon fiber,,,
+9382,material with combined load less than 57,,57,,57
+9384,pa66 gf50% zytel,glass fiber,50,45,55
+9385,40% glass reinforced ppa,glass fiber,40,35,45
+9391,what is an unfilled thermoplastic vulcanate that meets gmw15813 type 9 and has tear strength of 64?,unfilled,,,
+9418,65 wt% filled pps with gf and mineral exhibiting 0.3-0.5% mold shrinkage and that has plc 4 comparative tracking rating,glass fiber | mineral,65,60,70
+9449,fortronâ® 30% glass filled,glass fiber,30,25,35
+9503,pa66 with glass fiber below 10%,glass fiber,10,5,15
+9528,tell me the frianyl grade with 25% glass fiber,glass fiber,25,20,30
+9558,glass filled zytel,glass fiber,,,
+9565,clarifoil blue ridge td filler load of 59 with +/-12,mineral,59,47,71
+9584,"pps, gf, mineral, gmw17521p-pps-gf40-type 2",glass fiber | mineral,,,
+9590,relative thermal index electrical at 0.7mm of 196 long fibre glass natural organic fiber ranging between 17% - 73%,long glass fiber | natural organic fiber,17,17,73
+9614,hostaform with low wear and friction properties without glass fiber and ptfe free,unfilled,,,
+9653,pa66 gf30 heat and hydrolyses stabilized,glass fiber,30,25,35
+9677,total load >65 ms-ar-100 ggv,,65,65,
+9714,looking for a nylon 6/6 non filled with 180.48 cm³/10min mv,unfilled,,,
+9730,looking for a nylon 10-10 glass whisker combined fill >63% with flex of 3669mpa,whisker,63,63,
+9734,nylon 66 and glass fiber filled and with polytetrafluorethylene ( ptfe ) and tailgate spring sleeve application,glass fiber,,,
+9740,non filler lia5310050,unfilled,,,
+9745,unfilled pom grade having mvr 8-9 and specific gravity of 1.4,unfilled,,,
+9766,can you recommend an unfillled material that can be used for a suspension bellow,unfilled,,,
+9788,carbon fiber should not be greater than 40% filler load,carbon fiber,40,,40
+9809,unfilled pom grade,unfilled,,,
+9821,"i want a grade with 25% glass bead filler, a mold shrinkage < 1.4 and a tensile mod > 3700 that could be used in a paint can nozzle",glass beads,25,20,30
+9844,5 va @ 2.2mm 54% filler load,,54,49,59
+9845,looking for a ethylene-vinyl-acetate glass whisker with sr (3.42e+15ohm),whisker,,,
+9848,40% gf pps,glass fiber,40,35,45
+9851,tensile strain at yield: weak and compressive strength (267mpa) from 148 - 318 high plasticiser with filler load range 38 to 50,,38,38,50
+9864,"which grade can be used for laser direct structuring with a flexural strength of 158 megapascals, gf 15%",glass fiber,15,10,20
+9865,pa46 with gf50,glass fiber,50,45,55
+9875,"v0, gf + min, clti 3, microwave oven",glass fiber | mineral,,,
+9888,glass beads 14% and mineral 47% light stabilized pa 6t-xt,glass beads | mineral,61,56,66
+9904,pa 6/6 30 percent  glass filled flame retardant,glass fiber,30,25,35
+9931,unfilled santoprene,unfilled,,,
+9967,sofprene 15% lcp,,15,10,20
+9981,aramidereinforced esd nylon 6-10,aramid fiber,,,
+9983,gur am and stainless steel fiber less than 76%,metal,76,,76
+9986,"celcon, 25% glass bead",glass beads,25,20,30
+9999,"pa612
+â€¢ 20% filler: stainless steel (powder or threads, therefore magnetic)
+â€¢ mfi ~25g/10min (250â°c, 2.16kg)
+â€¢ food contact approved",metal,20,15,25
+10005,unreinforced tc v0 low density,unfilled,,,
+10020,pa66 gf33,glass fiber,33,28,38
+10026,polypropylene long glass fiber,long glass fiber,,,
+10029,"clte 9.0e-6 / c, 25% graphite fiber, cm 9000mpa",graphite fiber,25,20,30
+10041,"pp with gf , low emmission",glass fiber,,,
+10049,25% glass beads reinforced material with tensile modulus highter than 3700mpa and mold shrinkage below 1.4%,glass beads,25,20,30
+10061,pps and carbon,carbon,,,
+10093,total load <55% gf stellantis-chrysler,glass fiber,55,,55
+10094,wear and pa and gf30,glass fiber,30,25,35
+10099,material with md / long aramid fiber,mineral | long aramid fiber,,,
+10104,35% abs,,35,30,40
+10110,show grades that are without glass,unfilled,,,
+10150,full load greater than 61 cpn2660ms50103 stellantis-chrysler,,61,61,
+10171,pa66 gf30,glass fiber,30,25,35
+10175,unfilled high impact,unfilled,,,
+10176,standard compressive modulus or glass transition temperature coef. of lin. therm expansion normal = 295e-6/k between 249 to 328 good edhc non-filler,unfilled,,,
+10200,glass filled and liquid crystal polymer ( lcp ),glass fiber,,,
+10204,suggest some glass-mineral free grade,unfilled,,,
+10212,pa 66/6 sf carbon fiber range 20 to 72%,metal | carbon fiber,20,20,72
+10215,dielectric constant 3.7 with 158 mpa gf,glass fiber,,,
+10236,eptr mf + glass beads electdiss,mineral | glass beads,,,
+10246,polyamide 10-10 total load max 44% long aramid fibre long glass fiber flameretardent,long aramid fiber | long glass fiber,44,,44
+10251,vectra for a beer machine part + graphite fiber + clte ( parallel ) = 9.0 e-6 /k,graphite fiber,,,
+10265,fp 19%,,19,14,24
+10266,excellent u.v. stabilised or stable to weather standard elongation at yield 50 mm/min and flexural strain at failure astm d 790 tape 0° (%) more than or eaual to 1.49 with without glass,unfilled,,,
+10303,af grades,aramid fiber,,,
+10309,gf30 cd  (long fiber),long glass fiber | carbon powder,30,25,35
+10321,"looking for a material that is unreinforced, light weight and thermally conductive",unfilled,,,
+10340,pa6t-xt un filled,unfilled,,,
+10364,gr and long metal fiber,glass fiber | long metal fiber,,,
+10400,"need a grade for suspension bellow, unfilled",unfilled,,,
+10427,aramide 25% and mf 10%,aramid fiber | mineral,35,30,40
+10431,"50% gf, tm 2750, den 1410, = wss-m98p14-a7",glass fiber,50,45,55
+10439,"seeking gf / mf reinforced grades with tensile modulus 21500mpa, cti plc 4. applicable for auto camera base",glass fiber | mineral,,,
+10456,glass 50 lft,long glass fiber,50,45,55
+10459,mineral v-1 0.9mm thick.,mineral,,,
+10463,gf - long fiber cd 30,long glass fiber | carbon powder,30,25,35
+10503,"fibre glass, metal lead-free solderability polyamide 10/10",glass fiber | metal,,,
+10515,bf 30% pet,,30,25,35
+10526,natural organic fiber in nylon 6t-66,natural organic fiber,,,
+10527,lcf 32 with range +/-14,long carbon fiber,32,18,46
+10543,grades with total filler load less than 75 aramid reinforced,aramid fiber,75,,75
+10562,material with gr mineral,glass fiber | mineral,,,
+10584,poly-m-xylylenadipamid long ss fiber + long glass fiber,long metal fiber | long glass fiber,,,
+10607,pa6 gf35,glass fiber,35,30,40
+10610,recommend a pa6 gf30 with high heat properties in color black,glass fiber,30,25,35
+10621,"material for a tailgate protective tube housing, mvr 15cm3 / 10, glass filled",glass fiber,,,
+10638,material with load of 68 with range 14%,,68,54,82
+10641,materials with combined load <51 long metal fibre glass fiber,long metal fiber | glass fiber,51,,51
+10644,vicatsofteningtemperature=102°c good lasermarkable gf 18 and mineral 17% tear strength (lowest),glass fiber | mineral,35,30,40
+10648,cs lft ol and total content of 25,,25,20,30
+10654,"what lft has 30% long glass fiber, meets gmw15890p-pp-gf30e and is used in auto seat head cover box",long glass fiber,30,25,35
+10658,pa610 22% geolast,,22,17,27
+10663,combined load of 35% having glass/min filler,glass fiber | mineral,35,30,40
+10665,can you recommend a emissons total content less than 54% umpe grade that is approved for sliding for farm machine,,54,,54
+10672,organic fiber carbon powder 42 with range 18 shock resistance thermal conductivity iso 22007 2 flow w m k =average average molecular weight margolies' equation (g/mol) (3.96e+06 g/mol),natural organic fiber | carbon powder,42,24,60
+10673,nylon 6/10 long ss fiber or long carbon fiber tribology,long metal fiber | long carbon fiber,,,
+10680,long metal fiber in cope,long metal fiber,,,
+10693,jf0328 md / natural organic fiber,mineral | natural organic fiber,,,
+10709,looking for a polypropylene metal aramid fiber filler load >62 with mfi =180.92,metal | aramid fiber,62,62,
+10767,pps unreinforced grade,unfilled,,,
+10771,25% reinforced plastic with glass fiber content and laser markability and a v0 rating,glass fiber,25,20,30
+10777,non filler silicon oil concentrate thermoplastic vulcanizates,unfilled,,,
+10785,aramid reinforced 41 + natural organic fiber 45 e140692,aramid fiber | natural organic fiber,86,81,91
+10803,46% ld-pe,,46,41,51
+10809,looking for a pa6t 41 ss and 19 carbon fiber with mvr197.77,metal | carbon fiber,60,55,65
+10820,grade that excludes mineral filler,unfilled,,,
+10824,full load max 75% selar available in north america,,75,,75
+10833,"strong puncture energy and charpy notched, stress at 50% deformation 28, heat stable, md 58 to 72",mineral,58,58,72
+10844,polypropylene glass filled 30%,glass fiber,30,25,35
+10870,mineral max 49%,mineral,49,,49
+10878,zyt 30%,,30,25,35
+10897,gf laser direct structuring (lds) pa 66,glass fiber,,,
+10903,materials with natural fiber,natural organic fiber,,,
+10912,glass-min 65%,glass fiber | mineral,65,60,70
+10915,material with pa 12 fibre glass,glass fiber,,,
+10932,glass bead filled hostaform with tensile modulus of 3700,glass beads,,,
+10938,long fiber gf and cd 30,long glass fiber | carbon powder,30,25,35
+10948,"material with long glass fiber, with 30% filled and carbon fiber with 15%",long glass fiber | carbon fiber,45,40,50
+10954,longstainlesssteel + long glass fiber grades,long metal fiber | long glass fiber,,,
+10974,"customer wants a 40% gf material with a flex mod = 14700, dtul @1.8mpa = 270 and volume resistivity >1e15",glass fiber,40,35,45
+10984,combined fill min 75 glass fibre stress-strain curve,glass fiber,75,75,
+11007,find a grade without mineral filler,unfilled,,,
+11011,gf combined load >75 general motors (gm),glass fiber,75,75,
+11032,"all properties required: lead-free soldering, fr vectra grade, 45 wt% filler, contains both mineral and gf.",mineral | glass fiber,45,40,50
+11043,fiberglass 66%,glass fiber,66,61,71
+11053,glass+min filler content between 30% and 40%,glass fiber | mineral,30,30,40
+11086,aramide 10% mf 15%,aramid fiber | mineral,25,20,30
+11090,continuous fiber and long carbon fiber 28 - 74 pibiter available in eu,long glass fiber | long carbon fiber,28,28,74
+11102,show grades having 40% lfrt,long glass fiber,40,35,45
+11153,"+30% lgf, =gmw15890p-pp-gf30e, =automotive seat head cover box",long glass fiber,30,25,35
+11159,flame retardant grade with 25% short glass fiber filler and meets renault's ub22c auto spec,glass fiber,25,20,30
+11201,material with filler load less than 94,,94,,94
+11209,non filler kep available in europe,unfilled,,,
+11214,looking for an unfilled celcon ( pom ) material with a notched charpy impact of 7 kj per m²,unfilled,,,
+11221,celstran pp gf30 compliant to gmw15890p-pp gf30e standard,long glass fiber,30,25,35
+11227,"grade with light weight, unfilled, thermal conductive",unfilled,,,
+11229,product needed is pa66 with either glass fibers or ptfe. will be used for tailgate spring sleeve,glass fiber,,,
+11233,"1. polymer base select pps, 2. gf / md select yes, 3. select certification as gmw17521p-pps-gf40-type 2 auto approval",glass fiber | mineral,,,
+11262,"material with pa 6t,66 longaramidfiber 45 - 79",long aramid fiber,45,45,79
+11288,need an unfilled material for a suspension bellow application,unfilled,,,
+11290,fiber glass combined fill 19 - 55%,glass fiber,19,19,55
+11291,cnl 25%,,25,20,30
+11308,stainless steel fiber natural organic fiber combined load upto 48 cpn4765ms50017 stellantis-chrysler,metal | natural organic fiber,48,,48
+11312,5 va flamerated @ 0.9mm filler load min 92,,92,92,
+11321,"ve, kepamid, combined fill >42 md carbon fiber",mineral | carbon fiber,42,42,
+11377,"long steel non-halogenated pa6t,xt",long metal fiber,,,
+11380,35% omnicarb,,35,30,40
+11381,tesla 30flake long metal fiber,glass flake | long metal fiber,30,25,35
+11387,min 20,mineral,20,15,25
+11396,"looking for a pa 6t,6i gb max 37% with izod notched impact strength 6 kj/m²",glass beads,37,,37
+11432,"nylon 6,10 un filled hydrostable",unfilled,,,
+11464,"can you let me know grades meet following ctqs? 1. pps, 2. mold shrinkage 0.3~0.5 %, 3. comparative tracking plc 4, 4. total filler content 65%, 5. gf and mf?",glass fiber | mineral,65,60,70
+11474,highest ball pressure test iec 60695-10-2 (°c) or compression set mi in the range of 102-150 good laser marking without glass fiber,unfilled,,,
+11479,show me grades that are free from graphite,unfilled,,,
+11485,cd or metal tesla,carbon powder | metal,,,
+11492,gs + long carbon fiber materials,glass flake | long carbon fiber,,,
+11511,"laf min thickness 0.1, 174 rti elec",long aramid fiber,,,
+11529,styrene-ethylene-butadiene-styrene gb,glass beads,,,
+11537,total content <52 lp available in asia pacific,,52,,52
+11540,"filler load upto 33% in pa6,10",,33,,33
+11561,pp talc filled,mineral,,,
+11563,"cfr/gf, long carbon fiber 5 vb",cfr-gf | long carbon fiber,,,
+11570,full load 14 - 48 139°c relativethermalindex @ 1mm,,14,14,48
+11577,pa66 gf50% zytel black,glass fiber,50,45,55
+11578,pps unreinforced,unfilled,,,
+11605,can you recommend a uv resistant long fiber reinforced pp grade that is approved for auto interior,long glass fiber,,,
+11614,unfilled shore d > 41,unfilled,,,
+11633,a pa6t-6i with td total fill of 52 with range +/-27,mineral,52,25,79
+11643,grades with filler content = 25% and contains graphite fiber and application = beer machine,graphite fiber,25,20,30
+11649,can you recommend a thin wall carbon fiber >56% nylon 6/12 grade that is approved for auto lighting,carbon fiber,56,56,
+11674,polyamide 66/6 gf combined load <36 with good warp resistance,glass fiber,36,,36
+11690,"looking for a pa10,10 38% full load with cut=85",,38,33,43
+11768,visual fx cd total content range 49 to 85,carbon powder,49,49,85
+11777,gf with amorphous properties,glass fiber,,,
+11778,"i need an offer for unfilled celcon, with min 7 kj/m2 notched charpy.",unfilled,,,
+11785,"seeking a light weight, thermally conductive unfilled material? which materials have all of the mentioned properties",unfilled,,,
+11792,lcf cpn 1586 ms db 100,long carbon fiber,,,
+11798,more than 50% filler content,,50,50,
+11811,"resin for tailgate protective tube housing gf, mvr - 15, ball intention hardness - 145",glass fiber,,,
+11818,need unfilled material for suspension bellow,unfilled,,,
+11824,mineral filled lcp with ul yellow card at 0.4mm thickness and flame class rating of v0,mineral,,,
+11838,looking for lcp with graphite fiber for use in beer machine. need coefficient of linear thermal expansion ( parallel ) of 9.0 e-6 cm / cm / celsius,graphite fiber,,,
+11854,polystyrene 23 long metal fibre and 42 long carbon fiber,long metal fiber | long carbon fiber,65,60,70
+11864,pa6t/lgf30,long glass fiber,30,25,35
+11931,sbs carbonfilled,carbon fiber,,,
+11936,celanese glass fiber laser marking dielectric constant,glass fiber,,,
+11940,"light weight"" ""thermally conductive"" ""unfilled",unfilled,,,
+11945,"25% gf, frianyl",glass fiber,25,20,30
+11947,15min with pa,mineral,15,10,20
+11966,polymer unfilled low density thermally conductive,unfilled,,,
+11968,i want a long glass fiber grade that is low odor and meet gmw15890p-pp-gf30e,long glass fiber,,,
+11997,"show me pom grades that are unfilled, have an sg of 1.4 and an mvr of 8.4 cm^3/10min",unfilled,,,
+12063,"v1, unfilled, thermally conductive",unfilled,,,
+12071,aramid fortron,aramid fiber,,,
+12072,"tensile creep modulus standard, tape flex strength in the range of 773 to 1099 mpa, laser direct structuring, un-filled",unfilled,,,
+12074,looking for a sebs with the hot-wire ignition (hwi) at a thickness of 0.50 to 0.55 mm and filler content of 50% for a fastener for air conditioner,,50,45,55
+12080,can you recommend a long fiber reinforced aytel htn grade?,long glass fiber,,,
+12094,"mid, cra, cf metal >46%",carbon fiber | metal,46,46,
+12107,60%fp,,60,55,65
+12113,material with total filler load of 50,,50,45,55
+12122,which 30% glass filled pa can i use for a high heat application,glass fiber,30,25,35
+12125,material with combined fill min 35,,35,35,
+12128,"lcp, 45% ( min + gf ) , clti 3, microwave oven",mineral | glass fiber,45,40,50
+12131,vo flammability rating class @ 6mm total filler load min 87 long metal fiber aramid fiber,long metal fiber | aramid fiber,87,87,
+12146,i am looking for a glass fiber and mineral filled material to use in an automotive camera base that has tensile modulus greater than or equal to 21000 mpa and meets gmw17521p-pps-gf40-type 2 specs,glass fiber | mineral,,,
+12168,ve pultrusion full load <25 short fibre whisker,glass fiber | whisker,25,,25
+12172,45% total mineral and glass fiber filled and liquid crystal polymer (lcp) and comparative tracking index of plc 3 and used in microwave oven applications,mineral | glass fiber,45,40,50
+12181,"find grades with application = automotive camera base and glass fiber filled and mineral filled and ten mod = 21,500 mpa and has comparative tracking plc 4",glass fiber | mineral,,,
+12188,"pa 6t,6i continuous carbon fiber glass beads 47% to 73%",continuous carbon fiber | glass beads,47,47,73

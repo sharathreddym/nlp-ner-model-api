@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1200" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="f1" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+    <marker id="f2" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2f8a3f"/>
+    </marker>
+    <style>
+      .title{font-size:27px;font-weight:700;fill:#1a2b4a}
+      .sub{font-size:14px;fill:#5a6b8a}
+      .band{font-size:17px;font-weight:700;fill:#1a2b4a}
+      .bx{font-size:14px;font-weight:700;fill:#233}
+      .small{font-size:12px;fill:#3d4756}
+      .cap{font-size:11.5px;fill:#666}
+      .edge{stroke:#444;stroke-width:2;fill:none;marker-end:url(#f1)}
+      .plain{stroke:#444;stroke-width:2;fill:none}
+      .dash{stroke:#2f8a3f;stroke-width:2;fill:none;stroke-dasharray:7 5;marker-end:url(#f2)}
+      .tag{font-size:11px;font-weight:700}
+    </style>
+  </defs>
+  <rect width="1400" height="1200" fill="#f7f9fc"/>
+
+  <text x="40" y="46" class="title">Retrieval-Grounded NER — full architecture (no fine-tuning)</text>
+  <text x="40" y="72" class="sub">Elasticsearch holds the entity dictionary and the labelled-example store. A stock LLM is only asked to resolve what the dictionary cannot.</text>
+
+  <!-- ================= BAND 1 : BUILD ================= -->
+  <rect x="40" y="92" width="1320" height="236" rx="14" fill="#fbfdff" stroke="#bcd" stroke-width="2.5"/>
+  <text x="62" y="120" class="band">① BUILD / INDEX TIME — offline &amp; scheduled  (this replaces the fine-tuning job)</text>
+
+  <rect x="64" y="142" width="250" height="52" rx="9" fill="#eef1f5" stroke="#8aa" stroke-width="1.8"/>
+  <text x="189" y="164" text-anchor="middle" class="bx">❄️ Snowflake  gst_curated</text>
+  <text x="189" y="183" text-anchor="middle" class="small">SPT · competitors · SYNONYM · CTQ · OOS</text>
+
+  <rect x="64" y="202" width="250" height="52" rx="9" fill="#eef1f5" stroke="#8aa" stroke-width="1.8"/>
+  <text x="189" y="224" text-anchor="middle" class="bx">📄 Reference files</text>
+  <text x="189" y="243" text-anchor="middle" class="small">abbreviations · unit tables · UL lists</text>
+
+  <rect x="64" y="262" width="250" height="52" rx="9" fill="#eef1f5" stroke="#8aa" stroke-width="1.8"/>
+  <text x="189" y="284" text-anchor="middle" class="bx">🏷️ Existing labelled corpus</text>
+  <text x="189" y="303" text-anchor="middle" class="small">notebooks 3–5 — already built &amp; paid for</text>
+
+  <rect x="364" y="172" width="190" height="112" rx="10" fill="#e8edf5" stroke="#8aa" stroke-width="2"/>
+  <text x="459" y="206" text-anchor="middle" class="bx">🛠️ Index builder</text>
+  <text x="459" y="228" text-anchor="middle" class="small">normalize · expand</text>
+  <text x="459" y="246" text-anchor="middle" class="small">synonyms · embed</text>
+  <text x="459" y="268" text-anchor="middle" class="cap">nightly / on change</text>
+
+  <rect x="604" y="142" width="320" height="88" rx="10" fill="#d9f7d9" stroke="#2f8a3f" stroke-width="2.6"/>
+  <text x="764" y="168" text-anchor="middle" class="bx" fill="#1c6b2c">🔎 ES index · ner-entity-catalog</text>
+  <text x="764" y="190" text-anchor="middle" class="small">canonical · surface · normalized · synonyms[]</text>
+  <text x="764" y="208" text-anchor="middle" class="small">entity_type · user_scope · dense_vector</text>
+  <text x="764" y="224" text-anchor="middle" class="cap">+ percolator query per entry</text>
+
+  <rect x="604" y="246" width="320" height="68" rx="10" fill="#d9f7d9" stroke="#2f8a3f" stroke-width="2.6"/>
+  <text x="764" y="272" text-anchor="middle" class="bx" fill="#1c6b2c">🧠 ES index · ner-labelled-examples</text>
+  <text x="764" y="292" text-anchor="middle" class="small">query → 17-key dict + vector</text>
+  <text x="764" y="308" text-anchor="middle" class="cap">the few-shot store — was the fine-tune set</text>
+
+  <rect x="964" y="142" width="376" height="172" rx="10" fill="#fff7df" stroke="#d90" stroke-width="2"/>
+  <text x="1152" y="168" text-anchor="middle" class="bx" fill="#7a5b00">Updating knowledge = indexing a document</text>
+  <text x="984" y="196" class="small">• new / renamed grade, brand, synonym → upsert</text>
+  <text x="984" y="220" class="small">• ADE correction → append one labelled example</text>
+  <text x="984" y="244" class="small">• live on the very next query</text>
+  <text x="984" y="268" class="small">• no fine-tune job · no model redeploy</text>
+  <text x="984" y="296" class="cap">version-stamp the index alias so you can roll back</text>
+
+  <path class="edge" d="M316 166 C344 166 340 198 362 206"/>
+  <path class="edge" d="M316 228 H362"/>
+  <path class="edge" d="M316 288 C344 288 340 258 362 250"/>
+  <path class="edge" d="M556 206 C580 206 580 186 602 186"/>
+  <path class="edge" d="M556 252 C580 252 580 280 602 280"/>
+
+  <!-- ================= BAND 2 : SERVE ================= -->
+  <rect x="40" y="348" width="1320" height="712" rx="14" fill="#ffffff" stroke="#bcd" stroke-width="2.5"/>
+  <text x="62" y="376" class="band">② SERVE TIME — per query</text>
+
+  <path class="dash" d="M660 318 C660 352 620 356 612 388"/>
+  <text x="676" y="366" class="tag" fill="#2f8a3f">grounds every query</text>
+
+  <rect x="64" y="400" width="150" height="92" rx="10" fill="#eef1f5" stroke="#8aa" stroke-width="1.8"/>
+  <text x="139" y="428" text-anchor="middle" class="bx">🔎 query</text>
+  <text x="139" y="450" text-anchor="middle" class="small">"30% gf uv</text>
+  <text x="139" y="468" text-anchor="middle" class="small">nylon66 ul94v0"</text>
+
+  <rect x="244" y="400" width="170" height="92" rx="10" fill="#e8edf5" stroke="#8aa" stroke-width="1.8"/>
+  <text x="329" y="428" text-anchor="middle" class="bx">🧹 pre_processing</text>
+  <text x="329" y="450" text-anchor="middle" class="small">abbrev · symbols</text>
+  <text x="329" y="470" text-anchor="middle" class="cap">UNCHANGED</text>
+
+  <rect x="444" y="392" width="330" height="248" rx="12" fill="#f2faf3" stroke="#2f8a3f" stroke-width="2.6"/>
+  <text x="609" y="418" text-anchor="middle" class="bx" fill="#1c6b2c">RETRIEVE candidates from ES</text>
+  <rect x="462" y="430" width="294" height="44" rx="8" fill="#ffffff" stroke="#7fb98a" stroke-width="1.6"/>
+  <text x="609" y="448" text-anchor="middle" class="small" fill="#233">percolate → dictionary span tagging</text>
+  <text x="609" y="465" text-anchor="middle" class="cap">finds every catalog term inside the query</text>
+  <rect x="462" y="480" width="294" height="44" rx="8" fill="#ffffff" stroke="#7fb98a" stroke-width="1.6"/>
+  <text x="609" y="498" text-anchor="middle" class="small" fill="#233">normalized exact + fuzzy match</text>
+  <text x="609" y="515" text-anchor="middle" class="cap">typos, no-space forms, colour codes</text>
+  <rect x="462" y="530" width="294" height="44" rx="8" fill="#ffffff" stroke="#7fb98a" stroke-width="1.6"/>
+  <text x="609" y="548" text-anchor="middle" class="small" fill="#233">kNN vectors → paraphrases</text>
+  <text x="609" y="565" text-anchor="middle" class="cap">"heat resistant" → high-temperature FEATURE</text>
+  <rect x="462" y="580" width="294" height="44" rx="8" fill="#ffffff" stroke="#7fb98a" stroke-width="1.6"/>
+  <text x="609" y="598" text-anchor="middle" class="small" fill="#233">kNN over labelled examples</text>
+  <text x="609" y="615" text-anchor="middle" class="cap">the few-shot set for this exact query</text>
+
+  <rect x="804" y="400" width="200" height="124" rx="10" fill="#eef1f5" stroke="#8aa" stroke-width="2"/>
+  <text x="904" y="428" text-anchor="middle" class="bx">📋 candidate set</text>
+  <text x="904" y="452" text-anchor="middle" class="small">span · entity_type</text>
+  <text x="904" y="472" text-anchor="middle" class="small">canonical · score</text>
+  <text x="904" y="492" text-anchor="middle" class="small">match tier · evidence</text>
+  <text x="904" y="512" text-anchor="middle" class="cap">user_scope already filtered</text>
+
+  <rect x="804" y="568" width="200" height="84" rx="10" fill="#fff7df" stroke="#d90" stroke-width="2.2"/>
+  <text x="904" y="596" text-anchor="middle" class="bx" fill="#7a5b00">③ ROUTE</text>
+  <text x="904" y="618" text-anchor="middle" class="small">coverage · conflict ·</text>
+  <text x="904" y="636" text-anchor="middle" class="small">confidence threshold</text>
+
+  <path class="edge" d="M216 446 H242"/>
+  <path class="edge" d="M416 446 H442"/>
+  <path class="edge" d="M776 462 H802"/>
+  <path class="edge" d="M904 526 V566"/>
+
+  <!-- tiers -->
+  <rect x="64" y="690" width="300" height="124" rx="10" fill="#d9f7d9" stroke="#2f8a3f" stroke-width="2.4"/>
+  <text x="214" y="718" text-anchor="middle" class="bx" fill="#1c6b2c">⚡ TIER A — dictionary only</text>
+  <text x="214" y="742" text-anchor="middle" class="small">whole query covered, no conflict</text>
+  <text x="214" y="762" text-anchor="middle" class="small">→ the LLM is never called</text>
+  <text x="214" y="782" text-anchor="middle" class="small">deterministic · ~free · fast</text>
+  <text x="214" y="802" text-anchor="middle" class="cap">13 of the 17 labels are pure catalog lookups</text>
+
+  <rect x="404" y="690" width="340" height="124" rx="10" fill="#cce5ff" stroke="#36c" stroke-width="2.4"/>
+  <text x="574" y="718" text-anchor="middle" class="bx" fill="#15467f">🤖 TIER B — grounded LLM</text>
+  <text x="574" y="742" text-anchor="middle" class="small">stock GPT-4.1-mini — NOT fine-tuned</text>
+  <text x="574" y="762" text-anchor="middle" class="small">prompt = candidates + kNN few-shot</text>
+  <text x="574" y="782" text-anchor="middle" class="small">+ JSON-schema structured output</text>
+  <text x="574" y="802" text-anchor="middle" class="cap">handles PROPERTY, %, negation, unknown spans</text>
+
+  <rect x="784" y="690" width="240" height="124" rx="10" fill="#fbeaea" stroke="#c33" stroke-width="2.4"/>
+  <text x="904" y="718" text-anchor="middle" class="bx" fill="#922">❓ TIER C — abstain</text>
+  <text x="904" y="742" text-anchor="middle" class="small">conflicting or low-score</text>
+  <text x="904" y="762" text-anchor="middle" class="small">→ return candidates + flag</text>
+  <text x="904" y="782" text-anchor="middle" class="small">→ clarifying question / ADE</text>
+  <text x="904" y="802" text-anchor="middle" class="cap">the "I'm not sure" that exists today</text>
+
+  <path class="plain" d="M904 654 V670"/>
+  <path class="plain" d="M214 670 H904"/>
+  <path class="edge" d="M214 670 V688"/>
+  <path class="edge" d="M574 670 V688"/>
+  <path class="edge" d="M904 670 V688"/>
+
+  <path class="plain" d="M214 816 V838"/>
+  <path class="plain" d="M574 816 V838"/>
+  <path class="plain" d="M904 816 V838"/>
+  <path class="plain" d="M214 838 H904"/>
+  <path class="edge" d="M700 838 V868"/>
+
+  <rect x="440" y="870" width="520" height="86" rx="10" fill="#ffd9d9" stroke="#c33" stroke-width="2.2"/>
+  <text x="700" y="900" text-anchor="middle" class="bx" fill="#922">④ post_processing — the existing rule layer, UNCHANGED</text>
+  <text x="700" y="922" text-anchor="middle" class="small">unit conversion · UL→PLC · out-of-scope · schema validation · dedup · fuzzy reclassify</text>
+  <text x="700" y="942" text-anchor="middle" class="cap">every business rule you already trust keeps running, in the same place</text>
+
+  <rect x="440" y="986" width="520" height="64" rx="10" fill="#eef3ec" stroke="#8a8" stroke-width="2"/>
+  <text x="700" y="1012" text-anchor="middle" class="bx">📦 17-key entity JSON — same schema as today</text>
+  <text x="700" y="1034" text-anchor="middle" class="small">+ per-entity confidence  + evidence trail (which document matched, at which tier)</text>
+  <path class="edge" d="M700 958 V984"/>
+
+  <rect x="64" y="870" width="340" height="180" rx="10" fill="#f4f6fa" stroke="#8aa" stroke-width="1.8"/>
+  <text x="234" y="898" text-anchor="middle" class="bx">🛟 FALLBACK</text>
+  <text x="84" y="924" class="small">If Elasticsearch is unavailable, fall back to</text>
+  <text x="84" y="946" class="small">the in-memory dependencies/ snapshot and</text>
+  <text x="84" y="968" class="small">today's fast-paths + LLM path.</text>
+  <text x="84" y="996" class="cap">Serving must never hard-depend on a new</text>
+  <text x="84" y="1014" class="cap">external system — today it touches no DB</text>
+  <text x="84" y="1032" class="cap">at all, and that property is worth keeping.</text>
+
+  <rect x="1000" y="870" width="340" height="180" rx="10" fill="#f4f6fa" stroke="#8aa" stroke-width="1.8"/>
+  <text x="1170" y="898" text-anchor="middle" class="bx">🎯 CONFIDENCE — the new signal</text>
+  <text x="1020" y="924" class="small">Every entity now carries:</text>
+  <text x="1020" y="946" class="small">• match tier — exact / fuzzy / semantic / LLM</text>
+  <text x="1020" y="968" class="small">• ES relevance score</text>
+  <text x="1020" y="990" class="small">• agreement: did the LLM keep the candidate?</text>
+  <text x="1020" y="1018" class="cap">Today a chat model returns text, not</text>
+  <text x="1020" y="1036" class="cap">probabilities — so there is nothing to threshold.</text>
+
+  <!-- ================= BAND 3 : FEEDBACK ================= -->
+  <rect x="40" y="1080" width="1320" height="100" rx="14" fill="#e9f4ec" stroke="#2f8a3f" stroke-width="2.2"/>
+  <text x="62" y="1110" class="band" fill="#1c6b2c">🔁 FEEDBACK — corrections are INDEXED, not retrained</text>
+  <text x="62" y="1140" class="small">ADE fixes a wrong extraction → append one labelled example → it is retrieved as few-shot on the next similar query.</text>
+  <text x="62" y="1162" class="small">New grade launched → upsert one catalog document.   ·   Eval harness → per-entity metrics + regression on a held-out set.</text>
+  <path class="dash" d="M1360 1130 C1390 1130 1390 210 1364 210"/>
+</svg>

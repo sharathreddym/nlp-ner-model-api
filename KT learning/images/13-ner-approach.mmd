@@ -1,0 +1,59 @@
+%% Celanese Chemille NER — current approach: data sources, training time, serving time.
+flowchart TB
+    subgraph SRC["📥 DATA SOURCES"]
+        SF[("❄️ Snowflake<br/>ANALYTICS_DEV.gst_curated<br/>SPT · competitor_data · SYNONYM<br/>CTQ · OUT_OF_SCOPE_*")]
+        APIM["🔌 Azure APIM<br/>UI properties / unique values"]
+        ES[("🔍 Elasticsearch<br/><i>connected but UNUSED</i>")]
+    end
+
+    subgraph TRAIN["🏗️ TRAINING TIME · builds the model (offline, notebooks 1-9)"]
+        direction TB
+        G12["1-2 · Build gazetteers<br/>grades / brands / cgrades / certs / OOS"]
+        G3["3 · Generate SYNTHETIC labelled queries<br/>templates + synonyms + typos (augment)"]
+        G4["4 · Merge HUMAN-labelled sets<br/>(Prodigy / Excel, ADE-reviewed)"]
+        G5["5 · Normalize + schema-validate<br/>hand-curated synonym maps"]
+        G6["6 · Per-entity value inventories"]
+        G7["7 · Fine-tune GPT-4.1-mini<br/>chat JSONL · 80/20 split · ~3 epochs"]
+        FT[["🤖 Fine-tuned NER model<br/>Azure OpenAI deployment"]]
+    end
+
+    subgraph SERVE["⚙️ SERVING TIME · per query (Azure ML online endpoint)"]
+        direction TB
+        Q["🔎 User query"]
+        PRE["🧹 pre_processing<br/>clean · lowercase · normalize · abbrev"]
+        FP{"Fast-path?<br/>exact GRADE / SAP id /<br/>COMPETITOR / AUTO_CERT / FEATURE"}
+        LLM["🧠 Fine-tuned LLM call<br/>temp 0.01 · seed 12 · thin prompt<br/>NPROD→PROD fallback"]
+        POST["🔧 post_processing + rules<br/>reclassify · unit conv · UL→PLC<br/>validate schema · OOS · dedup"]
+        DEP[("🧰 DEPENDENCIES (in RAM)<br/>unique_values · abbreviations.xlsx<br/>unit tables · OOS · ul_list")]
+        OUT["📦 Structured 17-entity JSON<br/>+ unidentified + outOfScope"]
+    end
+
+    SF --> G12
+    APIM --> G12
+    SF --> G3
+    G12 --> G3 --> G4 --> G5 --> G6
+    G5 --> G7 --> FT
+    ES -. not queried .- G12
+
+    Q --> PRE --> FP
+    FP -- "yes (skip LLM)" --> POST
+    FP -- no --> LLM --> POST
+    FT -. serves .-> LLM
+    DEP -. loaded once in init() .-> FP
+    DEP -.-> POST
+    G12 -. gazetteers ship as data model .-> DEP
+    POST --> OUT
+
+    classDef src fill:#eef1f5,stroke:#64748b,color:#243244;
+    classDef train fill:#f8f1de,stroke:#c08a2d,color:#5a4212;
+    classDef serve fill:#e7f3f6,stroke:#1f8a9c,color:#0f4b56;
+    classDef model fill:#12263a,stroke:#cf9f3f,color:#ffffff;
+    classDef dep fill:#e9f4ec,stroke:#3f8a4d,color:#245231;
+    classDef unused fill:#f4eaea,stroke:#c1665a,color:#6e2e26,stroke-dasharray:4 3;
+
+    class SF,APIM src;
+    class ES unused;
+    class G12,G3,G4,G5,G6,G7 train;
+    class FT model;
+    class Q,PRE,FP,LLM,POST,OUT serve;
+    class DEP dep;

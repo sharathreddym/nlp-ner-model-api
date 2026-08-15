@@ -1,0 +1,16 @@
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy=1.24.4
+  - pip
+  - pip:
+    - azureml-defaults==1.62.0
+    - inference-schema[numpy-support]~=1.8
+    - openai==1.61.1
+    - pandas==2.0.3
+    - thefuzz==0.22.1
+    - rapidfuzz
+    - openpyxl==3.1.5
+    - python-dotenv==1.0.1
+

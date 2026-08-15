@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 560" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="ar--" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444"/>
+    </marker>
+    <style>
+      .title{font-size:26px;font-weight:700;fill:#1a2b4a}
+      .sub{font-size:14px;fill:#5a6b8a}
+      .lbl{font-size:15px;font-weight:600}
+      .small{font-size:12px;fill:#333}
+      .edge{stroke:#444;stroke-width:2.2;fill:none;marker-end:url(#ar--)}
+      .cap{font-size:12px;fill:#666}
+    </style>
+  </defs>
+  <rect width="1100" height="560" fill="#f7f9fc"/>
+  <text x="40" y="48" class="title">NER Service — High-Level Architecture</text>
+  <text x="40" y="72" class="sub">A messy search query goes in; clean structured material facts come out.</text>
+
+  <!-- user -->
+  <rect x="40" y="150" width="180" height="120" rx="12" fill="#e8edf5" stroke="#8aa" stroke-width="2"/>
+  <text x="130" y="200" text-anchor="middle" class="lbl" fill="#234">User / Search</text>
+  <text x="130" y="224" text-anchor="middle" class="small">"30% glass filled</text>
+  <text x="130" y="242" text-anchor="middle" class="small">UV nylon 66 UL94V0"</text>
+
+  <!-- service big box -->
+  <rect x="290" y="110" width="500" height="330" rx="16" fill="#ffffff" stroke="#bcd" stroke-width="2.5"/>
+  <text x="540" y="138" text-anchor="middle" class="lbl" fill="#1a2b4a">NER SERVICE  (Azure ML online endpoint)</text>
+
+  <!-- station 1 -->
+  <rect x="320" y="170" width="130" height="110" rx="10" fill="#d9f7d9" stroke="#3a3" stroke-width="2"/>
+  <text x="385" y="210" text-anchor="middle" class="lbl" fill="#176">1. CLEAN</text>
+  <text x="385" y="232" text-anchor="middle" class="small">pre_processing</text>
+  <text x="385" y="250" text-anchor="middle" class="cap">tidy the text</text>
+
+  <!-- station 2 -->
+  <rect x="475" y="170" width="130" height="110" rx="10" fill="#cce5ff" stroke="#36c" stroke-width="2"/>
+  <text x="540" y="210" text-anchor="middle" class="lbl" fill="#15467f">2. UNDERSTAND</text>
+  <text x="540" y="232" text-anchor="middle" class="small">GPT model</text>
+  <text x="540" y="250" text-anchor="middle" class="cap">extract entities</text>
+
+  <!-- station 3 -->
+  <rect x="630" y="170" width="130" height="110" rx="10" fill="#ffd9d9" stroke="#c33" stroke-width="2"/>
+  <text x="695" y="210" text-anchor="middle" class="lbl" fill="#922">3. FIX &amp; CHECK</text>
+  <text x="695" y="232" text-anchor="middle" class="small">post_processing</text>
+  <text x="695" y="250" text-anchor="middle" class="cap">rules + scope</text>
+
+  <text x="540" y="330" text-anchor="middle" class="cap">orchestrated by ner_helper.run_ner()  ·  entry via score.py</text>
+
+  <!-- fastpath note -->
+  <rect x="320" y="355" width="440" height="60" rx="10" fill="#fff7df" stroke="#d90" stroke-width="1.8"/>
+  <text x="540" y="380" text-anchor="middle" class="small" fill="#7a5b00">⚡ Fast-path: exact GRADE / SAP id / FEATURE matches</text>
+  <text x="540" y="400" text-anchor="middle" class="small" fill="#7a5b00">skip the AI entirely (faster &amp; cheaper)</text>
+
+  <!-- AI cloud -->
+  <rect x="860" y="150" width="200" height="120" rx="14" fill="#cce5ff" stroke="#36c" stroke-width="2.5"/>
+  <text x="960" y="195" text-anchor="middle" class="lbl" fill="#15467f">☁ Azure OpenAI</text>
+  <text x="960" y="220" text-anchor="middle" class="small">fine-tuned</text>
+  <text x="960" y="238" text-anchor="middle" class="small">GPT-4.1-mini</text>
+  <text x="960" y="256" text-anchor="middle" class="cap">(the actual AI)</text>
+
+  <!-- output -->
+  <rect x="290" y="475" width="500" height="60" rx="10" fill="#eef3ec" stroke="#8a8" stroke-width="2"/>
+  <text x="540" y="500" text-anchor="middle" class="small" fill="#234">📦 Structured JSON: GRADE, POLYMER, FILLER, FEATURE, PROPERTY,</text>
+  <text x="540" y="520" text-anchor="middle" class="small" fill="#234">certifications, INDUSTRY … + out-of-scope items</text>
+
+  <!-- edges -->
+  <path class="edge" d="M220 210 H318"/>
+  <path class="edge" d="M450 225 H473"/>
+  <path class="edge" d="M605 225 H628"/>
+  <path class="edge" d="M605 200 C700 130 800 130 858 200"/>
+  <path class="edge" d="M858 240 C800 300 700 300 607 250"/>
+  <text x="730" y="120" class="cap">API call (request)</text>
+  <text x="700" y="312" class="cap">entities (response)</text>
+  <path class="edge" d="M540 440 V473"/>
+</svg>

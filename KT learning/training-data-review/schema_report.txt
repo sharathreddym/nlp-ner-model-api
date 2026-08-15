@@ -1,0 +1,3 @@
+Examples checked: 12,190
+
+No schema errors found.

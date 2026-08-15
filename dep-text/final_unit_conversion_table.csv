@@ -1,0 +1,1498 @@
+Incoming Unit,ceed_unit,formula
+gpa,MPa,(x)*1000
+in/in,%,(x)*100
+psi,MPa,(x)*0.00689476
+ºf,°C,((x) - 32)*(5/9)
+g/cm3,kg/m³,(x)*1000
+g/cm³,kg/m³,(x)*1000
+8/cm3,kg/m³,(x)*1000
+ft-lb/in2,kJ/m²,(x)*2.10152
+ft.lb/in2,kJ/m²,(x)*2.10152
+ft-lbs/in2,kJ/m²,(x)*2.10152
+ft.lbs/in2,kJ/m²,(x)*2.10152
+ft-lb/in,J/m,(x)*53.37881493
+ft.lb/in,J/m,(x)*53.37881493
+ft-lbs/in,J/m,(x)*53.37881493
+ft.lbs/in,J/m,(x)*53.37881493
+j/cm,J/m,(x)*0.01
+ft*lb/in2,kJ/m²,2.1052*(x)
+ft·lb/in²,kJ/m²,2.1052*(x)
+×10-5/k,E-4/°C,(x)*0.1
+e-4/°c,E-4/°C,x
+e-6/k,E-4/°C,(x)*0.001
+kgf/cm²,MPa,0.0980665*(x)
+g/cm3,kg/m³,1000*(x)
+g/cc,kg/m³,1000*(x)
+gm/cc,kg/m³,1000*(x)
+g/cm³--,kg/m³,1000*(x)
+g/cmâ³,kg/m³,1000*(x)
+x10-4,E-4,x
+psi,MPa,0.00689476*(x)
+ohms.cm,Ohm*m,0.01*(x)
+ohm*cm,Ohm*m,0.01*(x)
+ohm.cm,Ohm*m,0.01*(x)
+ohms*cm,Ohm*m,0.01*(x)
+ohms·cm,Ohm*m,0.01*(x)
+?cm,Ohm*m,0.01*(x)
+ohmcm,Ohm*m,0.01*(x)
+1e14ohm.cm,Ohm*m,0.01*(x)
+ohms/cm,Ohm*m,0.01*(x)
+?*cm,Ohm*m,0.01*(x)
+o?cm,Ohm*m,0.01*(x)
+o·cm,Ohm*m,0.01*(x)
+q.cm,Ohm*m,0.01*(x)
+q2.cm,Ohm*m,0.01*(x)
+?.cm,Ohm*m,0.01*(x)
+ohm-cm,Ohm*m,0.01*(x)
+°f,°C,((x) - 32)*(5/9)
+lb/in3,kg/m³,(x)*27679.9
+e-6/°c,E-4/°C,(x)*0.001
+e-6,E-6,x
+e-5/°c,E-4/°C,(x)*0.01
+e-5/,E-4,(x)*0.01
+pa,Mpa,x/1000000
+pascal,Mpa,x/1000000
+kpa,Mpa,x/1000
+kilopascal,Mpa,x/1000
+gpa,Mpa,x*1000
+gigapascal,Mpa,x*1000
+bar,Mpa,x*10
+mbar,Mpa,x*10000
+millibar,Mpa,x*10000
+atm,Mpa,x/0.101325
+atmosphere,Mpa,x/0.101325
+psi,Mpa,x*145.037737797
+poundpersquareinch,Mpa,x*145.037737797
+ksi,Mpa,x*0.145037737797
+kilopoundpersquareinch,Mpa,x*0.145037737797
+n/m^2,Mpa,x/1000000
+newtonpersquaremeter,Mpa,x/1000000
+n/cm^2,Mpa,x/0.1
+newtonpersquarecentimeter,Mpa,x/0.1
+n/mm^2,Mpa,x*1
+newtonpersquaremillimeter,Mpa,x*1
+gf/cm^2,Mpa,x*10203.9215686
+gram-forcepersquarecentimeter,Mpa,x*10203.9215686
+kgf/cm^2,Mpa,x*10.1971621298
+kilogram-forcepersquarecentimeter,Mpa,x*10.1971621298
+kgf/m^2,Mpa,x/0.000101971621298
+kilogram-forcepersquaremeter,Mpa,x/0.000101971621298
+torr,Mpa,x*7500.616827
+mmhg,Mpa,x*7500.616827
+millimeterofmercury,Mpa,x*7500.616827
+inhg,Mpa,x*295.299830714
+inchofmercury,Mpa,x*295.299830714
+fth2o,Mpa,x*334.552565551
+footofwater,Mpa,x*334.552565551
+inh2o,Mpa,x*4021.4741784
+inchofwater,Mpa,x*4021.4741784
+dyn/cm^2,Mpa,x*10000000
+dynepersquarecentimeter,Mpa,x*10000000
+lb/ft^2,Mpa,x*20885.434233
+poundpersquarefoot,Mpa,x*20885.434233
+lb/in^2,Mpa,x*145.037737797
+stf/in^2,Mpa,x*0.0142233433074
+shortton-forcepersquareinch,Mpa,x*0.0142233433074
+lbf/in^2,Mpa,x*145.037737797
+pound-forcepersquareinch,Mpa,x*145.037737797
+tf/m^2,Mpa,x*0.101971621298
+tonne-forcepersquaremeter,Mpa,x*0.101971621298
+tf/cm^2,Mpa,x*10.1971621298
+tonne-forcepersquarecentimeter,Mpa,x*10.1971621298
+hpa,Mpa,x*10
+hectopascal,Mpa,x*10
+mmh2o,Mpa,x*101.971621298
+millimeterofwater,Mpa,x*101.971621298
+cmh2o,Mpa,x*10.1971621298
+centimeterofwater,Mpa,x*10.1971621298
+fthg,Mpa,x*24.8825757576
+footofmercury,Mpa,x*24.8825757576
+megapascal,Mpa,x
+g/cm³,kg/m³,x * 1000
+gramspercubiccentimeter,kg/m³,x * 1000
+lb/ft³,kg/m³,x * 62.42796
+poundspercubicfoot,kg/m³,x * 62.42796
+lb/in³,kg/m³,x * 27679.91
+poundspercubicinch,kg/m³,x * 27679.91
+oz/gal,kg/m³,x * 7.4891517
+ouncespergallon,kg/m³,x * 7.4891517
+lb/gal,kg/m³,x * 0.06242796
+poundspergallon,kg/m³,x * 0.06242796
+g/l,kg/m³,x * 1
+gramsperliter,kg/m³,x * 1
+mg/l,kg/m³,x * 0.001
+milligramsperliter,kg/m³,x * 0.001
+g/ml,kg/m³,x * 1000
+gramspermilliliter,kg/m³,x * 1000
+mg/ml,kg/m³,x * 1
+milligramspermilliliter,kg/m³,x * 1
+g/m³,kg/m³,x * 0.001
+gramspercubicmeter,kg/m³,x * 0.001
+mg/m³,kg/m³,x * 0.000001
+milligramspercubicmeter,kg/m³,x * 0.000001
+µg/m³,kg/m³,x * 0.000000001
+microgramspercubicmeter,kg/m³,x * 0.000000001
+ng/m³,kg/m³,x * 0.000000000001
+nanogramspercubicmeter,kg/m³,x * 0.000000000001
+pg/m³,kg/m³,x * 0.000000000000001
+picogramspercubicmeter,kg/m³,x * 0.000000000000001
+fg/m³,kg/m³,x * 0.000000000000000001
+femtogramspercubicmeter,kg/m³,x * 0.000000000000000001
+ag/m³,kg/m³,x * 0.000000000000000000001
+attogramspercubicmeter,kg/m³,x * 0.000000000000000000001
+zg/m³,kg/m³,x * 0.000000000000000000000001
+zeptogramspercubicmeter,kg/m³,x * 0.000000000000000000000001
+yg/m³,kg/m³,x * 0.000000000000000000000000001
+yoctogramspercubicmeter,kg/m³,x * 0.000000000000000000000000001
+t/m³,kg/m³,x * 1000
+tonnespercubicmeter,kg/m³,x * 1000
+lb/yd³,kg/m³,x * 1.68555
+poundspercubicyard,kg/m³,x * 1.68555
+oz/in³,kg/m³,x * 1729.994
+ouncespercubicinch,kg/m³,x * 1729.994
+oz/ft³,kg/m³,x * 1.04438
+ouncespercubicfoot,kg/m³,x * 1.04438
+oz/yd³,kg/m³,x * 0.037037
+ouncespercubicyard,kg/m³,x * 0.037037
+lb/ml,kg/m³,x * 453592.37
+poundspermilliliter,kg/m³,x * 453592.37
+lb/l,kg/m³,x * 453.59237
+poundsperliter,kg/m³,x * 453.59237
+oz/ml,kg/m³,x * 28349.523
+ouncespermilliliter,kg/m³,x * 28349.523
+oz/l,kg/m³,x * 28.349523
+ouncesperliter,kg/m³,x * 28.349523
+t/l,kg/m³,x * 1000000
+tonnesperliter,kg/m³,x * 1000000
+t/ml,kg/m³,x * 1000000000
+tonnespermilliliter,kg/m³,x * 1000000000
+kilogramspercubicmeter,kg/m³,x
+j/m²,kJ/m²,x/1000
+joulespersquaremeter,kJ/m²,x/1000
+cal/m²,kJ/m²,x/238.8458966275
+caloriespersquaremeter,kJ/m²,x/238.8458966275
+kcal/m²,kJ/m²,x/0.2388458966275
+kilocaloriespersquaremeter,kJ/m²,x/0.2388458966275
+btu/ft²,kJ/m²,x/0.31699833062815
+britishthermalunitspersquarefoot,kJ/m²,x/0.31699833062815
+btu/in²,kJ/m²,x/0.000490537537618
+britishthermalunitspersquareinch,kJ/m²,x/0.000490537537618
+erg/cm²,kJ/m²,x/10000000
+ergspersquarecentimeter,kJ/m²,x/10000000
+ft·lbf/ft²,kJ/m²,x/1.3558179483314
+foot-poundforcepersquarefoot,kJ/m²,x/1.3558179483314
+ft·lbf/in²,kJ/m²,x/0.00094781712031335
+foot-poundforcepersquareinch,kJ/m²,x/0.00094781712031335
+wh/m²,kJ/m²,x/0.27777777777778
+watthourspersquaremeter,kJ/m²,x/0.27777777777778
+kwh/m²,kJ/m²,x/0.00027777777777778
+kilowatthourspersquaremeter,kJ/m²,x/0.00027777777777778
+hp·h/ft²,kJ/m²,x/0.00039301477832512
+horsepowerhourpersquarefoot,kJ/m²,x/0.00039301477832512
+hp·h/in²,kJ/m²,x/0.000000273789649415
+horsepowerhourpersquareinch,kJ/m²,x/0.000000273789649415
+therm/ft²,kJ/m²,x/0.000000293071070172
+thermpersquarefoot,kJ/m²,x/0.000000293071070172
+therm/in²,kJ/m²,x/0.0000000002032094303
+thermpersquareinch,kJ/m²,x/0.0000000002032094303
+quad/ft²,kJ/m²,x/0.000000000000293071070172
+quadpersquarefoot,kJ/m²,x/0.000000000000293071070172
+quad/in²,kJ/m²,x/0.0000000000000002032094303
+quadpersquareinch,kJ/m²,x/0.0000000000000002032094303
+joule/cm²,kJ/m²,x/10000
+joulepersquarecentimeter,kJ/m²,x/10000
+mj/m²,kJ/m²,x/0.001
+megajoulepersquaremeter,kJ/m²,x/0.001
+gj/m²,kJ/m²,x/0.000001
+gigajoulepersquaremeter,kJ/m²,x/0.000001
+tj/m²,kJ/m²,x/0.000000001
+terajoulepersquaremeter,kJ/m²,x/0.000000001
+pj/m²,kJ/m²,x/0.000000000001
+petajoulepersquaremeter,kJ/m²,x/0.000000000001
+ej/m²,kJ/m²,x/0.000000000000001
+exajoulepersquaremeter,kJ/m²,x/0.000000000000001
+zj/m²,kJ/m²,x/0.000000000000000001
+zettajoulepersquaremeter,kJ/m²,x/0.000000000000000001
+yj/m²,kJ/m²,x/0.000000000000000000001
+yottajoulepersquaremeter,kJ/m²,x/0.000000000000000000001
+cal/cm²,kJ/m²,x/23884.58966275
+caloriepersquarecentimeter,kJ/m²,x/23884.58966275
+kcal/cm²,kJ/m²,x/238.8458966275
+kilocaloriepersquarecentimeter,kJ/m²,x/238.8458966275
+btu/cm²,kJ/m²,x/0.31699833062815
+britishthermalunitpersquarecentimeter,kJ/m²,x/0.31699833062815
+ft·lbf/cm²,kJ/m²,x/1.3558179483314
+foot-poundforcepersquarecentimeter,kJ/m²,x/1.3558179483314
+wh/cm²,kJ/m²,x/0.27777777777778
+watthourpersquarecentimeter,kJ/m²,x/0.27777777777778
+kilojoulespersquaremeter,kJ/m²,x
+l/g,ml/g,x*0.001
+literspergram,ml/g,x*0.001
+cl/g,ml/g,x*0.1
+centiliterspergram,ml/g,x*0.1
+dl/g,ml/g,x*0.01
+deciliterspergram,ml/g,x*0.01
+kl/g,ml/g,x*0.000001
+kiloliterspergram,ml/g,x*0.000001
+μl/g,ml/g,x*1000
+microliterspergram,ml/g,x*1000
+nl/g,ml/g,x*1000000
+nanoliterspergram,ml/g,x*1000000
+pl/g,ml/g,x*1000000000
+picoliterspergram,ml/g,x*1000000000
+fl/g,ml/g,x*1000000000000
+femtoliterspergram,ml/g,x*1000000000000
+al/g,ml/g,x*1000000000000000
+attoliterspergram,ml/g,x*1000000000000000
+zl/g,ml/g,x*1000000000000000000
+zeptoliterspergram,ml/g,x*1000000000000000000
+yl/g,ml/g,x*1000000000000000000000
+yoctoliterspergram,ml/g,x*1000000000000000000000
+mm³/g,ml/g,x*1
+megacubicmillimeterspergram,ml/g,x*1
+km³/g,ml/g,x*0.001
+kilocubicmillimeterspergram,ml/g,x*0.001
+cm³/g,ml/g,x*1
+cubiccentimeterspergram,ml/g,x*1
+dm³/g,ml/g,x*0.1
+decicubicmillimeterspergram,ml/g,x*0.1
+m³/g,ml/g,x*0.000001
+cubicmeterspergram,ml/g,x*0.000001
+μm³/g,ml/g,x*1000000
+microcubicmillimeterspergram,ml/g,x*1000000
+nm³/g,ml/g,x*1000000000
+nanocubicmillimeterspergram,ml/g,x*1000000000
+pm³/g,ml/g,x*1000000000000
+picocubicmillimeterspergram,ml/g,x*1000000000000
+fm³/g,ml/g,x*1000000000000000
+femtocubicmillimeterspergram,ml/g,x*1000000000000000
+am³/g,ml/g,x*1000000000000000000
+attocubicmillimeterspergram,ml/g,x*1000000000000000000
+zm³/g,ml/g,x*1000000000000000000000
+zeptocubicmillimeterspergram,ml/g,x*1000000000000000000000
+ym³/g,ml/g,x*1000000000000000000000000
+yoctocubicmillimeterspergram,ml/g,x*1000000000000000000000000
+floz/g,ml/g,x*0.033814
+fluidouncespergram,ml/g,x*0.033814
+gal/g,ml/g,x*0.000264172
+gallonspergram,ml/g,x*0.000264172
+qt/g,ml/g,x*0.00105669
+quartspergram,ml/g,x*0.00105669
+pt/g,ml/g,x*0.00211338
+pintspergram,ml/g,x*0.00211338
+cup/g,ml/g,x*0.00422675
+cupspergram,ml/g,x*0.00422675
+tbsp/g,ml/g,x*0.067628.
+tablespoonspergram,ml/g,x*0.067628.
+milliliterspergram,ml/g,x
+m³/kg,cm³/g,x
+cubicmetersperkilogram,cm³/g,x
+l/kg,cm³/g,x
+litersperkilogram,cm³/g,x
+ml/g,cm³/g,x
+milliliterspergram,cm³/g,x
+ft³/lb,cm³/g,x
+cubicfeetperpound,cm³/g,x
+in³/lb,cm³/g,x
+cubicinchesperpound,cm³/g,x
+yd³/lb,cm³/g,x
+cubicyardsperpound,cm³/g,x
+gal(us)/lb,cm³/g,x
+gallons(us)perpound,cm³/g,x
+gal(uk)/lb,cm³/g,x
+gallons(uk)perpound,cm³/g,x
+bbl(us)/lb,cm³/g,x
+barrels(us)perpound,cm³/g,x
+bbl(uk)/lb,cm³/g,x
+barrels(uk)perpound,cm³/g,x
+floz(us)/lb,cm³/g,x
+fluidounces(us)perpound,cm³/g,x
+floz(uk)/lb,cm³/g,x
+fluidounces(uk)perpound,cm³/g,x
+pt(us)/lb,cm³/g,x
+pints(us)perpound,cm³/g,x
+pt(uk)/lb,cm³/g,x
+pints(uk)perpound,cm³/g,x
+qt(us)/lb,cm³/g,x
+quarts(us)perpound,cm³/g,x
+qt(uk)/lb,cm³/g,x
+quarts(uk)perpound,cm³/g,x
+gal(us)/oz,cm³/g,x
+gallons(us)perounce,cm³/g,x
+gal(uk)/oz,cm³/g,x
+gallons(uk)perounce,cm³/g,x
+bbl(us)/oz,cm³/g,x
+barrels(us)perounce,cm³/g,x
+bbl(uk)/oz,cm³/g,x
+barrels(uk)perounce,cm³/g,x
+floz(us)/oz,cm³/g,x
+fluidounces(us)perounce,cm³/g,x
+floz(uk)/oz,cm³/g,x
+fluidounces(uk)perounce,cm³/g,x
+pt(us)/oz,cm³/g,x
+pints(us)perounce,cm³/g,x
+pt(uk)/oz,cm³/g,x
+pints(uk)perounce,cm³/g,x
+qt(us)/oz,cm³/g,x
+quarts(us)perounce,cm³/g,x
+qt(uk)/oz,cm³/g,x
+quarts(uk)perounce,cm³/g,x
+l/oz,cm³/g,x
+litersperounce,cm³/g,x
+ml/oz,cm³/g,x
+millilitersperounce,cm³/g,x
+m³/oz,cm³/g,x
+cubicmetersperounce,cm³/g,x
+cubiccentimeterspergram,cm³/g,x
+cm,mm,x * 10
+centimeters,mm,x * 10
+m,mm,x * 1000
+meters,mm,x * 1000
+km,mm,x * 1000000
+kilometers,mm,x * 1000000
+in,mm,x * 25.4
+inches,mm,x * 25.4
+ft,mm,x * 304.8
+feet,mm,x * 304.8
+yd,mm,x * 914.4
+yards,mm,x * 914.4
+mi,mm,x * 1609344
+miles,mm,x * 1609344
+nmi,mm,x * 1852000
+nauticalmiles,mm,x * 1852000
+å,mm,x * 0.1
+angstroms,mm,x * 0.1
+nm,mm,x * 0.001
+nanometers,mm,x * 0.001
+μm,mm,x * 0.01
+micrometers,mm,x * 0.01
+pm,mm,x * 0.000001
+picometers,mm,x * 0.000001
+fm,mm,x * 0.000000001
+femtometers,mm,x * 0.000000001
+au,mm,x * 1.496e+14
+astronomicalunits,mm,x * 1.496e+14
+ly,mm,x * 9.461e+18
+lightyears,mm,x * 9.461e+18
+pc,mm,x * 3.086e+19
+parsecs,mm,x * 3.086e+19
+mil,mm,x * 0.0254
+mils,mm,x * 0.0254
+thou,mm,x * 0.0254
+lea,mm,x * 4828032
+leagues,mm,x * 4828032
+fur,mm,x * 201168
+furlongs,mm,x * 201168
+ch,mm,x * 20116.8
+chains,mm,x * 20116.8
+rd,mm,x * 5029.2
+rods,mm,x * 5029.2
+li,mm,x * 201.168
+links,mm,x * 201.168
+hand,mm,x * 101.6
+hands,mm,x * 101.6
+fathom,mm,x * 1828.8
+fathoms,mm,x * 1828.8
+cable,mm,x * 185.2
+cables,mm,x * 185.2
+nauticalleague,mm,x * 5556000
+nauticalleagues,mm,x * 5556000
+cubit,mm,x * 457.2
+cubits,mm,x * 457.2
+span,mm,x * 228.6
+spans,mm,x * 228.6
+millimeters,mm,x
+mω,Ohm,x * 0.001
+milliohm,Ohm,x * 0.001
+kω,Ohm,x * 1000
+kiloohm,Ohm,x * 1000
+mω,Ohm,x * 1000000
+megaohm,Ohm,x * 1000000
+gω,Ohm,x * 1000000000
+gigaohm,Ohm,x * 1000000000
+μω,Ohm,x * 0.000001
+microohm,Ohm,x * 0.000001
+nω,Ohm,x * 0.000000001
+nanoohm,Ohm,x * 0.000000001
+pω,Ohm,x * 0.000000000001
+picoohm,Ohm,x * 0.000000000001
+fω,Ohm,x * 0.000000000000001
+femtoohm,Ohm,x * 0.000000000000001
+aω,Ohm,x * 0.000000000000000001
+attoohm,Ohm,x * 0.000000000000000001
+zω,Ohm,x * 0.000000000000000000001
+zeptoohm,Ohm,x * 0.000000000000000000001
+yω,Ohm,x * 0.000000000000000000000001
+yoctoohm,Ohm,x * 0.000000000000000000000001
+dω,Ohm,x * 0.1
+deciohm,Ohm,x * 0.1
+daω,Ohm,x * 10
+dekaohm,Ohm,x * 10
+hω,Ohm,x * 100
+hectoohm,Ohm,x * 100
+cω,Ohm,x * 0.01
+centiohm,Ohm,x * 0.01
+ω,Ohm,x
+ohm,Ohm,x
+s,Ohm,1 / x
+siemens,Ohm,1 / x
+ms,Ohm,1 / (x * 0.001)
+millisiemens,Ohm,1 / (x * 0.001)
+μs,Ohm,1 / (x * 0.000001)
+microsiemens,Ohm,1 / (x * 0.000001)
+ns,Ohm,1 / (x * 0.000000001)
+nanosiemens,Ohm,1 / (x * 0.000000001)
+ps,Ohm,1 / (x * 0.000000000001)
+picosiemens,Ohm,1 / (x * 0.000000000001)
+fs,Ohm,1 / (x * 0.000000000000001)
+femtosiemens,Ohm,1 / (x * 0.000000000000001)
+as,Ohm,1 / (x * 0.000000000000000001)
+attosiemens,Ohm,1 / (x * 0.000000000000000001)
+zs,Ohm,1 / (x * 0.000000000000000000001)
+zeptosiemens,Ohm,1 / (x * 0.000000000000000000001)
+ys,Ohm,1 / (x * 0.000000000000000000000001)
+yoctosiemens,Ohm,1 / (x * 0.000000000000000000000001)
+ds,Ohm,1 / (x * 0.1)
+decisiemens,Ohm,1 / (x * 0.1)
+das,Ohm,1 / (x * 10)
+dekasiemens,Ohm,1 / (x * 10)
+hs,Ohm,1 / (x * 100)
+hectosiemens,Ohm,1 / (x * 100)
+cs,Ohm,1 / (x * 0.01)
+centisiemens,Ohm,1 / (x * 0.01)
+ks,Ohm,1 / (x * 1000)
+kilosiemens,Ohm,1 / (x * 1000)
+ms,Ohm,1 / (x * 1000000)
+megasiemens,Ohm,1 / (x * 1000000)
+gs,Ohm,1 / (x * 1000000000)
+gigasiemens,Ohm,1 / (x * 1000000000)
+n/m,kN/m,x/1000
+newtonpermeter,kN/m,x/1000
+mn/m,kN/m,x*1000
+meganewtonpermeter,kN/m,x*1000
+gn/m,kN/m,x*1000000
+giganewtonpermeter,kN/m,x*1000000
+lbf/ft,kN/m,x*671.968975
+pound-forceperfoot,kN/m,x*671.968975
+lbf/in,kN/m,x*8071.66382
+pound-forceperinch,kN/m,x*8071.66382
+dyne/cm,kN/m,x*10000000
+dynepercentimeter,kN/m,x*10000000
+kgf/m,kN/m,x*101.971621
+kilogram-forcepermeter,kN/m,x*101.971621
+gf/cm,kN/m,x*10197.1621
+gram-forcepercentimeter,kN/m,x*10197.1621
+tonf/m,kN/m,x*0.101971621
+ton-force(metric)permeter,kN/m,x*0.101971621
+tonf/ft,kN/m,x*0.671968975
+ton-force(short)perfoot,kN/m,x*0.671968975
+kip/ft,kN/m,x*0.671968975
+kipperfoot,kN/m,x*0.671968975
+ozf/in,kN/m,x*129.032258
+ounce-forceperinch,kN/m,x*129.032258
+pdl/ft,kN/m,x*67196.8975
+poundalperfoot,kN/m,x*67196.8975
+pdl/in,kN/m,x*8071.66382
+poundalperinch,kN/m,x*8071.66382
+kgf/cm,kN/m,x*0.101971621
+kilogram-forcepercentimeter,kN/m,x*0.101971621
+gf/m,kN/m,x*101971.621
+gram-forcepermeter,kN/m,x*101971.621
+kgf/mm,kN/m,x*0.101971621
+kilogram-forcepermillimeter,kN/m,x*0.101971621
+gf/mm,kN/m,x*101.971621
+gram-forcepermillimeter,kN/m,x*101.971621
+tonf/cm,kN/m,x*0.000101971621
+ton-force(metric)percentimeter,kN/m,x*0.000101971621
+tonf/in,kN/m,x*0.00557611993
+ton-force(short)perinch,kN/m,x*0.00557611993
+kip/in,kN/m,x*0.00557611993
+kipperinch,kN/m,x*0.00557611993
+ozf/ft,kN/m,x*1547.58677
+ounce-forceperfoot,kN/m,x*1547.58677
+pdl/m,kN/m,x*67196.8975
+poundalpermeter,kN/m,x*67196.8975
+pdl/cm,kN/m,x*671.968975
+poundalpercentimeter,kN/m,x*671.968975
+kgf/ft,kN/m,x*310.728312
+kilogram-forceperfoot,kN/m,x*310.728312
+gf/ft,kN/m,x*310728.312
+gram-forceperfoot,kN/m,x*310728.312
+kgf/in,kN/m,x*25.8978428
+kilogram-forceperinch,kN/m,x*25.8978428
+gf/in,kN/m,x*25897.8428
+gram-forceperinch,kN/m,x*25897.8428
+tonf/ft,kN/m,x*0.310728312
+ton-force(metric)perfoot,kN/m,x*0.310728312
+kilonewtonpermeter,kN/m,x
+kg/h,g/10min,x*0.006
+kilogramsperhour,g/10min,x*0.006
+mg/s,g/10min,x*100
+milligramspersecond,g/10min,x*100
+g/h,g/10min,x*6
+gramsperhour,g/10min,x*6
+kg/10min,g/10min,x*0.001
+kilogramsper10minutes,g/10min,x*0.001
+mg/10min,g/10min,x*1000
+milligramsper10minutes,g/10min,x*1000
+g/s,g/10min,x*0.0166667
+gramspersecond,g/10min,x*0.0166667
+kg/s,g/10min,x*0.0000166667
+kilogramspersecond,g/10min,x*0.0000166667
+mg/h,g/10min,x*6000
+milligramsperhour,g/10min,x*6000
+g/min,g/10min,x*0.1
+gramsperminute,g/10min,x*0.1
+kg/min,g/10min,x*0.0001
+kilogramsperminute,g/10min,x*0.0001
+mg/min,g/10min,x*100
+milligramsperminute,g/10min,x*100
+g/5min,g/10min,x*0.2
+gramsper5minutes,g/10min,x*0.2
+kg/5min,g/10min,x*0.0002
+kilogramsper5minutes,g/10min,x*0.0002
+mg/5min,g/10min,x*200
+milligramsper5minutes,g/10min,x*200
+g/15min,g/10min,x*0.0666667
+gramsper15minutes,g/10min,x*0.0666667
+kg/15min,g/10min,x*0.0000666667
+kilogramsper15minutes,g/10min,x*0.0000666667
+mg/15min,g/10min,x*66.6667
+milligramsper15minutes,g/10min,x*66.6667
+g/30min,g/10min,x*0.0333333
+gramsper30minutes,g/10min,x*0.0333333
+kg/30min,g/10min,x*0.0000333333
+kilogramsper30minutes,g/10min,x*0.0000333333
+mg/30min,g/10min,x*33.3333
+milligramsper30minutes,g/10min,x*33.3333
+g/60min,g/10min,x*0.0166667
+gramsper60minutes,g/10min,x*0.0166667
+kg/60min,g/10min,x*0.0000166667
+kilogramsper60minutes,g/10min,x*0.0000166667
+mg/60min,g/10min,x*16.6667
+milligramsper60minutes,g/10min,x*16.6667
+g/120min,g/10min,x*0.00833333
+gramsper120minutes,g/10min,x*0.00833333
+kg/120min,g/10min,x*0.00000833333
+kilogramsper120minutes,g/10min,x*0.00000833333
+mg/120min,g/10min,x*8.33333
+milligramsper120minutes,g/10min,x*8.33333
+g/180min,g/10min,x*0.00555556
+gramsper180minutes,g/10min,x*0.00555556
+kg/180min,g/10min,x*0.00000555556
+kilogramsper180minutes,g/10min,x*0.00000555556
+mg/180min,g/10min,x*5.55556
+milligramsper180minutes,g/10min,x*5.55556
+gramsper10minutes,g/10min,x
+v/m,kV/mm,x * 1e6
+voltspermeter,kV/mm,x * 1e6
+mv/m,kV/mm,x * 1e3
+megavoltspermeter,kV/mm,x * 1e3
+gv/m,kV/mm,x * 1e-3
+gigavoltspermeter,kV/mm,x * 1e-3
+tv/m,kV/mm,x * 1e-6
+teravoltspermeter,kV/mm,x * 1e-6
+pv/m,kV/mm,x * 1e-9
+petavoltspermeter,kV/mm,x * 1e-9
+kv/cm,kV/mm,x * 0.1
+kilovoltspercentimeter,kV/mm,x * 0.1
+kv/in,kV/mm,x * 0.0393701
+kilovoltsperinch,kV/mm,x * 0.0393701
+kv/ft,kV/mm,x * 0.00328084
+kilovoltsperfoot,kV/mm,x * 0.00328084
+kv/mi,kV/mm,x * 0.000000621371
+kilovoltspermile,kV/mm,x * 0.000000621371
+v/mm,kV/mm,x * 1e3
+voltspermillimeter,kV/mm,x * 1e3
+mv/mm,kV/mm,x
+megavoltspermillimeter,kV/mm,x
+gv/mm,kV/mm,x * 1e-3
+gigavoltspermillimeter,kV/mm,x * 1e-3
+tv/mm,kV/mm,x * 1e-6
+teravoltspermillimeter,kV/mm,x * 1e-6
+pv/mm,kV/mm,x * 1e-9
+petavoltspermillimeter,kV/mm,x * 1e-9
+mv/mm,kV/mm,x * 1e6
+millivoltspermillimeter,kV/mm,x * 1e6
+μv/mm,kV/mm,x * 1e9
+microvoltspermillimeter,kV/mm,x * 1e9
+nv/mm,kV/mm,x * 1e12
+nanovoltspermillimeter,kV/mm,x * 1e12
+pv/mm,kV/mm,x * 1e15
+picovoltspermillimeter,kV/mm,x * 1e15
+fv/mm,kV/mm,x * 1e18
+femtovoltspermillimeter,kV/mm,x * 1e18
+av/mm,kV/mm,x * 1e21
+attovoltspermillimeter,kV/mm,x * 1e21
+zv/mm,kV/mm,x * 1e24
+zeptovoltspermillimeter,kV/mm,x * 1e24
+yv/mm,kV/mm,x * 1e27
+yoctovoltspermillimeter,kV/mm,x * 1e27
+kv/μm,kV/mm,x * 1e-3
+kilovoltspermicrometer,kV/mm,x * 1e-3
+kv/nm,kV/mm,x * 1e-6
+kilovoltspernanometer,kV/mm,x * 1e-6
+kv/pm,kV/mm,x * 1e-9
+kilovoltsperpicometer,kV/mm,x * 1e-9
+kv/fm,kV/mm,x * 1e-12
+kilovoltsperfemtometer,kV/mm,x * 1e-12
+kv/am,kV/mm,x * 1e-15
+kilovoltsperattometer,kV/mm,x * 1e-15
+kv/zm,kV/mm,x * 1e-18
+kilovoltsperzeptometer,kV/mm,x * 1e-18
+kv/ym,kV/mm,x * 1e-21
+kilovoltsperyoctometer,kV/mm,x * 1e-21
+kilovoltspermillimeter,kV/mm,x
+btu/(fth°f),W/(m K),x * 1.7307
+britishthermalunitsperfoothourdegreefahrenheit,W/(m K),x * 1.7307
+cal/(cms°c),W/(m K),x * 418.4
+caloriespercentimeterseconddegreecelsius,W/(m K),x * 418.4
+cal/(ms°c),W/(m K),x * 4.184
+caloriespermeterseconddegreecelsius,W/(m K),x * 4.184
+btu/(ins°f),W/(m K),x * 10502
+britishthermalunitsperinchseconddegreefahrenheit,W/(m K),x * 10502
+btu/(inh°f),W/(m K),x * 2.918
+britishthermalunitsperinchhourdegreefahrenheit,W/(m K),x * 2.918
+btu/(fts°f),W/(m K),x * 315.8
+britishthermalunitsperfootseconddegreefahrenheit,W/(m K),x * 315.8
+cal/(cmh°c),W/(m K),x * 0.1163
+caloriespercentimeterhourdegreecelsius,W/(m K),x * 0.1163
+cal/(cmmin°c),W/(m K),x * 6.978
+caloriespercentimeterminutedegreecelsius,W/(m K),x * 6.978
+btu/(ydh°f),W/(m K),x * 0.5769
+britishthermalunitsperyardhourdegreefahrenheit,W/(m K),x * 0.5769
+btu/(yds°f),W/(m K),x * 207.3
+britishthermalunitsperyardseconddegreefahrenheit,W/(m K),x * 207.3
+btu/(mih°f),W/(m K),x * 0.0001081
+britishthermalunitspermilehourdegreefahrenheit,W/(m K),x * 0.0001081
+btu/(mis°f),W/(m K),x * 0.3891
+britishthermalunitspermileseconddegreefahrenheit,W/(m K),x * 0.3891
+cal/(mh°c),W/(m K),x * 0.001163
+caloriespermeterhourdegreecelsius,W/(m K),x * 0.001163
+cal/(mmin°c),W/(m K),x * 0.06978
+caloriespermeterminutedegreecelsius,W/(m K),x * 0.06978
+cal/(kmh°c),W/(m K),x * 1.163e-6
+caloriesperkilometerhourdegreecelsius,W/(m K),x * 1.163e-6
+cal/(kms°c),W/(m K),x * 0.004184
+caloriesperkilometerseconddegreecelsius,W/(m K),x * 0.004184
+btu/(ftmin°f),W/(m K),x * 18.84
+britishthermalunitsperfootminutedegreefahrenheit,W/(m K),x * 18.84
+btu/(inmin°f),W/(m K),x * 226.1
+britishthermalunitsperinchminutedegreefahrenheit,W/(m K),x * 226.1
+btu/(ydmin°f),W/(m K),x * 6.28
+britishthermalunitsperyardminutedegreefahrenheit,W/(m K),x * 6.28
+btu/(mimin°f),W/(m K),x * 0.006485
+britishthermalunitspermileminutedegreefahrenheit,W/(m K),x * 0.006485
+cal/(kmmin°c),W/(m K),x * 6.978e-5
+caloriesperkilometerminutedegreecelsius,W/(m K),x * 6.978e-5
+btu/(ins°f),W/(m K),x * 3789
+britishthermalunitsperinchseconddegreefahrenheit,W/(m K),x * 3789
+btu/(yds°f),W/(m K),x * 105.3
+britishthermalunitsperyardseconddegreefahrenheit,W/(m K),x * 105.3
+wattspermeterkelvin,W/(m K),x
+m³/10min,cm³/10min,x*1e-6
+cubicmetersper10minutes,cm³/10min,x*1e-6
+dm³/10min,cm³/10min,x*0.001
+cubicdecimetersper10minutes,cm³/10min,x*0.001
+mm³/10min,cm³/10min,x*1e6
+cubicmillimetersper10minutes,cm³/10min,x*1e6
+km³/10min,cm³/10min,x*1e-15
+cubickilometersper10minutes,cm³/10min,x*1e-15
+µm³/10min,cm³/10min,x*1e12
+cubicmicrometersper10minutes,cm³/10min,x*1e12
+nm³/10min,cm³/10min,x*1e21
+cubicnanometersper10minutes,cm³/10min,x*1e21
+pm³/10min,cm³/10min,x*1e30
+cubicpicometersper10minutes,cm³/10min,x*1e30
+fm³/10min,cm³/10min,x*1e39
+cubicfemtometersper10minutes,cm³/10min,x*1e39
+am³/10min,cm³/10min,x*1e48
+cubicattometersper10minutes,cm³/10min,x*1e48
+zm³/10min,cm³/10min,x*1e57
+cubiczeptometersper10minutes,cm³/10min,x*1e57
+ym³/10min,cm³/10min,x*1e66
+cubicyoctometersper10minutes,cm³/10min,x*1e66
+cm³/s,cm³/10min,x*600
+cubiccentimeterspersecond,cm³/10min,x*600
+cm³/min,cm³/10min,x*10
+cubiccentimetersperminute,cm³/10min,x*10
+cm³/h,cm³/10min,x*0.16667
+cubiccentimetersperhour,cm³/10min,x*0.16667
+cm³/day,cm³/10min,x*0.0069444
+cubiccentimetersperday,cm³/10min,x*0.0069444
+cm³/week,cm³/10min,x*0.00099206
+cubiccentimetersperweek,cm³/10min,x*0.00099206
+cm³/month,cm³/10min,x*0.00022831
+cubiccentimeterspermonth,cm³/10min,x*0.00022831
+cm³/year,cm³/10min,x*0.000019048
+cubiccentimetersperyear,cm³/10min,x*0.000019048
+l/10min,cm³/10min,x*1
+litersper10minutes,cm³/10min,x*1
+ml/10min,cm³/10min,x*1000
+millilitersper10minutes,cm³/10min,x*1000
+µl/10min,cm³/10min,x*1e6
+microlitersper10minutes,cm³/10min,x*1e6
+nl/10min,cm³/10min,x*1e9
+nanolitersper10minutes,cm³/10min,x*1e9
+pl/10min,cm³/10min,x*1e12
+picolitersper10minutes,cm³/10min,x*1e12
+fl/10min,cm³/10min,x*1e15
+femtolitersper10minutes,cm³/10min,x*1e15
+al/10min,cm³/10min,x*1e18
+attolitersper10minutes,cm³/10min,x*1e18
+zl/10min,cm³/10min,x*1e21
+zeptolitersper10minutes,cm³/10min,x*1e21
+yl/10min,cm³/10min,x*1e24
+yoctolitersper10minutes,cm³/10min,x*1e24
+gal/10min,cm³/10min,x*0.26417
+gallonsper10minutes,cm³/10min,x*0.26417
+floz/10min,cm³/10min,x*33.814.
+fluidouncesper10minutes,cm³/10min,x*33.814.
+cubiccentimetersper10minutes,cm³/10min,x
+poise,Pa s,x*0.1
+centipoise,Pa s,x*0.001
+kilogrampermeterpersecond,Pa s,x
+grampercentimeterpersecond,Pa s,x*0.1
+poundperfootpersecond,Pa s,x*1.48816
+poundperinchpersecond,Pa s,x*17.8581
+slugperfootpersecond,Pa s,x*47.8803
+poundalsecondpersquarefoot,Pa s,x*1.48816
+pound-forcesecondpersquarefoot,Pa s,x*47.8803
+pound-forcesecondpersquareinch,Pa s,x*6894.76
+poundalsecondpersquareinch,Pa s,x*204.816
+poundalhourpersquarefoot,Pa s,x*5.36055
+pound-forcehourpersquarefoot,Pa s,x*172.369
+pound-forcehourpersquareinch,Pa s,x*24809.5
+poundalhourpersquareinch,Pa s,x*737.338
+poundalminutepersquarefoot,Pa s,x*0.0893425
+pound-forceminutepersquarefoot,Pa s,x*2.87281
+pound-forceminutepersquareinch,Pa s,x*413.492
+poundalminutepersquareinch,Pa s,x*12.2889
+pascalsecond,Pa s,x
+bel,dB,x*10
+np,dB,x*8.686
+neper,dB,x*8.686
+dbm,dB,x
+decibel-milliwatts,dB,x
+dbu,dB,x
+decibel-unloaded,dB,x
+dbv,dB,x
+decibel-volts,dB,x
+dbw,dB,x*10
+decibel-watts,dB,x*10
+dbspl,dB,x
+decibelsoundpressurelevel,dB,x
+dbfs,dB,x
+decibelfullscale,dB,x
+dba,dB,x
+decibela-weighted,dB,x
+dbb,dB,x
+decibelb-weighted,dB,x
+dbc,dB,x
+decibelc-weighted,dB,x
+dbz,dB,x
+decibelz-weighted,dB,x
+dbsil,dB,x
+decibelspeechinterferencelevel,dB,x
+dbsl,dB,x
+decibelsensationlevel,dB,x
+dbhl,dB,x
+decibelhearinglevel,dB,x
+dbq,dB,x
+decibelq-weighted,dB,x
+dbp,dB,x
+decibelpeak,dB,x
+dbpp,dB,x
+decibelpeak-to-peak,dB,x
+dbrms,dB,x
+decibelrootmeansquare,dB,x
+dbvu,dB,x
+decibelvolumeunit,dB,x
+dbuv,dB,x
+decibelmicrovolts,dB,x
+dbmv,dB,x
+decibelmillivolts,dB,x
+dbµv/m,dB,x
+decibelmicrovoltspermeter,dB,x
+dbm/m,dB,x
+decibelmilliwattspermeter,dB,x
+dbf,dB,x
+decibelfemtowatts,dB,x
+decibelrelativetothecarrier,dB,x
+dbr,dB,x
+decibelrelative,dB,x
+dbo,dB,x
+decibeloffset,dB,x
+dbov,dB,x
+decibeloverload,dB,x
+dbsm,dB,x
+decibelsquaremeter,dB,x
+decibel,dB,x
+kg/mol,g/mol,x*1000
+kilogramspermole,g/mol,x*1000
+mg/mol,g/mol,x/1000
+milligramspermole,g/mol,x/1000
+ug/mol,g/mol,x/1e6
+microgramspermole,g/mol,x/1e6
+ng/mol,g/mol,x/1e9
+nanogramspermole,g/mol,x/1e9
+pg/mol,g/mol,x/1e12
+picogramspermole,g/mol,x/1e12
+fg/mol,g/mol,x/1e15
+femtogramspermole,g/mol,x/1e15
+ag/mol,g/mol,x/1e18
+attogramspermole,g/mol,x/1e18
+zg/mol,g/mol,x/1e21
+zeptogramspermole,g/mol,x/1e21
+yg/mol,g/mol,x/1e24
+yoctogramspermole,g/mol,x/1e24
+lb/mol,g/mol,x*453.59237
+poundspermole,g/mol,x*453.59237
+oz/mol,g/mol,x*28.34952
+ouncespermole,g/mol,x*28.34952
+st/mol,g/mol,x*6350.29318
+stonespermole,g/mol,x*6350.29318
+t/mol,g/mol,x*1e6
+tonnespermole,g/mol,x*1e6
+ct/mol,g/mol,x*200
+caratspermole,g/mol,x*200
+gr/mol,g/mol,x*64.79891
+grainspermole,g/mol,x*64.79891
+dr/mol,g/mol,x*1.7718452
+dramspermole,g/mol,x*1.7718452
+gn/mol,g/mol,x*7776
+gunter'sgrainspermole,g/mol,x*7776
+q/mol,g/mol,x*1e5
+quintalspermole,g/mol,x*1e5
+slug/mol,g/mol,x*14593.903
+slugspermole,g/mol,x*14593.903
+cwt/mol,g/mol,x*50802.34544
+hundredweightspermole,g/mol,x*50802.34544
+kip/mol,g/mol,x*453592.37
+kilopoundspermole,g/mol,x*453592.37
+ozt/mol,g/mol,x*31.1034768
+troyouncespermole,g/mol,x*31.1034768
+dwt/mol,g/mol,x*1.55517384
+pennyweightspermole,g/mol,x*1.55517384
+grt/mol,g/mol,x*1e6
+grosstonnespermole,g/mol,x*1e6
+lt/mol,g/mol,x*1016046.9088
+longtonnespermole,g/mol,x*1016046.9088
+st/mol,g/mol,x*907184.74
+shorttonnespermole,g/mol,x*907184.74
+lbm/mol,g/mol,x*453.59237
+pounds-masspermole,g/mol,x*453.59237
+ozm/mol,g/mol,x*28.34952
+ounces-masspermole,g/mol,x*28.34952
+grm/mol,g/mol,x*64.79891
+grains-masspermole,g/mol,x*64.79891
+drm/mol,g/mol,x*1.7718452
+drams-masspermole,g/mol,x*1.7718452
+gramspermole,g/mol,x
+cm²/s,mm²/s,x*0.01
+squarecentimeterspersecond,mm²/s,x*0.01
+m²/s,mm²/s,x*0.000001
+squaremeterspersecond,mm²/s,x*0.000001
+km²/s,mm²/s,x*1e-12
+squarekilometerspersecond,mm²/s,x*1e-12
+in²/s,mm²/s,x*0.00155
+squareinchespersecond,mm²/s,x*0.00155
+ft²/s,mm²/s,x*0.000010764
+squarefeetpersecond,mm²/s,x*0.000010764
+yd²/s,mm²/s,x*0.000001196
+squareyardspersecond,mm²/s,x*0.000001196
+mi²/s,mm²/s,x*3.86102e-13
+squaremilespersecond,mm²/s,x*3.86102e-13
+nmi²/s,mm²/s,x*2.91553e-13
+squarenauticalmilespersecond,mm²/s,x*2.91553e-13
+acre/s,mm²/s,x*2.47105e-10
+acrespersecond,mm²/s,x*2.47105e-10
+hectare/s,mm²/s,x*1e-10
+hectarespersecond,mm²/s,x*1e-10
+µm²/s,mm²/s,x*1000000
+squaremicrometerspersecond,mm²/s,x*1000000
+nm²/s,mm²/s,x*1e+12
+squarenanometerspersecond,mm²/s,x*1e+12
+pm²/s,mm²/s,x*1e+18
+squarepicometerspersecond,mm²/s,x*1e+18
+fm²/s,mm²/s,x*1e+24
+squarefemtometerspersecond,mm²/s,x*1e+24
+am²/s,mm²/s,x*1e+30
+squareattometerspersecond,mm²/s,x*1e+30
+zm²/s,mm²/s,x*1e+36
+squarezeptometerspersecond,mm²/s,x*1e+36
+ym²/s,mm²/s,x*1e+42
+squareyoctometerspersecond,mm²/s,x*1e+42
+dam²/s,mm²/s,x*1e-6
+squaredecameterspersecond,mm²/s,x*1e-6
+hm²/s,mm²/s,x*1e-8
+squarehectometerspersecond,mm²/s,x*1e-8
+dm²/s,mm²/s,x*0.01
+squaredecimeterspersecond,mm²/s,x*0.01
+squaredekameterspersecond,mm²/s,x*1e-6
+å²/s,mm²/s,x*1e+10
+squareångströmspersecond,mm²/s,x*1e+10
+pc²/s,mm²/s,x*1.05026e-35
+squareparsecspersecond,mm²/s,x*1.05026e-35
+ly²/s,mm²/s,x*1.11709e-34
+squarelightyearspersecond,mm²/s,x*1.11709e-34
+au²/s,mm²/s,x*2.23701e-23
+squareastronomicalunitspersecond,mm²/s,x*2.23701e-23
+mm²/s,mm²/s,x*1e-18
+squaremegameterspersecond,mm²/s,x*1e-18
+gm²/s,mm²/s,x*1e-21
+squaregigameterspersecond,mm²/s,x*1e-21
+tm²/s,mm²/s,x*1e-24
+squareterameterspersecond,mm²/s,x*1e-24
+pm²/s,mm²/s,x*1e-27
+squarepetameterspersecond,mm²/s,x*1e-27
+squaremillimeterspersecond,mm²/s,x
+kg/m²,g/m²,x * 0.001
+kilogramspersquaremeter,g/m²,x * 0.001
+mg/m²,g/m²,x * 1000
+milligramspersquaremeter,g/m²,x * 1000
+µg/m²,g/m²,x * 1000000
+microgramspersquaremeter,g/m²,x * 1000000
+ng/m²,g/m²,x * 1000000000
+nanogramspersquaremeter,g/m²,x * 1000000000
+pg/m²,g/m²,x * 1000000000000
+picogramspersquaremeter,g/m²,x * 1000000000000
+fg/m²,g/m²,x * 1000000000000000
+femtogramspersquaremeter,g/m²,x * 1000000000000000
+ag/m²,g/m²,x * 1000000000000000000
+attogramspersquaremeter,g/m²,x * 1000000000000000000
+zg/m²,g/m²,x * 1000000000000000000000
+zeptogramspersquaremeter,g/m²,x * 1000000000000000000000
+yg/m²,g/m²,x * 1000000000000000000000000
+yoctogramspersquaremeter,g/m²,x * 1000000000000000000000000
+t/m²,g/m²,x * 0.000001
+tonnespersquaremeter,g/m²,x * 0.000001
+lb/m²,g/m²,x * 0.00220462
+poundspersquaremeter,g/m²,x * 0.00220462
+oz/m²,g/m²,x * 0.03527396
+ouncespersquaremeter,g/m²,x * 0.03527396
+st/m²,g/m²,x * 0.00015747
+stonespersquaremeter,g/m²,x * 0.00015747
+cwt/m²,g/m²,x * 0.00001968413
+hundredweightspersquaremeter,g/m²,x * 0.00001968413
+gr/m²,g/m²,x * 15.43235835
+grainspersquaremeter,g/m²,x * 15.43235835
+dr/m²,g/m²,x * 0.56438339
+dramspersquaremeter,g/m²,x * 0.56438339
+c/m²,g/m²,x * 5
+caratspersquaremeter,g/m²,x * 5
+q/m²,g/m²,x * 0.00001
+quintalspersquaremeter,g/m²,x * 0.00001
+slug/m²,g/m²,x * 0.00006852177
+slugspersquaremeter,g/m²,x * 0.00006852177
+ct/m²,g/m²,x * 5
+metriccaratspersquaremeter,g/m²,x * 5
+lbt/m²,g/m²,x * 0.00267923
+troypoundspersquaremeter,g/m²,x * 0.00267923
+ozt/m²,g/m²,x * 0.03215075
+troyouncespersquaremeter,g/m²,x * 0.03215075
+dwt/m²,g/m²,x * 0.64301493
+pennyweightspersquaremeter,g/m²,x * 0.64301493
+grt/m²,g/m²,x * 15.4323584
+troygrainspersquaremeter,g/m²,x * 15.4323584
+scwt/m²,g/m²,x * 0.00002204623
+shorthundredweightspersquaremeter,g/m²,x * 0.00002204623
+lcwt/m²,g/m²,x * 0.00001968413
+longhundredweightspersquaremeter,g/m²,x * 0.00001968413
+stt/m²,g/m²,x * 0.0001883465
+troystonespersquaremeter,g/m²,x * 0.0001883465
+gramspersquaremeter,g/m²,x
+min,s,x*60
+minutes,s,x*60
+h,s,x*3600
+hours,s,x*3600
+d,s,x*86400
+days,s,x*86400
+ms,s,x/1000
+milliseconds,s,x/1000
+us,s,x/1000000
+microseconds,s,x/1000000
+ns,s,x/1000000000
+nanoseconds,s,x/1000000000
+ps,s,x/1000000000000
+picoseconds,s,x/1000000000000
+fs,s,x/1000000000000000
+femtoseconds,s,x/1000000000000000
+as,s,x/1000000000000000000
+attoseconds,s,x/1000000000000000000
+zs,s,x/1000000000000000000000
+zeptoseconds,s,x/1000000000000000000000
+ys,s,x/1000000000000000000000000
+yoctoseconds,s,x/1000000000000000000000000
+ds,s,x/10
+deciseconds,s,x/10
+cs,s,x/100
+centiseconds,s,x/100
+μs,s,x/1000000
+ks,s,x*1000
+kiloseconds,s,x*1000
+ms,s,x*1000000
+megaseconds,s,x*1000000
+gs,s,x*1000000000
+gigaseconds,s,x*1000000000
+ts,s,x*1000000000000
+teraseconds,s,x*1000000000000
+ps,s,x*1000000000000000
+petaseconds,s,x*1000000000000000
+es,s,x*1000000000000000000
+exaseconds,s,x*1000000000000000000
+zs,s,x*1000000000000000000000
+zettaseconds,s,x*1000000000000000000000
+ys,s,x*1000000000000000000000000
+yottaseconds,s,x*1000000000000000000000000
+decade,s,x*315360000
+century,s,x*3153600000
+seconds,s,x
+n/m,J/m,x*1
+newtonspermeter,J/m,x*1
+w/m,J/m,x*1
+wattspermeter,J/m,x*1
+pa/m,J/m,x*1
+pascalspermeter,J/m,x*1
+kg.m/s^2/m,J/m,x*1
+kilogrammeterpersecondsquaredpermeter,J/m,x*1
+n.s/m,J/m,x*1
+newtonsecondpermeter,J/m,x*1
+kg.m^2/s^2/m,J/m,x*1
+kilogrammetersquaredpersecondsquaredpermeter,J/m,x*1
+w.s/m,J/m,x*1
+wattsecondpermeter,J/m,x*1
+j.s/m,J/m,x*1
+joulesecondpermeter,J/m,x*1
+kg.m^2/s^3/m,J/m,x*1
+kilogrammetersquaredpersecondcubedpermeter,J/m,x*1
+n.m/m,J/m,x*1
+newtonmeterpermeter,J/m,x*1
+kg.m^2/s^2/m^2,J/m,x*1
+kilogrammetersquaredpersecondsquaredpermetersquared,J/m,x*1
+w.s/m^2,J/m,x*1
+wattsecondpermetersquared,J/m,x*1
+j.s/m^2,J/m,x*1
+joulesecondpermetersquared,J/m,x*1
+kg.m^2/s^3/m^2,J/m,x*1
+kilogrammetersquaredpersecondcubedpermetersquared,J/m,x*1
+n.m/m^2,J/m,x*1
+newtonmeterpermetersquared,J/m,x*1
+kg.m^2/s^2/m^3,J/m,x*1
+kilogrammetersquaredpersecondsquaredpermetercubed,J/m,x*1
+w.s/m^3,J/m,x*1
+wattsecondpermetercubed,J/m,x*1
+j.s/m^3,J/m,x*1
+joulesecondpermetercubed,J/m,x*1
+kg.m^2/s^3/m^3,J/m,x*1
+kilogrammetersquaredpersecondcubedpermetercubed,J/m,x*1
+n.m/m^3,J/m,x*1
+newtonmeterpermetercubed,J/m,x*1
+kg.m^2/s^2/m^4,J/m,x*1
+kilogrammetersquaredpersecondsquaredpermetertothepowerof4,J/m,x*1
+w.s/m^4,J/m,x*1
+wattsecondpermetertothepowerof4,J/m,x*1
+j.s/m^4,J/m,x*1
+joulesecondpermetertothepowerof4,J/m,x*1
+kg.m^2/s^3/m^4,J/m,x*1
+kilogrammetersquaredpersecondcubedpermetertothepowerof4,J/m,x*1
+n.m/m^4,J/m,x*1
+newtonmeterpermetertothepowerof4,J/m,x*1
+kg.m^2/s^2/m^5,J/m,x*1
+kilogrammetersquaredpersecondsquaredpermetertothepowerof5,J/m,x*1
+w.s/m^5,J/m,x*1
+wattsecondpermetertothepowerof5,J/m,x*1
+j.s/m^5,J/m,x*1
+joulesecondpermetertothepowerof5,J/m,x*1
+kg.m^2/s^3/m^5,J/m,x*1
+kilogrammetersquaredpersecondcubedpermetertothepowerof5,J/m,x*1
+n.m/m^5,J/m,x*1
+newtonmeterpermetertothepowerof5,J/m,x*1
+joulespermeter,J/m,x
+cm/min,mm/min,x*10
+centimetersperminute,mm/min,x*10
+m/min,mm/min,x*1000
+metersperminute,mm/min,x*1000
+km/min,mm/min,x*1000000
+kilometersperminute,mm/min,x*1000000
+in/min,mm/min,x*25.4
+inchesperminute,mm/min,x*25.4
+ft/min,mm/min,x*304.8
+feetperminute,mm/min,x*304.8
+yd/min,mm/min,x*914.4
+yardsperminute,mm/min,x*914.4
+mi/min,mm/min,x*1609344
+milesperminute,mm/min,x*1609344
+mm/h,mm/min,x/60
+millimetersperhour,mm/min,x/60
+cm/h,mm/min,x/6
+centimetersperhour,mm/min,x/6
+m/h,mm/min,x/0.06
+metersperhour,mm/min,x/0.06
+km/h,mm/min,x/0.00006
+kilometersperhour,mm/min,x/0.00006
+in/h,mm/min,x/2.36
+inchesperhour,mm/min,x/2.36
+ft/h,mm/min,x/0.198
+feetperhour,mm/min,x/0.198
+yd/h,mm/min,x/0.055
+yardsperhour,mm/min,x/0.055
+mi/h,mm/min,x/0.000037
+milesperhour,mm/min,x/0.000037
+mm/s,mm/min,x*60
+millimeterspersecond,mm/min,x*60
+cm/s,mm/min,x*600
+centimeterspersecond,mm/min,x*600
+m/s,mm/min,x*60000
+meterspersecond,mm/min,x*60000
+km/s,mm/min,x*60000000
+kilometerspersecond,mm/min,x*60000000
+in/s,mm/min,x*1524
+inchespersecond,mm/min,x*1524
+ft/s,mm/min,x*18288
+feetpersecond,mm/min,x*18288
+yd/s,mm/min,x*54864
+yardspersecond,mm/min,x*54864
+mi/s,mm/min,x*96560640
+milespersecond,mm/min,x*96560640
+mm/day,mm/min,x/0.000694
+millimetersperday,mm/min,x/0.000694
+cm/day,mm/min,x/0.00694
+centimetersperday,mm/min,x/0.00694
+m/day,mm/min,x/0.000694
+metersperday,mm/min,x/0.000694
+km/day,mm/min,x/0.000000694
+kilometersperday,mm/min,x/0.000000694
+in/day,mm/min,x/0.0176
+inchesperday,mm/min,x/0.0176
+ft/day,mm/min,x/0.211
+feetperday,mm/min,x/0.211
+yd/day,mm/min,x/0.632
+yardsperday,mm/min,x/0.632
+mi/day,mm/min,x/0.00044
+milesperday,mm/min,x/0.00044
+millimetersperminute,mm/min,x
+cal/(g°c),J/(kg K),x * 4.184
+caloriespergramdegreecelsius,J/(kg K),x * 4.184
+btu/(lb°f),J/(kg K),x * 1.8
+britishthermalunitsperpounddegreefahrenheit,J/(kg K),x * 1.8
+kcal/(kg°c),J/(kg K),x * 4.184
+kilocaloriesperkilogramdegreecelsius,J/(kg K),x * 4.184
+wh/(kgk),J/(kg K),x * 0.00027778
+watthoursperkilogramkelvin,J/(kg K),x * 0.00027778
+btu/(lbk),J/(kg K),x * 1.8
+britishthermalunitsperpoundkelvin,J/(kg K),x * 1.8
+cal/(gk),J/(kg K),x * 4.184
+caloriespergramkelvin,J/(kg K),x * 4.184
+kcal/(kgk),J/(kg K),x * 4.184
+kilocaloriesperkilogramkelvin,J/(kg K),x * 4.184
+wh/(kg°c),J/(kg K),x * 0.00027778
+watthoursperkilogramdegreecelsius,J/(kg K),x * 0.00027778
+btu/(lb°c),J/(kg K),x * 1.8
+britishthermalunitsperpounddegreecelsius,J/(kg K),x * 1.8
+cal/(kgk),J/(kg K),x * 0.004184
+caloriesperkilogramkelvin,J/(kg K),x * 0.004184
+kcal/(g°c),J/(kg K),x * 4184
+kilocaloriespergramdegreecelsius,J/(kg K),x * 4184
+wh/(gk),J/(kg K),x * 0.27778
+watthourspergramkelvin,J/(kg K),x * 0.27778
+btu/(kgk),J/(kg K),x * 0.4184
+britishthermalunitsperkilogramkelvin,J/(kg K),x * 0.4184
+cal/(kg°c),J/(kg K),x * 0.004184
+caloriesperkilogramdegreecelsius,J/(kg K),x * 0.004184
+kcal/(gk),J/(kg K),x * 4184
+kilocalitiespergramkelvin,J/(kg K),x * 4184
+wh/(g°c),J/(kg K),x * 0.27778
+watthourspergramdegreecelsius,J/(kg K),x * 0.27778
+btu/(kg°c),J/(kg K),x * 0.4184
+britishthermalunitsperkilogramdegreecelsius,J/(kg K),x * 0.4184
+cal/(lbk),J/(kg K),x * 1.896
+caloriesperpoundkelvin,J/(kg K),x * 1.896
+kcal/(lb°c),J/(kg K),x * 1896
+kilocaloriesperpounddegreecelsius,J/(kg K),x * 1896
+wh/(lbk),J/(kg K),x * 0.12598
+watthoursperpoundkelvin,J/(kg K),x * 0.12598
+btu/(gk),J/(kg K),x * 238.8459
+britishthermalunitspergramkelvin,J/(kg K),x * 238.8459
+cal/(lb°c),J/(kg K),x * 1.896
+caloriesperpounddegreecelsius,J/(kg K),x * 1.896
+kcal/(lbk),J/(kg K),x * 1896
+kilocaloriesperpoundkelvin,J/(kg K),x * 1896
+wh/(lb°c),J/(kg K),x * 0.12598
+watthoursperpounddegreecelsius,J/(kg K),x * 0.12598
+btu/(g°c),J/(kg K),x * 238.8459
+britishthermalunitspergramdegreecelsius,J/(kg K),x * 238.8459
+joulesperkilogramkelvin,J/(kg K),x
+mgc/g,µgC/g,x * 0.001
+milligramsofcarbonpergram,µgC/g,x * 0.001
+gc/g,µgC/g,x * 0.000001
+gramsofcarbonpergram,µgC/g,x * 0.000001
+kgc/g,µgC/g,x * 0.000000001
+kilogramsofcarbonpergram,µgC/g,x * 0.000000001
+lbc/g,µgC/g,x * 0.00000000220462
+poundsofcarbonpergram,µgC/g,x * 0.00000000220462
+ozc/g,µgC/g,x * 0.000000035274
+ouncesofcarbonpergram,µgC/g,x * 0.000000035274
+tc/g,µgC/g,x * 0.00000000000110231
+tonsofcarbonpergram,µgC/g,x * 0.00000000000110231
+ctc/g,µgC/g,x * 0.000005
+caratsofcarbonpergram,µgC/g,x * 0.000005
+grc/g,µgC/g,x * 0.0000154324
+grainsofcarbonpergram,µgC/g,x * 0.0000154324
+stc/g,µgC/g,x * 0.000000000157473
+stonesofcarbonpergram,µgC/g,x * 0.000000000157473
+drc/g,µgC/g,x * 0.000000564383
+dramsofcarbonpergram,µgC/g,x * 0.000000564383
+qc/g,µgC/g,x * 0.00000000001
+quintalsofcarbonpergram,µgC/g,x * 0.00000000001
+slugc/g,µgC/g,x * 0.0000000000685218
+slugsofcarbonpergram,µgC/g,x * 0.0000000000685218
+npc/g,µgC/g,x * 0.00000000000980665
+newtonsofcarbonpergram(onearth),µgC/g,x * 0.00000000000980665
+dync/g,µgC/g,x * 0.00000000101972
+dynesofcarbonpergram,µgC/g,x * 0.00000000101972
+microgramsofcarbonpergram,µgC/g,x
+ppm,µg/g,x*1
+partspermillion,µg/g,x*1
+mg/kg,µg/g,x*1
+milligramsperkilogram,µg/g,x*1
+ng/mg,µg/g,x*1000
+nanogramspermilligram,µg/g,x*1000
+pg/µg,µg/g,x*1000
+picogramspermicrogram,µg/g,x*1000
+kg/t,µg/g,x*1
+kilogramspertonne,µg/g,x*1
+g/kg,µg/g,x*1
+gramsperkilogram,µg/g,x*1
+µg/mg,µg/g,x*1000
+microgramspermilligram,µg/g,x*1000
+ng/g,µg/g,x*1000000
+nanogramspergram,µg/g,x*1000000
+pg/g,µg/g,x*1000000000
+picogramspergram,µg/g,x*1000000000
+mg/g,µg/g,x/1000
+milligramspergram,µg/g,x/1000
+g/g,µg/g,x/1000000
+gramspergram,µg/g,x/1000000
+kg/g,µg/g,x/1000000000
+kilogramspergram,µg/g,x/1000000000
+t/g,µg/g,x/1000000000000
+tonnespergram,µg/g,x/1000000000000
+µg/kg,µg/g,x*1000000
+microgramsperkilogram,µg/g,x*1000000
+ng/kg,µg/g,x*1000000000
+nanogramsperkilogram,µg/g,x*1000000000
+pg/kg,µg/g,x*1000000000000
+picogramsperkilogram,µg/g,x*1000000000000
+mg/t,µg/g,x*1000000
+milligramspertonne,µg/g,x*1000000
+g/t,µg/g,x*1000000000
+gramspertonne,µg/g,x*1000000000
+kg/t,µg/g,x*1000000000000
+kilogramspertonne,µg/g,x*1000000000000
+t/t,µg/g,x/1000000000000
+tonnespertonne,µg/g,x/1000000000000
+µg/t,µg/g,x*1000000000000
+microgramspertonne,µg/g,x*1000000000000
+ng/t,µg/g,x*1000000000000000
+nanogramspertonne,µg/g,x*1000000000000000
+pg/t,µg/g,x*1000000000000000000
+picogramspertonne,µg/g,x*1000000000000000000
+mg/mg,µg/g,x/1000
+milligramspermilligram,µg/g,x/1000
+g/mg,µg/g,x/1000
+gramspermilligram,µg/g,x/1000
+kg/mg,µg/g,x/1000000
+kilogramspermilligram,µg/g,x/1000000
+t/mg,µg/g,x/1000000000
+tonnespermilligram,µg/g,x/1000000000
+µg/µg,µg/g,x/1
+microgramspermicrogram,µg/g,x/1
+ng/µg,µg/g,x*1000
+nanogramspermicrogram,µg/g,x*1000
+pg/µg,µg/g,x*1000000
+picogramspermicrogram,µg/g,x*1000000
+microgramspergram,µg/g,x
+cal,J,x*0.239006
+calorie,J,x*0.239006
+btu,J,x*0.000947817
+britishthermalunit,J,x*0.000947817
+ev,J,x*6.242e+18
+electronvolt,J,x*6.242e+18
+ft.lbf,J,x*0.737562
+foot-poundforce,J,x*0.737562
+erg,J,x*1e+7
+wh,J,x*0.000277778
+watthour,J,x*0.000277778
+kcal,J,x*0.000239006
+kilocalorie,J,x*0.000239006
+hph,J,x*0.000000372506
+horsepowerhour,J,x*0.000000372506
+therm,J,x*0.00000000947817
+quad,J,x*9.47817e-19
+tontnt,J,x*0.00000000239006
+tonoftnt,J,x*0.00000000239006
+mmbtu,J,x*0.000000000947817
+millionbritishthermalunits,J,x*0.000000000947817
+gj,J,x*0.000000001
+gigajoule,J,x*0.000000001
+mj,J,x*0.001
+megajoule,J,x*0.001
+kj,J,x*0.001
+kilojoule,J,x*0.001
+mwh,J,x*0.277778
+milliwatthour,J,x*0.277778
+kwh,J,x*0.000277778
+kilowatthour,J,x*0.000277778
+mwh,J,x*0.000000277778
+megawatthour,J,x*0.000000277778
+gwh,J,x*0.000000000277778
+gigawatthour,J,x*0.000000000277778
+twh,J,x*0.000000000000277778
+terawatthour,J,x*0.000000000000277778
+pwh,J,x*0.000000000000000277778
+petawatthour,J,x*0.000000000000000277778
+ewh,J,x*0.000000000000000000277778
+exawatthour,J,x*0.000000000000000000277778
+zwh,J,x*0.000000000000000000000277778
+zettawatthour,J,x*0.000000000000000000000277778
+ywh,J,x*0.000000000000000000000000277778
+yottawatthour,J,x*0.000000000000000000000000277778
+ry,J,x*4.58742e+17
+rydberg,J,x*4.58742e+17
+ha,J,x*2.29371e+17
+hartree,J,x*2.29371e+17
+a.u.,J,x*2.29371e+17
+atomicunitofenergy,J,x*2.29371e+17
+th,J,x*0.239005736
+thermochemicalcalorie,J,x*0.239005736
+it,J,x*0.238845896.
+internationaltablecalorie,J,x*0.238845896.
+joule,J,x
+°c,°C,x
+mpa,MPa,x
+kg/m³,kg/m³,x
+kj/m²,kJ/m²,x
+g/cm³,g/cm³,x
+ml/g,ml/g,x
+cm³/g,cm³/g,x
+mm,mm,x
+kn/m,kN/m,x
+g/10min,g/10min,x
+kv/mm,kV/mm,x
+w/(mk),W/(m K),x
+cm³/10min,cm³/10min,x
+pas,Pa s,x
+db,dB,x
+g/mol,g/mol,x
+mm²/s,mm²/s,x
+g/m²,g/m²,x
+s,s,x
+j/m,J/m,x
+mm/min,mm/min,x
+j/(kgk),J/(kg K),x
+µgc/g,µgC/g,x
+µg/g,µg/g,x
+j,J,x
+um,mm,x/1000
+ω*cm,Ohm*m,x/100
+ohmcentimeter,Ohm*m,x/100
+ω*mm,Ohm*m,x/1000
+ohmmillimeter,Ohm*m,x/1000
+ω*km,Ohm*m,x*1000
+ohmkilometer,Ohm*m,x*1000
+ω*μm,Ohm*m,x/1e6
+ohmmicrometer,Ohm*m,x/1e6
+ω*nm,Ohm*m,x/1e9
+ohmnanometer,Ohm*m,x/1e9
+ω*pm,Ohm*m,x/1e12
+ohmpicometer,Ohm*m,x/1e12
+ω*fm,Ohm*m,x/1e15
+ohmfemtometer,Ohm*m,x/1e15
+ω*am,Ohm*m,x/1e18
+ohmattometer,Ohm*m,x/1e18
+ω*zm,Ohm*m,x/1e21
+ohmzeptometer,Ohm*m,x/1e21
+ω*ym,Ohm*m,x/1e24
+ohmyoctometer,Ohm*m,x/1e24
+kω*m,Ohm*m,x*1000
+kiloohmmeter,Ohm*m,x*1000
+mω*m,Ohm*m,x*1e6
+megaohmmeter,Ohm*m,x*1e6
+gω*m,Ohm*m,x*1e9
+gigaohmmeter,Ohm*m,x*1e9
+tω*m,Ohm*m,x*1e12
+teraohmmeter,Ohm*m,x*1e12
+pω*m,Ohm*m,x*1e15
+petaohmmeter,Ohm*m,x*1e15
+eω*m,Ohm*m,x*1e18
+exaohmmeter,Ohm*m,x*1e18
+zω*m,Ohm*m,x*1e21
+zettaohmmeter,Ohm*m,x*1e21
+yω*m,Ohm*m,x*1e24
+yottaohmmeter,Ohm*m,x*1e24
+mω*m,Ohm*m,x/1000
+milliohmmeter,Ohm*m,x/1000
+μω*m,Ohm*m,x/1e6
+microohmmeter,Ohm*m,x/1e6
+nω*m,Ohm*m,x/1e9
+nanoohmmeter,Ohm*m,x/1e9
+pω*m,Ohm*m,x/1e12
+picoohmmeter,Ohm*m,x/1e12
+fω*m,Ohm*m,x/1e15
+femtoohmmeter,Ohm*m,x/1e15
+aω*m,Ohm*m,x/1e18
+attoohmmeter,Ohm*m,x/1e18
+zω*m,Ohm*m,x/1e21
+zeptoohmmeter,Ohm*m,x/1e21
+yω*m,Ohm*m,x/1e24
+yoctoohmmeter,Ohm*m,x/1e24
+ohmmeter,Ohm*m,x
+ohm*cm,Ohm*m,x/100
+ohm*mm,Ohm*m,x/1000
+ohm*km,Ohm*m,x*1000
+ohm*μm,Ohm*m,x/1e6
+ohm*nm,Ohm*m,x/1e9
+ohm*pm,Ohm*m,x/1e12
+ohm*fm,Ohm*m,x/1e15
+ohm*am,Ohm*m,x/1e18
+ohm*zm,Ohm*m,x/1e21
+ohm*ym,Ohm*m,x/1e24
+kohm*m,Ohm*m,x*1000
+mohm*m,Ohm*m,x*1e6
+gohm*m,Ohm*m,x*1e9
+tohm*m,Ohm*m,x*1e12
+pohm*m,Ohm*m,x*1e15
+eohm*m,Ohm*m,x*1e18
+zohm*m,Ohm*m,x*1e21
+yohm*m,Ohm*m,x*1e24
+mohm*m,Ohm*m,x/1000
+μohm*m,Ohm*m,x/1e6
+nohm*m,Ohm*m,x/1e9
+pohm*m,Ohm*m,x/1e12
+fohm*m,Ohm*m,x/1e15
+aohm*m,Ohm*m,x/1e18
+zohm*m,Ohm*m,x/1e21
+yohm*m,Ohm*m,x/1e24
+ohm-m,Ohm*m,x
+ohm.m,Ohm*m,x
+ohm m,Ohm*m,x
+ohmm,Ohm*m,x
+kg/m3,kg/m³,x
+°k,°C,x - 273.15
+degree k,°C,x - 273.15
+deg k,°C,x - 273.15
+deg f,°C,((x) - 32)*(5/9)
+degree f,°C,((x) - 32)*(5/9)
+deg c,°C,x
+degree c,°C,x
+°kelvin,°C,x - 273.15
+degree kelvin,°C,x - 273.15
+deg kelvin,°C,x - 273.15
+deg fahrenheit,°C,((x) - 32)*(5/9)
+degree fahrenheit,°C,((x) - 32)*(5/9)
+deg celsius,°C,x
+degree celsius,°C,x
+°fahrenheit,°C,((x) - 32)*(5/9)
+°celsius,°C,x
+

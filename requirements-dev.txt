@@ -1,0 +1,20 @@
+# Dependencies for running the DATA-PREP notebooks in "Development files/"
+# (NOT the runtime service — that uses requirements.txt).
+# Use with Python 3.11 (3.9–3.11 supported by snowflake-snowpark + pyarrow).
+#
+#   conda create -n gst_ner_dev python=3.11 -y
+#   conda activate gst_ner_dev
+#   pip install -r requirements-dev.txt
+#   python -m ipykernel install --user --name gst_ner_dev --display-name "Python 3.11 (gst_ner_dev)"
+
+# Snowflake access + pandas/pyarrow fetch support (the [pandas] extra is the key part)
+snowflake-snowpark-python[pandas]
+snowflake-connector-python[pandas]
+
+# Data handling
+pandas==2.0.3
+numpy==1.24.4
+openpyxl==3.1.5          # read/write .xlsx (abbreviations, etc.)
+
+# Jupyter kernel so VS Code can select this env
+ipykernel

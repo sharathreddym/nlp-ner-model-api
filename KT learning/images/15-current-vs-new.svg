@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1340 800" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="g1" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#555"/>
+    </marker>
+    <marker id="g2" markerWidth="14" markerHeight="14" refX="6" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#2f8a3f"/>
+    </marker>
+    <style>
+      .title{font-size:26px;font-weight:700;fill:#1a2b4a}
+      .sub{font-size:14px;fill:#5a6b8a}
+      .ph{font-size:17px;font-weight:700}
+      .bx{font-size:14px;font-weight:600;fill:#233}
+      .small{font-size:12px;fill:#4a5568}
+      .cap{font-size:11.5px;fill:#666}
+      .edge{stroke:#555;stroke-width:2;fill:none;marker-end:url(#g1)}
+      .tag{font-size:11px;font-weight:700}
+    </style>
+  </defs>
+  <rect width="1340" height="800" fill="#f7f9fc"/>
+
+  <text x="40" y="46" class="title">What changes — today vs the retrieval approach</text>
+  <text x="40" y="72" class="sub">Same input, same output schema, same rule layer. The deviation is where the entity knowledge lives.</text>
+
+  <!-- ============ LEFT PANEL ============ -->
+  <rect x="40" y="110" width="600" height="640" rx="16" fill="#ffffff" stroke="#c9b2b2" stroke-width="2.5"/>
+  <rect x="40" y="110" width="600" height="44" rx="16" fill="#f6e9e9" stroke="#c9b2b2" stroke-width="2.5"/>
+  <rect x="40" y="140" width="600" height="14" fill="#f6e9e9"/>
+  <text x="340" y="140" text-anchor="middle" class="ph" fill="#8a2b2b">TODAY — knowledge lives in the model weights</text>
+
+  <rect x="80" y="176" width="520" height="60" rx="10" fill="#eef1f5" stroke="#8aa" stroke-width="1.8"/>
+  <text x="340" y="202" text-anchor="middle" class="bx">🔎 User search query</text>
+  <text x="340" y="222" text-anchor="middle" class="small">"30% gf uv nylon66 ul94v0"</text>
+
+  <rect x="80" y="258" width="520" height="60" rx="10" fill="#e8edf5" stroke="#8aa" stroke-width="1.8"/>
+  <text x="340" y="284" text-anchor="middle" class="bx">🧹 pre_processing.py — cleaning rules</text>
+  <text x="340" y="304" text-anchor="middle" class="small">lowercase · abbreviations · symbols · normalized form</text>
+
+  <rect x="80" y="340" width="520" height="60" rx="10" fill="#fff7df" stroke="#d90" stroke-width="1.8"/>
+  <text x="340" y="366" text-anchor="middle" class="bx">⚡ Fast-path — exact match on the WHOLE query</text>
+  <text x="340" y="386" text-anchor="middle" class="small">all-or-nothing: "pa6 gf30" hits, "pa6 gf30 for connectors" misses</text>
+
+  <rect x="80" y="422" width="520" height="60" rx="10" fill="#cce5ff" stroke="#36c" stroke-width="2.4"/>
+  <text x="340" y="448" text-anchor="middle" class="bx" fill="#15467f">🧠 Fine-tuned GPT-4.1-mini — 16 of 17 labels</text>
+  <text x="340" y="468" text-anchor="middle" class="small">thin prompt · no retrieval · no examples · dictionary memorised in weights</text>
+
+  <rect x="80" y="504" width="520" height="60" rx="10" fill="#ffd9d9" stroke="#c33" stroke-width="1.8"/>
+  <text x="340" y="530" text-anchor="middle" class="bx" fill="#922">🔧 post_processing — heavy rule layer</text>
+  <text x="340" y="550" text-anchor="middle" class="small">units · UL→PLC · out-of-scope · validate · dedup · fuzzy reclassify</text>
+
+  <rect x="80" y="586" width="520" height="60" rx="10" fill="#eef3ec" stroke="#8a8" stroke-width="1.8"/>
+  <text x="340" y="612" text-anchor="middle" class="bx">📦 17-key entity JSON</text>
+  <text x="340" y="632" text-anchor="middle" class="small">one committed answer · no confidence · no evidence</text>
+
+  <rect x="80" y="668" width="520" height="62" rx="10" fill="#fbeaea" stroke="#c33" stroke-width="1.8"/>
+  <text x="340" y="694" text-anchor="middle" class="bx" fill="#922">➕ To add one new grade:</text>
+  <text x="340" y="714" text-anchor="middle" class="small">rebuild training data → fine-tune → validate → redeploy  ·  days, and a cost per cycle</text>
+
+  <path class="edge" d="M340 238 V256"/>
+  <path class="edge" d="M340 320 V338"/>
+  <path class="edge" d="M340 402 V420"/>
+  <path class="edge" d="M340 484 V502"/>
+  <path class="edge" d="M340 566 V584"/>
+
+  <!-- ============ CENTRE ARROW ============ -->
+  <path d="M652 420 H688" stroke="#2f8a3f" stroke-width="6" fill="none" marker-end="url(#g2)"/>
+  <text x="670" y="404" text-anchor="middle" class="tag" fill="#2f8a3f">shift</text>
+
+  <!-- ============ RIGHT PANEL ============ -->
+  <rect x="700" y="110" width="600" height="640" rx="16" fill="#ffffff" stroke="#a9cdb0" stroke-width="2.5"/>
+  <rect x="700" y="110" width="600" height="44" rx="16" fill="#e9f4ec" stroke="#a9cdb0" stroke-width="2.5"/>
+  <rect x="700" y="140" width="600" height="14" fill="#e9f4ec"/>
+  <text x="1000" y="140" text-anchor="middle" class="ph" fill="#1c6b2c">PROPOSED — knowledge lives in an index</text>
+
+  <rect x="740" y="176" width="520" height="60" rx="10" fill="#eef1f5" stroke="#8aa" stroke-width="1.8"/>
+  <text x="1000" y="202" text-anchor="middle" class="bx">🔎 User search query</text>
+  <text x="1000" y="222" text-anchor="middle" class="small">identical input — nothing upstream changes</text>
+
+  <rect x="740" y="258" width="520" height="60" rx="10" fill="#e8edf5" stroke="#8aa" stroke-width="1.8"/>
+  <text x="1000" y="284" text-anchor="middle" class="bx">🧹 pre_processing.py — cleaning rules</text>
+  <text x="1000" y="304" text-anchor="middle" class="small">UNCHANGED — the normalized form becomes the lookup key</text>
+
+  <rect x="740" y="340" width="520" height="60" rx="10" fill="#d9f7d9" stroke="#2f8a3f" stroke-width="2.6"/>
+  <text x="1000" y="366" text-anchor="middle" class="bx" fill="#1c6b2c">🔎 Elasticsearch retrieval — NEW</text>
+  <text x="1000" y="386" text-anchor="middle" class="small">tags every span: exact · fuzzy (typos) · kNN (paraphrase) · scope-filtered</text>
+
+  <rect x="740" y="422" width="520" height="60" rx="10" fill="#cce5ff" stroke="#36c" stroke-width="2.4"/>
+  <text x="1000" y="448" text-anchor="middle" class="bx" fill="#15467f">⚡ rules only  —or—  🤖 stock GPT-4.1-mini</text>
+  <text x="1000" y="468" text-anchor="middle" class="small">no fine-tune · prompt = retrieved candidates + kNN few-shot + JSON schema</text>
+
+  <rect x="740" y="504" width="520" height="60" rx="10" fill="#ffd9d9" stroke="#c33" stroke-width="1.8"/>
+  <text x="1000" y="530" text-anchor="middle" class="bx" fill="#922">🔧 post_processing — heavy rule layer</text>
+  <text x="1000" y="550" text-anchor="middle" class="small">UNCHANGED — same conversions, same validation, same out-of-scope logic</text>
+
+  <rect x="740" y="586" width="520" height="60" rx="10" fill="#eef3ec" stroke="#8a8" stroke-width="1.8"/>
+  <text x="1000" y="612" text-anchor="middle" class="bx">📦 17-key entity JSON + confidence + evidence</text>
+  <text x="1000" y="632" text-anchor="middle" class="small">same schema · can now say "unsure" and show what matched</text>
+
+  <rect x="740" y="668" width="520" height="62" rx="10" fill="#e9f4ec" stroke="#2f8a3f" stroke-width="1.8"/>
+  <text x="1000" y="694" text-anchor="middle" class="bx" fill="#1c6b2c">➕ To add one new grade:</text>
+  <text x="1000" y="714" text-anchor="middle" class="small">index one document  ·  live on the very next query, no redeploy</text>
+
+  <path class="edge" d="M1000 238 V256"/>
+  <path class="edge" d="M1000 320 V338"/>
+  <path class="edge" d="M1000 402 V420"/>
+  <path class="edge" d="M1000 484 V502"/>
+  <path class="edge" d="M1000 566 V584"/>
+
+  <text x="40" y="782" class="cap">The deviation is confined to two stations: retrieval is added, and the fine-tuned model is replaced by a stock model that is shown the answer candidates. Cleaning and the rule layer are carried over as-is.</text>
+</svg>

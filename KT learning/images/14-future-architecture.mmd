@@ -1,0 +1,50 @@
+%% Chemille NER — PROPOSED future architecture.
+%% Green = NEW components that close the current gaps.  Blue = kept from today.
+flowchart TB
+    subgraph KB["🧩 UPGRADED KNOWLEDGEBASE · built by new data frameworks"]
+        direction TB
+        SF[("❄️ Snowflake master<br/>grades · certs · synonyms")]
+        SPECS[("📄 Grade spec sheets / TDS<br/>full property data")]
+        KG[["🕸️ CTQ ↔ APPLICATION ↔ GRADE<br/>Knowledge Graph"]]
+        ADE[("👷 Captured ADE knowledge<br/>tacit expertise → structured")]
+        IDX[("🔎 Retrieval index / embeddings")]
+        SF --> IDX
+        SPECS --> IDX
+        KG --> IDX
+        ADE --> KG
+    end
+
+    subgraph FLOW["⚙️ AGENTIC SERVING FLOW · per query"]
+        direction TB
+        Q["🔎 User query"] --> PRE["🧹 pre_processing"]
+        PRE --> RET["📚 Retrieval (RAG)<br/>ground on live knowledgebase"]
+        RET --> NER["🧠 NER extraction<br/>fine-tuned LLM + retrieved context"]
+        NER --> CONF{"🎯 Confidence &<br/>Ambiguity check<br/>per-entity"}
+        CONF -- "ambiguous / low" --> CLAR["❓ Ask clarifying question /<br/>return candidates + flag"]
+        CONF -- confident --> CHEM["⚗️ Chemistry reasoning agent<br/>substitutions · CTQ satisfaction"]
+        CHEM --> POST["🔧 rule post_processing<br/>unit conv · UL→PLC · OOS · validate"]
+        POST --> OUT["📦 Entities + per-entity confidence<br/>+ grade matches + rationale"]
+    end
+
+    subgraph LOOP["🔁 EVALUATION & FEEDBACK"]
+        direction TB
+        EVAL["📊 Agent evaluation harness<br/>large data-grounded suite · metrics · regression"]
+        HITL["🧑‍🔬 ADE / human-in-the-loop review"]
+    end
+
+    IDX -. grounds .-> RET
+    KG -. reason over .-> CHEM
+    CLAR --> HITL
+    OUT --> EVAL
+    HITL -. corrections feed back .-> ADE
+    EVAL -. gaps drive retrain / new rules .-> NER
+
+    classDef new  fill:#e9f4ec,stroke:#3f8a4d,stroke-width:2px,color:#204d2c;
+    classDef keep fill:#e7f3f6,stroke:#1f8a9c,color:#0f4b56;
+    classDef data fill:#eef1f5,stroke:#64748b,color:#243244;
+    classDef dec  fill:#fbf1d9,stroke:#cf9f3f,stroke-width:2px,color:#6b4d16;
+
+    class SF,SPECS,IDX data;
+    class KG,ADE,RET,CHEM,CLAR,EVAL,HITL new;
+    class Q,PRE,NER,POST,OUT keep;
+    class CONF dec;

@@ -1,0 +1,94 @@
+{
+  "comparative tracking index (cti)": {
+    "synonyms": [
+      "comparative tracking",
+      "comparative tracking index",
+      "cti",
+      "comparative tracking rating",
+      "comparative tracking index rating",
+      "comp tracking"
+    ],
+    "values": [
+      "plc 0",
+      "plc 1",
+      "plc 2",
+      "plc 3",
+      "plc 4",
+      "plc 5",
+      "plc0",
+      "plc1",
+      "plc2",
+      "plc3",
+      "plc4",
+      "plc5",
+      "plc-0",
+      "plc-1",
+      "plc-2",
+      "plc-3",
+      "plc-4",
+      "plc-5"
+    ],
+    "has_thickness": false,
+    "value_priority": true
+  },
+  "flame rating": {
+    "synonyms": [
+      "flame rating",
+      "fr",
+      "flame rated",
+      "flame rate",
+      "flame",
+      "flamerating",
+      "flamerated",
+      "flamerate",
+      "flammability rating",
+      "flammability class rating",
+      "flammability rating class",
+      "flame rating class",
+      "flame class rating"
+    ],
+    "values": [
+      "5va",
+      "5vb",
+      "vo",
+      "v0",
+      "v1",
+      "v2",
+      "hb",
+      "5 va",
+      "5 vb",
+      "v 0",
+      "v 1",
+      "v 2",
+      "v-o",
+      "5-va",
+      "5-vb",
+      "v-0",
+      "v-1",
+      "v-2"
+    ],
+    "has_thickness": true,
+    "value_priority": true
+  },
+  "outdoor suitability": {
+    "synonyms": [
+      "outdoor suitability",
+      "outdoor durability",
+      "out door durability",
+      "durability",
+      "suitability",
+      "out door suitability",
+      "os"
+    ],
+    "values": [
+      "f1",
+      "f2",
+      "f 1",
+      "f 2",
+      "f-1",
+      "f-2"
+    ],
+    "has_thickness": false,
+    "value_priority": false
+  }
+}

@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 860" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="aR" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker>
+    <marker id="gR" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2e8b3d"/></marker>
+    <style>
+      .title{font-size:25px;font-weight:700;fill:#1a2b4a}
+      .sub{font-size:13px;fill:#5a6b8a}
+      .hdr{font-size:14px;font-weight:700;fill:#fff}
+      .b{font-size:13px;font-weight:700;fill:#16314f}
+      .s{font-size:12px;fill:#222}
+      .cap{font-size:11px;fill:#666}
+      .tag{font-size:11px;font-weight:700}
+      .edge{stroke:#444;stroke-width:2.2;fill:none;marker-end:url(#aR)}
+      .gedge{stroke:#2e8b3d;stroke-width:2.4;fill:none;marker-end:url(#gR)}
+    </style>
+  </defs>
+  <rect width="1280" height="860" fill="#f7f9fc"/>
+  <text x="36" y="40" class="title">Rule-Based vs LLM — how each of the 17 labels is resolved</text>
+  <text x="36" y="62" class="sub">LLM-first, with rule fast-paths BEFORE it and rule post-processing AFTER it. Green path = LLM skipped.</text>
+
+  <!-- query -->
+  <rect x="40" y="100" width="180" height="56" rx="12" fill="#e8edf5" stroke="#8aa" stroke-width="2"/>
+  <text x="130" y="134" text-anchor="middle" class="b">🌐 query</text>
+
+  <!-- fast path gate -->
+  <rect x="270" y="86" width="280" height="150" rx="12" fill="#fff7df" stroke="#d90" stroke-width="2.4"/>
+  <text x="410" y="110" text-anchor="middle" class="b" fill="#7a5b00">⚡ RULE FAST-PATHS (before LLM)</text>
+  <text x="288" y="136" class="s">• MATERIAL_ID — 8-digit SAP id</text>
+  <text x="288" y="158" class="s">• GRADE — exact catalog match</text>
+  <text x="288" y="180" class="s">• COMPETITOR_GRADE — exact</text>
+  <text x="288" y="202" class="s">• AUTO_CERT — exact</text>
+  <text x="288" y="224" class="s">• FEATURE — single-feature match</text>
+
+  <!-- short circuit out -->
+  <rect x="270" y="270" width="280" height="60" rx="10" fill="#d9f7d9" stroke="#2e8b3d" stroke-width="2"/>
+  <text x="410" y="295" text-anchor="middle" class="b" fill="#176">match → return NOW</text>
+  <text x="410" y="316" text-anchor="middle" class="cap">whole query short-circuits · LLM never called</text>
+
+  <!-- LLM -->
+  <rect x="610" y="110" width="250" height="120" rx="12" fill="#cce5ff" stroke="#36c" stroke-width="2.6"/>
+  <text x="735" y="140" text-anchor="middle" class="b" fill="#15467f">🧠 LLM resolution</text>
+  <text x="735" y="164" text-anchor="middle" class="s">fine-tuned GPT-4.1-mini</text>
+  <text x="735" y="186" text-anchor="middle" class="s">extracts 16 labels</text>
+  <text x="735" y="208" text-anchor="middle" class="cap">temperature 0.01 · seed 12</text>
+
+  <!-- post processing -->
+  <rect x="910" y="86" width="330" height="150" rx="12" fill="#ffe1e1" stroke="#c33" stroke-width="2.4"/>
+  <text x="1075" y="110" text-anchor="middle" class="b" fill="#922">🔧 RULE POST-PROCESSING (after LLM)</text>
+  <text x="928" y="136" class="s">unit conversion · UL→PLC</text>
+  <text x="928" y="158" class="s">fuzzy GRADE↔COMPETITOR (thefuzz)</text>
+  <text x="928" y="180" class="s">eco/UV→FEATURE · spelling · industry</text>
+  <text x="928" y="202" class="s">validation · normalization · dedup</text>
+  <text x="928" y="224" class="cap">every LLM output passes through here</text>
+
+  <!-- edges top -->
+  <path class="edge" d="M220 128 H268"/>
+  <path class="gedge" d="M410 236 V268"/>
+  <text x="418" y="258" class="tag" fill="#2e8b3d">exact match</text>
+  <path class="edge" d="M550 175 H608"/>
+  <text x="558" y="166" class="cap">no match → LLM</text>
+  <path class="edge" d="M860 170 H908"/>
+  <path class="gedge" d="M550 300 C760 300 1090 300 1075 238"/>
+  <text x="720" y="320" class="tag" fill="#2e8b3d">fast-path result still validated</text>
+
+  <!-- ===== label categories ===== -->
+  <text x="36" y="390" class="title" font-size="19">The 17 labels by resolution type</text>
+
+  <!-- cat1 -->
+  <rect x="40" y="410" width="290" height="190" rx="12" fill="#fff" stroke="#777" stroke-width="2"/>
+  <rect x="40" y="410" width="290" height="34" rx="12" fill="#444"/>
+  <text x="56" y="433" class="hdr">① Pure rule-based (no LLM)</text>
+  <rect x="58" y="460" width="180" height="30" rx="6" fill="#eceff4" stroke="#aab"/><text x="68" y="480" class="s">MATERIAL_ID</text>
+  <text x="58" y="520" class="cap">Only label the LLM never</text>
+  <text x="58" y="538" class="cap">produces — 8-digit SAP regex.</text>
+
+  <!-- cat2 -->
+  <rect x="350" y="410" width="300" height="190" rx="12" fill="#fff" stroke="#d90" stroke-width="2"/>
+  <rect x="350" y="410" width="300" height="34" rx="12" fill="#caa000"/>
+  <text x="366" y="433" class="hdr">② LLM + rule fast-path</text>
+  <g class="s">
+    <rect x="366" y="456" width="260" height="26" rx="6" fill="#fff7df" stroke="#e0c45a"/><text x="376" y="474">GRADE</text>
+    <rect x="366" y="488" width="260" height="26" rx="6" fill="#fff7df" stroke="#e0c45a"/><text x="376" y="506">COMPETITOR_GRADE</text>
+    <rect x="366" y="520" width="260" height="26" rx="6" fill="#fff7df" stroke="#e0c45a"/><text x="376" y="538">AUTO_CERT</text>
+    <rect x="366" y="552" width="260" height="26" rx="6" fill="#fff7df" stroke="#e0c45a"/><text x="376" y="570">FEATURE (single-feature)</text>
+  </g>
+  <text x="366" y="592" class="cap">exact match → can skip the LLM</text>
+
+  <!-- cat3 -->
+  <rect x="670" y="410" width="330" height="320" rx="12" fill="#fff" stroke="#c33" stroke-width="2"/>
+  <rect x="670" y="410" width="330" height="34" rx="12" fill="#b13030"/>
+  <text x="686" y="433" class="hdr">③ LLM + heavy rule post-processing</text>
+  <g class="s">
+    <rect x="686" y="456" width="300" height="24" rx="5" fill="#ffe1e1" stroke="#e0a3a3"/><text x="696" y="473">GRADE / COMPETITOR_GRADE (reclassify)</text>
+    <rect x="686" y="486" width="300" height="24" rx="5" fill="#ffe1e1" stroke="#e0a3a3"/><text x="696" y="503">FEATURE (eco/UV/carbon)</text>
+    <rect x="686" y="516" width="300" height="24" rx="5" fill="#ffe1e1" stroke="#e0a3a3"/><text x="696" y="533">FILLER (long-fiber, spelling)</text>
+    <rect x="686" y="546" width="300" height="24" rx="5" fill="#ffe1e1" stroke="#e0a3a3"/><text x="696" y="563">PROPERTY (units, UL→PLC)</text>
+    <rect x="686" y="576" width="300" height="24" rx="5" fill="#ffe1e1" stroke="#e0a3a3"/><text x="696" y="593">INDUSTRY (mapping, E&amp;E)</text>
+    <rect x="686" y="606" width="300" height="24" rx="5" fill="#ffe1e1" stroke="#e0a3a3"/><text x="696" y="623">BRAND (validate, reassign)</text>
+    <rect x="686" y="636" width="300" height="24" rx="5" fill="#ffe1e1" stroke="#e0a3a3"/><text x="696" y="653">APPLICATION · POLYMER · PROCESSING</text>
+    <rect x="686" y="666" width="300" height="24" rx="5" fill="#ffe1e1" stroke="#e0a3a3"/><text x="696" y="683">REGION · RAILWAY_CERT (normalize)</text>
+  </g>
+  <text x="686" y="712" class="cap">LLM proposes → rules correct/enrich</text>
+
+  <!-- cat4 -->
+  <rect x="1020" y="410" width="220" height="320" rx="12" fill="#fff" stroke="#36c" stroke-width="2"/>
+  <rect x="1020" y="410" width="220" height="34" rx="12" fill="#2f6fd0"/>
+  <text x="1036" y="433" class="hdr">④ LLM + light validate</text>
+  <g class="s">
+    <rect x="1036" y="460" width="188" height="28" rx="6" fill="#e7f0ff" stroke="#9bf"/><text x="1046" y="479">DELIVERY_FORM</text>
+    <rect x="1036" y="496" width="188" height="28" rx="6" fill="#e7f0ff" stroke="#9bf"/><text x="1046" y="515">NSF_CERT</text>
+    <rect x="1036" y="532" width="188" height="28" rx="6" fill="#e7f0ff" stroke="#9bf"/><text x="1046" y="551">WATER_CERT</text>
+  </g>
+  <text x="1036" y="586" class="cap">straight from the LLM,</text>
+  <text x="1036" y="604" class="cap">only shape-checked in</text>
+  <text x="1036" y="622" class="cap">post_processing.</text>
+
+  <!-- footer -->
+  <rect x="40" y="760" width="1200" height="70" rx="10" fill="#eef3ec" stroke="#bcd" stroke-width="1.6"/>
+  <text x="58" y="786" class="b">Bottom line</text>
+  <text x="58" y="808" class="s">16 labels → LLM by default · MATERIAL_ID → rules only · 4 labels have rule fast-paths that skip the LLM · ALL LLM output is post-processed by rules.</text>
+</svg>

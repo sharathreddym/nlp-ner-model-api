@@ -1,0 +1,568 @@
+{
+  "arc resistance": {
+     "synonyms": [
+        "arc resistance",
+        "hvar",
+        "arc resistivity",
+        "arc resist",
+        "arc resistance",
+        "high voltage arc resist to ignition",
+        "high voltage arc resistant to ignition",
+        "high voltage arc resistance to ignition",
+        "high voltage arc resistivity to ignition",
+        "high voltage arc resist ignition",
+        "high voltage arc resistant ignition",
+        "high voltage arc resistance ignition",
+        "high voltage arc resistivity ignition",
+        "high voltage arc",
+        "arc resistant",
+        "ar",
+        "arc r",
+        "arcres",
+        "arc res"
+     ],
+     "values": [
+        "plc 0",
+        "plc 1",
+        "plc 2",
+        "plc 3",
+        "plc 4",
+        "plc 5",
+        "plc 6",
+        "plc 7",
+        "plc0",
+        "plc1",
+        "plc2",
+        "plc3",
+        "plc4",
+        "plc5",
+        "plc6",
+        "plc7",
+        "plc-0",
+        "plc-1",
+        "plc-2",
+        "plc-3",
+        "plc-4",
+        "plc-5",
+        "plc-6",
+        "plc-7"
+     ],
+     "has_thickness": false,
+     "value_priority": false
+  },
+  "ball pressure test": {
+     "synonyms": [
+        "ball pressure test",
+        "resist to heat",
+        "resis to heat",
+        "ball pressure",
+        "resistance to heat",
+        "resistant to heat",
+        "bpt",
+        "ball test"
+     ],
+     "values": [],
+     "has_thickness": false,
+     "value_priority": false
+  },
+  "Charpy Unnotched Impact Strength": {
+     "synonyms": [
+        "charpy unnotched impact strength",
+        "charpy impact strength unnotched",
+        "unnotched charpy impact strength",
+        "charpy unnotched imp str",
+        "charpy imp str unnotched",
+        "unnotched charpy imp str",
+        "charpy unnotched imp strength",
+        "charpy imp strength unnotched",
+        "unnotched charpy imp strength",
+        "charpy unnotched impact str",
+        "charpy impact str unnotched",
+        "unnotched charpy impact str"
+     ],
+     "values": [],
+     "has_thickness": false,
+     "value_priority": false
+  },
+  "comparative tracking index (cti)": {
+     "synonyms": [
+        "comparative tracking",
+        "comparative tracking index",
+        "cti",
+        "comparative tracking rating",
+        "comparative tracking index rating",
+        "comp tracking"
+     ],
+     "values": [
+        "plc 0",
+        "plc 1",
+        "plc 2",
+        "plc 3",
+        "plc 4",
+        "plc 5",
+        "plc0",
+        "plc1",
+        "plc2",
+        "plc3",
+        "plc4",
+        "plc5",
+        "plc-0",
+        "plc-1",
+        "plc-2",
+        "plc-3",
+        "plc-4",
+        "plc-5"
+     ],
+     "has_thickness": false,
+     "value_priority": true
+  },
+  "dielectric strength": {
+     "synonyms": [
+        "dielectric strength",
+        "di strength",
+        "dielectric str",
+        "di str",
+        "diele str",
+        "dielec str",
+        "dielectrical strength",
+        "dc dielectric strength",
+        "dielectric strength",
+        "di-electric str"
+     ],
+     "values": [],
+     "has_thickness": false,
+     "value_priority": false
+  },
+  "dimensional change": {
+     "synonyms": [
+        "dimensional change",
+        "dim change",
+        "dimens change",
+        "dimensional chg",
+        "di-mensional change"
+     ],
+     "values": [],
+     "has_thickness": false,
+     "value_priority": false
+  },
+  "flame rating": {
+     "synonyms": [
+        "flame rating",
+        "fr",
+        "flame rated",
+        "flame rate",
+        "flame",
+        "flamerating",
+        "flamerated",
+        "flamerate",
+	"flammability rating",
+	"flammability class rating",
+	"flammability rating class",
+	"flame rating class",
+	"flame class rating"
+     ],
+     "values": [
+        "5va",
+        "5vb",
+        "vo",
+        "v0",
+        "v1",
+        "v2",
+        "hb",
+        "5 va",
+        "5 vb",
+        "v 0",
+        "v 1",
+        "v 2",
+        "v-o",
+        "5-va",
+        "5-vb",
+        "v-0",
+        "v-1",
+        "v-2"
+     ],
+     "has_thickness": true,
+     "value_priority": true
+  },
+  "flammability classification": {
+     "synonyms": [
+	"flame class",
+        "flame classification",
+        "flameclassification",
+	"flammability class"
+     ],
+     "values": [
+        "5va",
+        "5vb",
+        "vo",
+        "v0",
+        "v1",
+        "v2",
+        "hb",
+        "hb40",
+        "hb75",
+        "5 va",
+        "5 vb",
+        "v 0",
+        "v 1",
+        "v 2",
+        "hb 40",
+        "hb 75",
+        "vo",
+        "5-va",
+        "5-vb",
+        "v-0",
+        "v-1",
+        "v-2",
+        "hb-40",
+        "hb-75"
+     ],
+     "has_thickness": true,
+     "value_priority": false
+  },
+  "flexural stress": {
+     "synonyms": [
+        "flexural stress",
+        "fs",
+        "flex stress",
+        "flexstress"
+     ],
+     "values": [],
+     "has_thickness": false,
+     "value_priority": false
+  },
+  "glow wire flammability index": {
+     "synonyms": [
+        "glow wire flammability index",
+        "glow-wire flammability",
+        "gwfi",
+        "glow wire flammability",
+        "glow-wire flammability index",
+        "gwf index",
+        "glow wire flame index"
+     ],
+     "values": [],
+     "has_thickness": true,
+     "value_priority": false
+  },
+  "glow wire ignition temperature": {
+     "synonyms": [
+        "glow wire ignition",
+        "gwit",
+        "glow wire temperature",
+        "glow wire temp",
+        "glow-wire ignition temperature",
+        "gwi temp",
+        "gwi temperature"
+     ],
+     "values": [],
+     "has_thickness": true,
+     "value_priority": false
+  },
+  "glow wire": {
+     "synonyms": [
+        "glow wire",
+	"glow wire test"
+     ],
+     "values": [],
+     "has_thickness": true,
+     "value_priority": false
+  },
+  "has linked tds": {
+     "synonyms": [
+        "linked tds",
+        "tds"
+     ],
+     "values": [
+        "yes"
+     ],
+     "has_thickness": false,
+     "value_priority": false
+  },
+  "high voltage arc tracking rate (hvtr)": {
+     "synonyms": [
+        "high voltage arc tracking rate",
+        "hvtr",
+        "high voltage arc tracking rate",
+        "high vol arc tracking rate",
+        "high voltage tracking rate",
+        "high voltage arc tracking",
+        "voltage arc tracking rate",
+        "high voltage rate"
+     ],
+     "values": [
+        "plc 0",
+        "plc 1",
+        "plc 2",
+        "plc 3",
+        "plc 4",
+        "plc0",
+        "plc1",
+        "plc2",
+        "plc3",
+        "plc4",
+        "plc-0",
+        "plc-1",
+        "plc-2",
+        "plc-3",
+        "plc-4"
+     ],
+     "has_thickness": false,
+     "value_priority": false
+  },
+  "high-current arc ignition (hai)": {
+     "synonyms": [
+        "high-current arc ignition",
+        "high current arc ignition",
+        "high amp arc ignition",
+        "high ampere arc ignition",
+        "high amperage arc ignition category",
+        "hai",
+        "high current arc",
+        "high current arc ignition",
+        "high arc ignition",
+        "arc ignition",
+        "hcai",
+        "high-current ignition",
+        "current ignition",
+        "high amp"
+     ],
+     "values": [
+        "plc 0",
+        "plc 1",
+        "plc 2",
+        "plc 3",
+        "plc 4",
+        "plc0",
+        "plc1",
+        "plc2",
+        "plc3",
+        "plc4",
+        "plc-0",
+        "plc-1",
+        "plc-2",
+        "plc-3",
+        "plc-4"
+     ],
+     "has_thickness": true,
+     "value_priority": false
+  },
+  "hot wire ignition (hwi)": {
+     "synonyms": [
+        "hot wire ignition",
+        "hwi",
+        "hot-wire ignition",
+        "hw ignition",
+        "hot wire"
+     ],
+     "values": [
+        "plc 0",
+        "plc 1",
+        "plc 2",
+        "plc 3",
+        "plc 4",
+        "plc 5",
+        "plc0",
+        "plc1",
+        "plc2",
+        "plc3",
+        "plc4",
+        "plc5",
+        "plc-0",
+        "plc-1",
+        "plc-2",
+        "plc-3",
+        "plc-4",
+        "plc-5"
+     ],
+     "has_thickness": true,
+     "value_priority": false
+  },
+  "inclined-plane tracking": {
+     "synonyms": [
+        "inclined-plane",
+        "ip tracking",
+        "ipt",
+        "inclined plane",
+        "plane tracking",
+        "inc-plane track",
+        "inc-plane tracking"
+     ],
+     "values": [],
+     "has_thickness": false,
+     "value_priority": false
+  },
+  "mechanically recycled content": {
+     "synonyms": [
+        "mechanically recycled",
+        "mechanical recycled",
+        "mech recycled",
+        "mechanically rc",
+        "mechanical rc",
+        "recycled mechanically",
+        "recycled content mechanically",
+        "recycled content mech",
+        "mrc"
+     ],
+     "values": [
+        "yes"
+     ],
+     "has_thickness": false,
+     "value_priority": false
+  },
+  "non-halogenated material": {
+     "synonyms": [
+        "non-halogenated material",
+        "nhm",
+        "non halo material"
+     ],
+     "values": [
+        "compliant"
+     ],
+     "has_thickness": false,
+     "value_priority": false
+  },
+  "outdoor suitability": {
+     "synonyms": [
+        "outdoor suitability",
+        "outdoor durability",
+        "out door durability",
+        "durability",
+        "suitability",
+        "out door suitability",
+        "os"
+     ],
+     "values": [
+        "f1",
+        "f2",
+        "f 1",
+        "f 2",
+        "f-1",
+        "f-2"
+     ],
+     "has_thickness": false,
+     "value_priority": false
+  },
+  "detergent resistance": {
+     "synonyms": [
+        "detergent resistance",
+        "detergent resistant",
+        "detergent resist",
+        "detergent resistivity",
+        "detergent resis",
+        "detergent res",
+        "deterres",
+        "dr",
+        "dres"
+     ],
+     "values": [
+        "f3",
+        "f4",
+        "f 3",
+        "f 4",
+        "f-3",
+        "f-4"
+     ],
+     "has_thickness": false,
+     "value_priority": false
+  },
+  "relative thermal index - electrical (rti elec) (\u00b0c)": {
+     "synonyms": [
+        "relative thermal index electrical",
+        "relative thermal index ele",
+        "rti-e",
+        "rti elec",
+        "rti ele",
+        "rti electrical",
+        "rtie"
+     ],
+     "values": [],
+     "has_thickness": true,
+     "value_priority": false
+  },
+  "relative thermal index - mechanical impact (rti imp) (\u00b0c)": {
+     "synonyms": [
+        "relative thermal index mechanical impact",
+        "relative thermal index impact",
+        "rti-i",
+        "rti imp",
+        "rti impact",
+        "rtii"
+     ],
+     "values": [],
+     "has_thickness": true,
+     "value_priority": false
+  },
+  "relative thermal index - mechanical strength (rti str) (\u00b0c)": {
+     "synonyms": [
+        "relative thermal index mechanical strength",
+        "relative thermal index strength",
+        "rti-s",
+        "rti str",
+        "rti strength",
+        "relative thermal index mechanical",
+        "rti ms"
+     ],
+     "values": [],
+     "has_thickness": true,
+     "value_priority": false
+  },
+  "relative thermal index": {
+     "synonyms": [
+        "relative thermal index",
+        "rti"
+     ],
+     "values": [],
+     "has_thickness": true,
+     "value_priority": false
+  },
+  "rohs 2011/65/eu material": {
+     "synonyms": [
+        "rohs",
+        "rohs and eu",
+        "rohs & eu",
+        "rohs 2011/65/eu material",
+        "rohs material",
+        "2011/65/eu material",
+        "2011/65/eu",
+        "rohs 2011/65/eu mat",
+        "rohs mat",
+        "2011/65/eu mat"
+     ],
+     "values": [
+        "+863 compliant",
+        "863 compliant",
+        "863",
+        "+863-compliant",
+        "863-compliant"
+     ],
+     "has_thickness": false,
+     "value_priority": false
+  },
+  "surface resistivity": {
+     "synonyms": [
+        "surface resistivity",
+        "surface resistance",
+        "surf res",
+        "sur res",
+        "resistivity of surface"
+     ],
+     "values": [],
+     "has_thickness": false,
+     "value_priority": false
+  },
+  "tensile impact strength": {
+     "synonyms": [
+        "tensile impact strength",
+        "ten imp str",
+        "tensile imp",
+        "tensile imp str",
+        "ti strength",
+        "ti str",
+        "tis"
+     ],
+     "values": [],
+     "has_thickness": false,
+     "value_priority": false
+  }
+}

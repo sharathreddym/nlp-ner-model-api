@@ -1,0 +1,9 @@
+Incoming Unit,ceed_unit,formula
+mohm*cm,Ohm*cm,x/1000
+milliohmcentimeter,Ohm*cm,x/1000
+kohm*cm,Ohm*cm,x*1000
+kiloohmcentimeter,Ohm*cm,x*1000
+mohm*cm,Ohm*cm,x*1000000
+megaohmcentimeter,Ohm*cm,x*1000000
+gohm*cm,Ohm*cm,x*1000000000
+gigaohmcentimeter,Ohm*cm,x*1000000000

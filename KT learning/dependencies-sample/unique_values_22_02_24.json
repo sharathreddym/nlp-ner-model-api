@@ -1,0 +1,114 @@
+{
+  "BRAND": [
+    "ateva",
+    "celanex",
+    "celanyl",
+    "celcon",
+    "celstran"
+  ],
+  "POLYMER": [
+    "abs",
+    "acetal",
+    "acetal copolymer",
+    "acrylonitrile butadiene styrene",
+    "acrylonitrile-butadiene-styrene"
+  ],
+  "PROPERTY": [
+    "1.3sg",
+    "2011/65/eu",
+    "2011/65/eu mat",
+    "2011/65/eu material",
+    "416 edelstahl"
+  ],
+  "FEATURE": [
+    "100% rh",
+    "acid resistant",
+    "aesthetical",
+    "agri based",
+    "alternate extrusion"
+  ],
+  "FILLER": [
+    "10gf",
+    "10glass",
+    "10mf",
+    "10min",
+    "10mineral"
+  ],
+  "GRADE": [
+    "9021 eco-b",
+    "celanex 1401a",
+    "celanex 1462z",
+    "celanex 1600a",
+    "celanex 1602z"
+  ],
+  "CERTIFICATION": [
+    "0094z-ghaf-9810-m1",
+    "01378_15_02001",
+    "01378_15_02346",
+    "01994_13_00033 (ftm69 0004)",
+    "01994_13_00034 (ftm69 0003)"
+  ],
+  "COMPETITOR_GRADE": [
+    "2200j",
+    "2210j",
+    "2210ju",
+    "2600j",
+    "5220b"
+  ],
+  "APPLICATION": [
+    "\"aqua pro\" gear program",
+    "\"junior\" gear program",
+    "\"uno\" gear program",
+    "(cement) renders",
+    "12-pin connector for electrical & electronics"
+  ],
+  "MODIFIER": [
+    "(kj/m²)",
+    "(mpa)",
+    "-0.024 e-4/°c",
+    "-10-5 /°c",
+    "-105 /°c"
+  ],
+  "UNIT": [
+    "%",
+    "% by vol.",
+    "% by wt.",
+    "(kj/m²)",
+    "(mpa)"
+  ],
+  "FILLER_PERCENTAGE": [
+    "0 %",
+    "12.0 %",
+    "18.0 %",
+    "2.0 %",
+    "20.0 %"
+  ],
+  "GRADE_WITHOUT_BRAND": [
+    "+pp-gf20-05cn05 black",
+    "+pp-gf30-04cn02/10",
+    "+pp-gf30-05cn01/10",
+    "+pp-gf30-05cn05/10",
+    "+pp-gf40-04cn15"
+  ],
+  "COMPETITOR_GRADE_TRANSFORMED": [
+    "3301b-pet",
+    "4100m",
+    "5000su",
+    "5200b",
+    "5500b"
+  ],
+  "COMP_GRADE_WITHOUT_BRAND": [
+    "(pa/pp) m/mo",
+    "(pa/pp) m/mo 5101",
+    "(pa/pp) m/mo 7101 gf25",
+    "(pa/pp) m/mo 7101 gf8",
+    "(pa/pp) m/mo gf 25"
+  ],
+  "COMP_GRADE_TRANSFORMED_WITHOUT_BRAND": [
+    "(abs) e/hi",
+    "(abs) fabs 30 gb",
+    "(abs) hh",
+    "(abs) hh 3",
+    "(abs) hh 3 d"
+  ]
+}

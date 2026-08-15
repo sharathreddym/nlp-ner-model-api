@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="sa" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+    <marker id="sd" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#888"/></marker>
+    <style>
+      .title{font-size:23px;font-weight:700;fill:#1a2b4a}
+      .sub{font-size:13px;fill:#5a6b8a}
+      .act{font-size:13px;font-weight:700;fill:#fff}
+      .msg{font-size:12.5px;fill:#16314f}
+      .ret{font-size:12px;fill:#777;font-style:italic}
+      .ll{stroke:#aab;stroke-width:1.4;stroke-dasharray:4 4}
+      .call{stroke:#222;stroke-width:1.8;fill:none;marker-end:url(#sa)}
+      .reply{stroke:#888;stroke-width:1.4;fill:none;stroke-dasharray:6 4;marker-end:url(#sd)}
+      .note{font-size:11.5px;fill:#7a5b00}
+    </style>
+  </defs>
+  <rect width="1200" height="900" fill="#f7f9fc"/>
+  <text x="36" y="40" class="title">UML Sequence — How the APIs are called per request</text>
+  <text x="36" y="62" class="sub">init() runs once at startup; run() and everything below repeats for every request.</text>
+
+  <!-- actors -->
+  <!-- x centers: 110, 300, 520, 720, 900, 1090 -->
+  <g>
+    <rect x="40" y="86" width="140" height="40" rx="8" fill="#445e8a"/><text x="110" y="112" text-anchor="middle" class="act">Azure ML</text>
+    <rect x="235" y="86" width="130" height="40" rx="8" fill="#3a7d4a"/><text x="300" y="112" text-anchor="middle" class="act">score.py</text>
+    <rect x="445" y="86" width="150" height="40" rx="8" fill="#b58a00"/><text x="520" y="112" text-anchor="middle" class="act">ner_helper</text>
+    <rect x="650" y="86" width="140" height="40" rx="8" fill="#3a8f3a"/><text x="720" y="112" text-anchor="middle" class="act">pre_proc</text>
+    <rect x="830" y="86" width="140" height="40" rx="8" fill="#2f6fd0"/><text x="900" y="112" text-anchor="middle" class="act">Azure OpenAI</text>
+    <rect x="1015" y="86" width="150" height="40" rx="8" fill="#c0392b"/><text x="1090" y="112" text-anchor="middle" class="act">post_proc</text>
+  </g>
+  <!-- lifelines -->
+  <line class="ll" x1="110" y1="126" x2="110" y2="860"/>
+  <line class="ll" x1="300" y1="126" x2="300" y2="860"/>
+  <line class="ll" x1="520" y1="126" x2="520" y2="860"/>
+  <line class="ll" x1="720" y1="126" x2="720" y2="860"/>
+  <line class="ll" x1="900" y1="126" x2="900" y2="860"/>
+  <line class="ll" x1="1090" y1="126" x2="1090" y2="860"/>
+
+  <!-- startup phase -->
+  <rect x="60" y="150" width="1110" height="48" rx="8" fill="#eef3ff" stroke="#cdd"/>
+  <text x="75" y="170" class="note">STARTUP (once)</text>
+  <path class="call" d="M110 186 H298"/><text x="150" y="180" class="msg">init()</text>
+  <path class="reply" d="M300 196 H112"/><text x="150" y="210" class="ret">DEPENDENCIES loaded (CSV/JSON/XLSX)</text>
+
+  <!-- per request -->
+  <path class="call" d="M110 250 H298"/><text x="150" y="244" class="msg">run(raw_data)</text>
+  <text x="305" y="270" class="ret">parse JSON → query, user_type</text>
+
+  <path class="call" d="M300 300 H518"/><text x="330" y="294" class="msg">run_ner(query, DEPENDENCIES, user_type)</text>
+
+  <!-- fastpath note -->
+  <rect x="450" y="318" width="430" height="34" rx="6" fill="#fff7df" stroke="#d90"/>
+  <text x="460" y="340" class="note">if exact GRADE / SAP id / FEATURE → return now (skip OpenAI &amp; post_proc)</text>
+
+  <path class="call" d="M520 378 H718"/><text x="545" y="372" class="msg">data_preprocessing()</text>
+  <path class="reply" d="M720 392 H522"/><text x="545" y="408" class="ret">cleaned text + normalized text</text>
+
+  <path class="call" d="M520 442 H898"/><text x="545" y="436" class="msg">get_entities() → client.chat.completions.create()</text>
+  <rect x="610" y="452" width="360" height="30" rx="6" fill="#e7f0ff" stroke="#9bf"/>
+  <text x="620" y="472" class="note" fill="#15467f">model=GPT_DEPLOYMENT · temperature=0.01 · seed=12</text>
+  <path class="reply" d="M900 500 H522"/><text x="545" y="516" class="ret">raw entities dict (17 types)</text>
+
+  <!-- fallback -->
+  <rect x="610" y="528" width="360" height="30" rx="6" fill="#fdeaea" stroke="#e2a3a3"/>
+  <text x="620" y="548" class="note" fill="#922">on failure → retry secondary deployment (fallback)</text>
+
+  <path class="call" d="M520 588 H1088"/><text x="545" y="582" class="msg">modifier_unit_conversion()</text>
+  <path class="reply" d="M1090 602 H522"/><text x="545" y="618" class="ret">units standardized (GPa→MPa…)</text>
+
+  <text x="520" y="650" text-anchor="middle" class="msg" fill="#922">▢ self: UL→PLC, eco/UV→FEATURE, fuzzy reclassify, spelling</text>
+
+  <path class="call" d="M520 688 H1088"/><text x="545" y="682" class="msg">identify_out_of_scope_items(user_type)</text>
+  <path class="reply" d="M1090 702 H522"/><text x="545" y="718" class="ret">in-scope vs out-of-scope split</text>
+
+  <text x="520" y="748" text-anchor="middle" class="msg" fill="#b58a00">▢ self: deduplicate every list</text>
+
+  <path class="reply" d="M518 780 H302"/><text x="330" y="774" class="ret">structured result</text>
+  <path class="reply" d="M298 808 H112"/><text x="150" y="802" class="ret">JSON response</text>
+
+  <rect x="60" y="828" width="1110" height="26" rx="6" fill="#eef3ec" stroke="#bcd"/>
+  <text x="75" y="846" class="note" fill="#356">Solid arrow = call · Dashed arrow = return · ▢ self = internal step (no external call)</text>
+</svg>

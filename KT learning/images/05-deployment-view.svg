@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 700" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a5" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker>
+    <style>
+      .title{font-size:24px;font-weight:700;fill:#1a2b4a}
+      .sub{font-size:13px;fill:#5a6b8a}
+      .zone{font-size:14px;font-weight:700;fill:#445}
+      .b{font-size:14px;font-weight:600;fill:#1a2b4a}
+      .s{font-size:12px;fill:#333}
+      .cap{font-size:11.5px;fill:#666}
+      .edge{stroke:#444;stroke-width:2.2;fill:none;marker-end:url(#a5)}
+    </style>
+  </defs>
+  <rect width="1150" height="700" fill="#f7f9fc"/>
+  <text x="36" y="42" class="title">Deployment View — where things run</text>
+  <text x="36" y="64" class="sub">UML-style deployment diagram of the live service and its cloud dependencies.</text>
+
+  <!-- client -->
+  <rect x="40" y="120" width="190" height="100" rx="10" fill="#e8edf5" stroke="#8aa" stroke-width="2"/>
+  <text x="135" y="150" text-anchor="middle" class="b">Chemille search</text>
+  <text x="135" y="172" text-anchor="middle" class="s">(client app)</text>
+  <text x="135" y="196" text-anchor="middle" class="cap">sends HTTPS POST</text>
+
+  <!-- Azure ML endpoint node -->
+  <rect x="300" y="100" width="470" height="430" rx="14" fill="#ffffff" stroke="#5a8" stroke-width="2.6"/>
+  <text x="320" y="128" class="zone">«device» Azure ML Online Endpoint</text>
+  <text x="320" y="148" class="cap">gst-ner-endpoint  (managed container)</text>
+
+  <!-- container artifacts -->
+  <rect x="330" y="170" width="410" height="120" rx="10" fill="#eef2f9" stroke="#3a6" stroke-width="2"/>
+  <text x="345" y="194" class="b">«artifact» onlinescoring/</text>
+  <text x="345" y="216" class="s">score.py  (init + run)</text>
+  <text x="345" y="236" class="s">ner_helper.py · pre_processing.py · post_processing.py</text>
+  <text x="345" y="258" class="s">+ openai, pandas, thefuzz, python-dotenv</text>
+  <text x="345" y="280" class="cap">scored via init() once, run() per request</text>
+
+  <!-- env file -->
+  <rect x="330" y="305" width="195" height="90" rx="10" fill="#fff7df" stroke="#d90" stroke-width="2"/>
+  <text x="345" y="330" class="b">🔑 .env</text>
+  <text x="345" y="352" class="s">azure_openai_key_aif</text>
+  <text x="345" y="370" class="s">..._endpoint_aif</text>
+  <text x="345" y="388" class="s">api_version_aif</text>
+
+  <!-- dependencies -->
+  <rect x="545" y="305" width="195" height="90" rx="10" fill="#eceff4" stroke="#778" stroke-width="2"/>
+  <text x="560" y="330" class="b">📦 dependencies/</text>
+  <text x="560" y="352" class="s">CSV · JSON · XLSX</text>
+  <text x="560" y="370" class="s">(registered model)</text>
+  <text x="560" y="388" class="cap">loaded by init()</text>
+
+  <!-- versions -->
+  <rect x="330" y="410" width="410" height="60" rx="10" fill="#f3f6fb" stroke="#aab" stroke-width="1.6"/>
+  <text x="345" y="434" class="s">MODEL_VERSION = "GPT-4-1-mini-17_04_26"</text>
+  <text x="345" y="456" class="s">API_VERSION = "v5.8.4"</text>
+
+  <text x="320" y="505" class="cap">AZUREML_MODEL_DIR points to the registered model folder at runtime</text>
+
+  <!-- Azure OpenAI node -->
+  <rect x="830" y="120" width="290" height="300" rx="14" fill="#eaf2ff" stroke="#36c" stroke-width="2.6"/>
+  <text x="848" y="148" class="zone" fill="#15467f">«device» Azure OpenAI</text>
+
+  <rect x="855" y="170" width="240" height="100" rx="10" fill="#cce5ff" stroke="#36c" stroke-width="2"/>
+  <text x="870" y="194" class="b" fill="#15467f">NPROD deployment</text>
+  <text x="870" y="216" class="s">aif-gpt-4-1-mini-NER</text>
+  <text x="870" y="234" class="s">-2026-04-17-...ussc-01</text>
+  <text x="870" y="256" class="cap">primary in non-prod</text>
+
+  <rect x="855" y="290" width="240" height="100" rx="10" fill="#cce5ff" stroke="#36c" stroke-width="2"/>
+  <text x="870" y="314" class="b" fill="#15467f">PROD deployment</text>
+  <text x="870" y="336" class="s">aif-gpt-4-1-mini-NER</text>
+  <text x="870" y="354" class="s">-2026-05-11-...-prod</text>
+  <text x="870" y="376" class="cap">primary in prod</text>
+
+  <!-- legend / fallback -->
+  <rect x="300" y="560" width="820" height="90" rx="10" fill="#ffffff" stroke="#cdd" stroke-width="1.6"/>
+  <text x="320" y="586" class="b">Fallback &amp; environment selection</text>
+  <text x="320" y="610" class="s">ENVIRONMENT = NPROD → call NPROD first, PROD as backup.   ENVIRONMENT = PROD → call PROD first, NPROD as backup.</text>
+  <text x="320" y="632" class="cap">If the primary deployment errors, run_ner() retries the secondary deployment automatically.</text>
+
+  <!-- edges -->
+  <path class="edge" d="M230 165 H298"/>
+  <text x="240" y="156" class="cap">HTTPS POST /score</text>
+  <path class="edge" d="M740 220 H853"/>
+  <text x="750" y="210" class="cap">chat.completions (HTTPS)</text>
+  <path class="edge" d="M853 340 C800 420 770 360 742 300"/>
+  <text x="752" y="300" class="cap">fallback</text>
+</svg>

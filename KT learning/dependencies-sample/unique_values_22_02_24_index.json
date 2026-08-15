@@ -1,0 +1,17 @@
+{
+  "PROPERTY": [
+    "apparent viscosity at 1200 1/s",
+    "apparent viscosity at 1200 1/s internal (pa s)",
+    "apparent viscosity at 200 1/s"
+  ],
+  "FILLER": [
+    "aramide fiber",
+    "carbon fiber",
+    "carbon powder"
+  ],
+  "FEATURE": [
+    "anti-static",
+    "bio-based",
+    "blow molding"
+  ]
+}

@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="diamond" markerWidth="16" markerHeight="12" refX="1" refY="5" orient="auto"><path d="M1,5 L8,1 L15,5 L8,9 z" fill="#fff" stroke="#444"/></marker>
+    <style>
+      .title{font-size:24px;font-weight:700;fill:#1a2b4a}
+      .sub{font-size:13px;fill:#5a6b8a}
+      .cls{font-size:14px;font-weight:700;fill:#16314f}
+      .attr{font-size:12px;fill:#333}
+      .cap{font-size:11px;fill:#777}
+      .link{stroke:#444;stroke-width:1.8;fill:none;marker-start:url(#diamond)}
+      .hdr{font-size:13px;font-weight:700;fill:#fff}
+    </style>
+  </defs>
+  <rect width="1200" height="820" fill="#f7f9fc"/>
+  <text x="36" y="40" class="title">UML Class Diagram — output structure &amp; nested types</text>
+  <text x="36" y="62" class="sub">◆ = composition ("contains"). Most entities are simple string lists; five are nested objects.</text>
+
+  <!-- Root -->
+  <rect x="470" y="90" width="260" height="110" rx="6" fill="#fff" stroke="#2c3e6b" stroke-width="2"/>
+  <rect x="470" y="90" width="260" height="28" rx="6" fill="#2c3e6b"/>
+  <text x="600" y="110" text-anchor="middle" class="hdr">NER_Result</text>
+  <text x="484" y="138" class="attr">userInput.searchQuery : str</text>
+  <text x="484" y="158" class="attr">modelOutput : ModelOutput</text>
+  <text x="484" y="178" class="attr">modelVersion, apiVersion : str</text>
+
+  <!-- ModelOutput -->
+  <rect x="470" y="250" width="260" height="100" rx="6" fill="#fff" stroke="#2c3e6b" stroke-width="2"/>
+  <rect x="470" y="250" width="260" height="28" rx="6" fill="#2c3e6b"/>
+  <text x="600" y="270" text-anchor="middle" class="hdr">ModelOutput</text>
+  <text x="484" y="298" class="attr">entities : Entities</text>
+  <text x="484" y="318" class="attr">unidentified : str</text>
+  <text x="484" y="338" class="attr">outOfScope : OutOfScope</text>
+
+  <!-- Entities -->
+  <rect x="440" y="400" width="320" height="150" rx="6" fill="#fff" stroke="#7a3e8a" stroke-width="2"/>
+  <rect x="440" y="400" width="320" height="28" rx="6" fill="#7a3e8a"/>
+  <text x="600" y="420" text-anchor="middle" class="hdr">Entities (17 keys)</text>
+  <text x="454" y="446" class="attr">GRADE, BRAND, POLYMER, FEATURE : str[]</text>
+  <text x="454" y="464" class="attr">APPLICATION, PROCESSING, REGION : str[]</text>
+  <text x="454" y="482" class="attr">DELIVERY_FORM, NSF_CERT, INDUSTRY : str[]</text>
+  <text x="454" y="500" class="attr">COMPETITOR_GRADE, MATERIAL_ID : str[]</text>
+  <text x="454" y="520" class="attr">PROPERTY[], FILLER[], AUTO_CERT[] : object[]</text>
+  <text x="454" y="538" class="attr">RAILWAY_CERT[], WATER_CERT[] : object[]</text>
+
+  <!-- nested: PROPERTY -->
+  <rect x="40" y="430" width="270" height="120" rx="6" fill="#fff" stroke="#9a6b1c" stroke-width="2"/>
+  <rect x="40" y="430" width="270" height="26" rx="6" fill="#9a6b1c"/>
+  <text x="175" y="449" text-anchor="middle" class="hdr">Property</text>
+  <text x="54" y="476" class="attr">property_name : str</text>
+  <text x="54" y="496" class="attr">property_type : str</text>
+  <text x="54" y="516" class="attr">modifier : Modifier</text>
+  <text x="54" y="536" class="cap">type ∈ property / ul_property / ul_sub_property</text>
+
+  <!-- Modifier -->
+  <rect x="40" y="590" width="270" height="100" rx="6" fill="#fff" stroke="#9a6b1c" stroke-width="2"/>
+  <rect x="40" y="590" width="270" height="26" rx="6" fill="#9a6b1c"/>
+  <text x="175" y="609" text-anchor="middle" class="hdr">Modifier</text>
+  <text x="54" y="636" class="attr">value : num | null</text>
+  <text x="54" y="656" class="attr">min, max : num | null</text>
+  <text x="54" y="676" class="attr">unit : str   (e.g. "MPa &lt;-&gt; GPa")</text>
+
+  <!-- FILLER -->
+  <rect x="40" y="720" width="270" height="80" rx="6" fill="#fff" stroke="#7a3e8a" stroke-width="2"/>
+  <rect x="40" y="720" width="270" height="26" rx="6" fill="#7a3e8a"/>
+  <text x="175" y="739" text-anchor="middle" class="hdr">Filler</text>
+  <text x="54" y="766" class="attr">filler_name : str[]</text>
+  <text x="54" y="786" class="attr">total_load : {value, min, max}</text>
+
+  <!-- certs -->
+  <rect x="880" y="430" width="280" height="74" rx="6" fill="#fff" stroke="#9a6b1c" stroke-width="2"/>
+  <rect x="880" y="430" width="280" height="26" rx="6" fill="#9a6b1c"/>
+  <text x="1020" y="449" text-anchor="middle" class="hdr">AutoCert</text>
+  <text x="894" y="476" class="attr">oem : str</text>
+  <text x="894" y="495" class="attr">certs : str[]</text>
+
+  <rect x="880" y="520" width="280" height="74" rx="6" fill="#fff" stroke="#9a6b1c" stroke-width="2"/>
+  <rect x="880" y="520" width="280" height="26" rx="6" fill="#9a6b1c"/>
+  <text x="1020" y="539" text-anchor="middle" class="hdr">RailwayCert</text>
+  <text x="894" y="566" class="attr">standard : str</text>
+  <text x="894" y="585" class="attr">hazard_level[], req_set[] : str[]</text>
+
+  <rect x="880" y="610" width="280" height="70" rx="6" fill="#fff" stroke="#9a6b1c" stroke-width="2"/>
+  <rect x="880" y="610" width="280" height="26" rx="6" fill="#9a6b1c"/>
+  <text x="1020" y="629" text-anchor="middle" class="hdr">WaterCert</text>
+  <text x="894" y="656" class="attr">standard : str</text>
+  <text x="894" y="674" class="attr">temp : str[]</text>
+
+  <!-- OutOfScope -->
+  <rect x="880" y="710" width="280" height="90" rx="6" fill="#fff" stroke="#8a3030" stroke-width="2"/>
+  <rect x="880" y="710" width="280" height="26" rx="6" fill="#8a3030"/>
+  <text x="1020" y="729" text-anchor="middle" class="hdr">OutOfScope</text>
+  <text x="894" y="756" class="attr">active : bool</text>
+  <text x="894" y="775" class="attr">entities : {GRADE, BRAND, POLYMER,</text>
+  <text x="894" y="792" class="attr">                  FILLER, OTHERS} : str[]</text>
+
+  <!-- links -->
+  <path class="link" d="M600 200 V248"/>
+  <path class="link" d="M600 350 V398"/>
+  <path class="link" d="M440 470 H312"/>
+  <path class="link" d="M175 550 V588"/>
+  <path class="link" d="M440 510 C360 600 280 690 312 740"/>
+  <path class="link" d="M760 470 H878"/>
+  <path class="link" d="M760 500 C820 540 840 560 878 552"/>
+  <path class="link" d="M760 520 C820 600 840 640 878 645"/>
+  <path class="link" d="M730 320 C800 600 840 700 878 740"/>
+</svg>

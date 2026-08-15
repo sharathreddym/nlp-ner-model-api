@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1220 800" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="aA" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker>
+    <style>
+      .title{font-size:24px;font-weight:700;fill:#1a2b4a}
+      .sub{font-size:13px;fill:#5a6b8a}
+      .hdr{font-size:14px;font-weight:700;fill:#fff}
+      .b{font-size:13px;font-weight:700;fill:#16314f}
+      .s{font-size:11.5px;fill:#222}
+      .cap{font-size:11px;fill:#666}
+      .edge{stroke:#444;stroke-width:2;fill:none;marker-end:url(#aA)}
+    </style>
+  </defs>
+  <rect width="1220" height="800" fill="#f7f9fc"/>
+  <text x="36" y="40" class="title">Domain Knowledge — PROPERTY types &amp; UL → PLC conversions</text>
+  <text x="36" y="62" class="sub">PROPERTY entities split into three types. UL electrical-safety values get converted from raw numbers to standard categories (PLC).</text>
+
+  <!-- property types -->
+  <rect x="30" y="90" width="560" height="40" rx="8" fill="#7a3e8a"/><text x="48" y="116" class="hdr">PROPERTY → property_type (3 kinds)</text>
+
+  <rect x="30" y="140" width="180" height="170" rx="10" fill="#f3eaf6" stroke="#c9a6d4"/>
+  <text x="44" y="166" class="b">property</text>
+  <text x="44" y="190" class="s">Tensile strength</text>
+  <text x="44" y="210" class="s">Flexural modulus</text>
+  <text x="44" y="230" class="s">Density / MFR</text>
+  <text x="44" y="250" class="s">DTUL / HDT</text>
+  <text x="44" y="270" class="s">Melting temperature</text>
+  <text x="44" y="290" class="cap">→ units converted</text>
+
+  <rect x="220" y="140" width="180" height="170" rx="10" fill="#f3eaf6" stroke="#c9a6d4"/>
+  <text x="234" y="166" class="b">ul_property</text>
+  <text x="234" y="190" class="s">Flammability (V-0/V-1…)</text>
+  <text x="234" y="210" class="s">CTI</text>
+  <text x="234" y="230" class="s">Glow wire (GWFI/GWIT)</text>
+  <text x="234" y="250" class="s">RTI (elec/imp/str)</text>
+  <text x="234" y="270" class="s">Dielectric strength</text>
+  <text x="234" y="290" class="cap">→ may map to PLC</text>
+
+  <rect x="410" y="140" width="180" height="170" rx="10" fill="#f3eaf6" stroke="#c9a6d4"/>
+  <text x="424" y="166" class="b">ul_sub_property</text>
+  <text x="424" y="190" class="s">HAI</text>
+  <text x="424" y="210" class="s">HWI</text>
+  <text x="424" y="230" class="s">HVAR</text>
+  <text x="424" y="250" class="s">HVTR</text>
+  <text x="424" y="270" class="s">Arc resistance</text>
+  <text x="424" y="290" class="cap">→ PLC categories</text>
+
+  <!-- modifier shape -->
+  <rect x="620" y="90" width="570" height="220" rx="10" fill="#fff" stroke="#9a6b1c" stroke-width="2"/>
+  <text x="640" y="118" class="b" fill="#9a6b1c">Every PROPERTY carries a modifier</text>
+  <text x="640" y="148" class="s">property_name : "tensile modulus"</text>
+  <text x="640" y="172" class="s">modifier.value : 2500</text>
+  <text x="640" y="196" class="s">modifier.min / max : 2400 / 2600   (a range)</text>
+  <text x="640" y="220" class="s">modifier.unit : "MPa &lt;-&gt; GPa"   (converted, original kept after &lt;-&gt;)</text>
+  <rect x="640" y="238" width="530" height="58" rx="8" fill="#fdf3e0" stroke="#dcc488"/>
+  <text x="654" y="262" class="s" fill="#7a5b00">Unit conversion: incoming unit fuzzy-matched to the conversion table (&gt;85%),</text>
+  <text x="654" y="282" class="s" fill="#7a5b00">then the formula is applied. e.g. 2.5 GPa → 2500 MPa.</text>
+
+  <!-- PLC conversion -->
+  <rect x="30" y="350" width="1160" height="40" rx="8" fill="#1d6b5a"/><text x="48" y="376" class="hdr">UL value → PLC (Performance Level Category) — handled by *_value_convertion() functions in ner_helper.py</text>
+
+  <!-- table -->
+  <g class="s">
+    <rect x="30" y="400" width="1160" height="30" fill="#dcefe9"/>
+    <text x="44" y="420" class="b">Property</text>
+    <text x="240" y="420" class="b">Function</text>
+    <text x="470" y="420" class="b">Example raw value → category</text>
+
+    <rect x="30" y="430" width="1160" height="28" fill="#fff"/>
+    <text x="44" y="449">CTI (Comparative Tracking Index)</text><text x="240" y="449">cti_value_convertion()</text><text x="470" y="449">600 → PLC 0 · 400 → PLC 1 · 250 → PLC 2 …</text>
+    <rect x="30" y="458" width="1160" height="28" fill="#f4f8f6"/>
+    <text x="44" y="477">HAI (High-current Arc Ignition)</text><text x="240" y="477">hai_value_convertion()</text><text x="470" y="477">120 → PLC 0 · 60 → PLC 1 …</text>
+    <rect x="30" y="486" width="1160" height="28" fill="#fff"/>
+    <text x="44" y="505">HWI (Hot Wire Ignition)</text><text x="240" y="505">hwi_value_convertion()</text><text x="470" y="505">120 → PLC 0 · 60 → PLC 1 …</text>
+    <rect x="30" y="514" width="1160" height="28" fill="#f4f8f6"/>
+    <text x="44" y="533">HVAR (High-Voltage Arc, ignition)</text><text x="240" y="533">hvar_value_convertion()</text><text x="470" y="533">300 → PLC 0 · 120 → PLC 1 …</text>
+    <rect x="30" y="542" width="1160" height="28" fill="#fff"/>
+    <text x="44" y="561">HVTR (High-Voltage Arc Tracking Rate)</text><text x="240" y="561">hvtr_value_convertion()</text><text x="470" y="561">&gt;150 → PLC 4 · 80.1 → PLC 3 …</text>
+    <rect x="30" y="570" width="1160" height="28" fill="#f4f8f6"/>
+    <text x="44" y="589">Arc resistance</text><text x="240" y="589">arc_value_convertion()</text><text x="470" y="589">420 → PLC 0 · 360 → PLC 1 …</text>
+  </g>
+
+  <!-- flow -->
+  <rect x="30" y="630" width="1160" height="150" rx="12" fill="#fff" stroke="#cdd" stroke-width="1.6"/>
+  <text x="48" y="658" class="b">Why convert? Search needs standard categories, not raw lab numbers.</text>
+  <rect x="60" y="678" width="180" height="56" rx="8" fill="#cce5ff" stroke="#36c"/><text x="150" y="702" text-anchor="middle" class="s">AI: "CTI = 600 volts"</text><text x="150" y="722" text-anchor="middle" class="cap">raw value</text>
+  <rect x="430" y="678" width="220" height="56" rx="8" fill="#fff7df" stroke="#d90"/><text x="540" y="702" text-anchor="middle" class="s">cti_value_convertion()</text><text x="540" y="722" text-anchor="middle" class="cap">lookup rule</text>
+  <rect x="850" y="678" width="200" height="56" rx="8" fill="#d9f7d9" stroke="#3a3"/><text x="950" y="702" text-anchor="middle" class="s">"PLC 0"</text><text x="950" y="722" text-anchor="middle" class="cap">searchable category</text>
+  <path class="edge" d="M240 706 H428"/>
+  <path class="edge" d="M650 706 H848"/>
+</svg>

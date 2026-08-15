@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1680 980" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="call" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222"/></marker>
+    <marker id="ret" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#777"/></marker>
+    <style>
+      .title{font-size:24px;font-weight:700;fill:#1a2b4a}
+      .sub{font-size:13px;fill:#5a6b8a}
+      .actor{font-size:13px;font-weight:700;fill:#fff}
+      .msg{font-size:12.5px;fill:#16314f}
+      .ret{font-size:12px;fill:#666;font-style:italic}
+      .num{font-size:11px;fill:#999;font-weight:700}
+      .ll{stroke:#b8c0cf;stroke-width:1.4;stroke-dasharray:4 4}
+      .call{stroke:#222;stroke-width:1.8;fill:none;marker-end:url(#call)}
+      .reply{stroke:#888;stroke-width:1.4;fill:none;stroke-dasharray:6 4;marker-end:url(#ret)}
+      .selfnote{font-size:11.5px;fill:#7a5b00}
+      .note{font-size:11.5px;fill:#7a5b00}
+    </style>
+  </defs>
+  <rect width="1680" height="980" fill="#f7f9fc"/>
+  <text x="40" y="40" class="title">Celanese NER Service — API Sequence</text>
+  <text x="40" y="62" class="sub">One-time init() at startup, then per-request flow (fast-path vs full pipeline). Solid = call, dashed = return.</text>
+
+  <!-- lifelines x centers: 100, 350, 590, 830, 1080, 1330, 1580 -->
+  <!-- actor boxes -->
+  <g>
+    <rect x="30" y="86" width="140" height="42" rx="8" fill="#445e8a"/><text x="100" y="112" text-anchor="middle" class="actor">Client</text>
+    <rect x="280" y="86" width="140" height="42" rx="8" fill="#2c3e6b"/><text x="350" y="106" text-anchor="middle" class="actor">Azure ML</text><text x="350" y="121" text-anchor="middle" class="actor" font-size="11">Endpoint</text>
+    <rect x="520" y="86" width="140" height="42" rx="8" fill="#3a7d4a"/><text x="590" y="112" text-anchor="middle" class="actor">score.py</text>
+    <rect x="760" y="86" width="140" height="42" rx="8" fill="#b58a00"/><text x="830" y="112" text-anchor="middle" class="actor">ner_helper</text>
+    <rect x="1010" y="86" width="140" height="42" rx="8" fill="#3a8f3a"/><text x="1080" y="112" text-anchor="middle" class="actor">pre_processing</text>
+    <rect x="1260" y="86" width="140" height="42" rx="8" fill="#2f6fd0"/><text x="1330" y="106" text-anchor="middle" class="actor">Azure OpenAI</text><text x="1330" y="121" text-anchor="middle" class="actor" font-size="11">GPT-4.1-mini</text>
+    <rect x="1510" y="86" width="140" height="42" rx="8" fill="#c0392b"/><text x="1580" y="112" text-anchor="middle" class="actor">post_processing</text>
+  </g>
+  <!-- lifelines -->
+  <line class="ll" x1="100" y1="128" x2="100" y2="930"/>
+  <line class="ll" x1="350" y1="128" x2="350" y2="930"/>
+  <line class="ll" x1="590" y1="128" x2="590" y2="930"/>
+  <line class="ll" x1="830" y1="128" x2="830" y2="930"/>
+  <line class="ll" x1="1080" y1="128" x2="1080" y2="930"/>
+  <line class="ll" x1="1330" y1="128" x2="1330" y2="930"/>
+  <line class="ll" x1="1580" y1="128" x2="1580" y2="930"/>
+
+  <!-- ===== STARTUP (once) ===== -->
+  <rect x="60" y="150" width="1560" height="70" rx="8" fill="#eef3ff" stroke="#cdd7ea"/>
+  <text x="75" y="168" class="note" font-weight="700">STARTUP (once)</text>
+  <path class="call" d="M352 188 H588"/><text x="360" y="182" class="msg">init()</text>
+  <text x="600" y="182" class="selfnote">loads DEPENDENCIES (CSV/JSON/XLSX) + .env creds</text>
+  <path class="reply" d="M588 210 H352"/><text x="360" y="205" class="ret">ready</text>
+
+  <!-- ===== PER REQUEST ===== -->
+  <!-- 1 -->
+  <path class="call" d="M102 262 H348"/><text x="112" y="256" class="msg">POST /score {data, user_type}</text><text x="60" y="256" class="num">1</text>
+  <!-- 2 -->
+  <path class="call" d="M352 296 H588"/><text x="360" y="290" class="msg">run(raw_data)</text><text x="330" y="290" class="num">2</text>
+  <!-- 3 self parse -->
+  <path class="call" d="M592 326 h40 v14 h-40" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#call)"/>
+  <text x="640" y="336" class="selfnote">json.loads → query, user_type</text><text x="568" y="326" class="num">3</text>
+  <!-- 4 -->
+  <path class="call" d="M592 366 H828"/><text x="600" y="360" class="msg">run_ner(query, DEPENDENCIES, user_type)</text><text x="568" y="360" class="num">4</text>
+
+  <!-- ALT frame -->
+  <rect x="600" y="386" width="1030" height="452" rx="6" fill="none" stroke="#8a6d00" stroke-width="1.6"/>
+  <path d="M600 386 h96 v20 l-10 10 H600 z" fill="#f6ecd6" stroke="#8a6d00" stroke-width="1.2"/>
+  <text x="612" y="401" class="msg" font-size="11" font-weight="700">alt</text>
+  <text x="700" y="401" class="msg" font-size="11">[ exact match → skip LLM ]</text>
+
+  <!-- 5 fast-path return -->
+  <path class="reply" d="M828 430 H592"/><text x="600" y="424" class="ret">result (LLM not called)</text><text x="836" y="424" class="selfnote">exact GRADE / SAP id / FEATURE / COMPETITOR / AUTO_CERT</text>
+
+  <!-- else divider -->
+  <line x1="600" y1="450" x2="1630" y2="450" stroke="#8a6d00" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="612" y="464" class="msg" font-size="11">[ else — full pipeline ]</text>
+
+  <!-- 6 -->
+  <path class="call" d="M832 496 H1078"/><text x="840" y="490" class="msg">data_preprocessing()</text><text x="810" y="490" class="num">6</text>
+  <!-- 7 -->
+  <path class="reply" d="M1078 526 H832"/><text x="840" y="520" class="ret">cleaned + normalized text</text>
+  <!-- 8 -->
+  <path class="call" d="M832 558 H1328"/><text x="840" y="552" class="msg">get_entities()  · temperature 0.01 · seed 12</text><text x="810" y="552" class="num">8</text>
+  <!-- 9 -->
+  <path class="reply" d="M1328 588 H832"/><text x="840" y="582" class="ret">raw entities (fallback to secondary deployment on failure)</text>
+  <!-- 10 -->
+  <path class="call" d="M832 620 H1578"/><text x="840" y="614" class="msg">modifier_unit_conversion()</text><text x="810" y="614" class="num">10</text>
+  <!-- 11 -->
+  <path class="reply" d="M1578 650 H832"/><text x="840" y="644" class="ret">units standardized (GPa→MPa …)</text>
+  <!-- 12 self rules -->
+  <path class="call" d="M834 680 h40 v14 h-40" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#call)"/>
+  <text x="882" y="690" class="selfnote">business rules: UL→PLC, eco/UV→FEATURE, fuzzy GRADE↔COMPETITOR, spelling</text><text x="810" y="680" class="num">12</text>
+  <!-- 13 -->
+  <path class="call" d="M832 722 H1578"/><text x="840" y="716" class="msg">identify_out_of_scope_items(user_type)</text><text x="810" y="716" class="num">13</text>
+  <!-- 14 -->
+  <path class="reply" d="M1578 752 H832"/><text x="840" y="746" class="ret">in-scope vs out-of-scope</text>
+  <!-- 15 self dedup -->
+  <path class="call" d="M834 782 h40 v14 h-40" fill="none" stroke="#222" stroke-width="1.6" marker-end="url(#call)"/>
+  <text x="882" y="792" class="selfnote">deduplicate every entity list</text><text x="810" y="782" class="num">15</text>
+  <!-- 16 -->
+  <path class="reply" d="M828 822 H592"/><text x="600" y="816" class="ret">structured result</text>
+
+  <!-- 17 / 18 back to client -->
+  <path class="reply" d="M588 862 H352"/><text x="360" y="856" class="ret">NER JSON (entities, outOfScope, versions)</text>
+  <path class="reply" d="M348 894 H102"/><text x="112" y="888" class="ret">200 OK + JSON</text>
+
+  <!-- error note -->
+  <rect x="520" y="912" width="620" height="44" rx="6" fill="#fdeaea" stroke="#e2a3a3"/>
+  <text x="535" y="931" class="note" fill="#922">On any exception, score.run() returns a default empty-entities</text>
+  <text x="535" y="948" class="note" fill="#922">response so the endpoint never hard-fails.</text>
+</svg>

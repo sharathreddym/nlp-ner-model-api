@@ -1,0 +1,2 @@
+The real dependencies/model-best/ contains only a .amlignore file.
+It is a leftover from the retired spaCy model and is never read by the code.

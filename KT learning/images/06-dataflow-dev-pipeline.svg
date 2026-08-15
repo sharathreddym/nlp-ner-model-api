@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a6" markerWidth="12" markerHeight="12" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#444"/></marker>
+    <style>
+      .title{font-size:24px;font-weight:700;fill:#1a2b4a}
+      .sub{font-size:13px;fill:#5a6b8a}
+      .b{font-size:14px;font-weight:700;fill:#fff}
+      .h{font-size:13px;font-weight:700;fill:#1a2b4a}
+      .s{font-size:11.5px;fill:#222}
+      .cap{font-size:11px;fill:#666}
+      .edge{stroke:#444;stroke-width:2.2;fill:none;marker-end:url(#a6)}
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#f7f9fc"/>
+  <text x="36" y="42" class="title">Data-Flow View — dev sources → dependency files → runtime</text>
+  <text x="36" y="64" class="sub">Left side is DEV-TIME ONLY (notebooks). The deployed service only reads the generated files.</text>
+
+  <!-- DEV zone -->
+  <rect x="30" y="90" width="380" height="560" rx="14" fill="#fbf3f3" stroke="#d9b3b3" stroke-width="2"/>
+  <text x="48" y="116" class="h" fill="#922">DEV-TIME data sources (Development files/*.ipynb)</text>
+
+  <!-- Snowflake -->
+  <rect x="55" y="140" width="330" height="150" rx="10" fill="#2980b9"/>
+  <text x="70" y="166" class="b">🟦 Snowflake — ANALYTICS_DEV.GST_CURATED</text>
+  <text x="70" y="190" class="s" fill="#eaf2fb">SPT · FEATURE · APPLICATION_MAP_SFDC</text>
+  <text x="70" y="210" class="s" fill="#eaf2fb">COMPETITOR_DATA · CTQ · TDS_MAPPING</text>
+  <text x="70" y="230" class="s" fill="#eaf2fb">RAILWAY · WATER_APPROVALS · NSF</text>
+  <text x="70" y="250" class="s" fill="#eaf2fb">OUT_OF_SCOPE_* · SYNONYM</text>
+  <text x="70" y="272" class="cap" fill="#cfe2f2">cols: PRODUCT_CD, POLYMER, PROPERTY_NAME, …</text>
+
+  <!-- Azure SQL -->
+  <rect x="55" y="305" width="330" height="120" rx="10" fill="#c0392b"/>
+  <text x="70" y="331" class="b">🟥 Azure SQL Server (pymssql)</text>
+  <text x="70" y="355" class="s" fill="#fbe9e7">mssqldb-gst-dev-ussc-01 · schema SFTRaw</text>
+  <text x="70" y="375" class="s" fill="#fbe9e7">Nsf · Railway · WaterApprovals · Feature</text>
+  <text x="70" y="397" class="cap" fill="#f3c6c1">→ certifications (NSF/RAILWAY/WATER/AUTO)</text>
+  <text x="70" y="415" class="cap" fill="#f3c6c1">NOT Postgres</text>
+
+  <!-- Elastic -->
+  <rect x="55" y="440" width="330" height="110" rx="10" fill="#27ae60"/>
+  <text x="70" y="466" class="b">🟩 Elasticsearch (Elastic Cloud 8.16)</text>
+  <text x="70" y="490" class="s" fill="#e9f8ef">indexes: filter_polymer ·</text>
+  <text x="70" y="510" class="s" fill="#e9f8ef">filter_ul · filter_property</text>
+  <text x="70" y="530" class="cap" fill="#cdeeda">match_all → full _source documents</text>
+
+  <text x="48" y="585" class="cap" fill="#922">⚠ notebooks contain hard-coded credentials (rotate &amp; move to secrets)</text>
+  <text x="48" y="620" class="cap">notebooks: clean / normalize / merge / generate</text>
+
+  <!-- generated files -->
+  <rect x="470" y="200" width="300" height="320" rx="14" fill="#eceff4" stroke="#778" stroke-width="2.2"/>
+  <text x="488" y="226" class="h">📦 dependencies/ (generated files)</text>
+  <text x="488" y="254" class="s">final_unit_conversion_table.csv</text>
+  <text x="488" y="276" class="s">..._for_exeptions.csv</text>
+  <text x="488" y="298" class="s">unique_values_22_02_24.json</text>
+  <text x="488" y="320" class="s">normalized_unique_values_for_grade_mapping.json</text>
+  <text x="488" y="342" class="s">normalized_competitor_names.json</text>
+  <text x="488" y="364" class="s">outOfScopeData.json</text>
+  <text x="488" y="386" class="s">oos_color_code_pattern.txt</text>
+  <text x="488" y="408" class="s">ul_list_name_value.json</text>
+  <text x="488" y="430" class="s">abbreviations.xlsx (4 sheets)</text>
+  <text x="488" y="470" class="cap">these are the files currently MISSING</text>
+  <text x="488" y="490" class="cap">from this repo copy (see 09-missing-files)</text>
+
+  <!-- runtime -->
+  <rect x="830" y="220" width="340" height="280" rx="14" fill="#fff" stroke="#5a8" stroke-width="2.4"/>
+  <text x="848" y="246" class="h" fill="#176">🚪 RUNTIME (onlinescoring/)</text>
+  <rect x="855" y="266" width="290" height="70" rx="10" fill="#eef2f9" stroke="#3a6" stroke-width="1.8"/>
+  <text x="870" y="292" class="s">score.py · init() reads the files →</text>
+  <text x="870" y="312" class="s">builds DEPENDENCIES (in memory)</text>
+  <rect x="855" y="350" width="290" height="70" rx="10" fill="#fff3d6" stroke="#d99" stroke-width="1.8"/>
+  <text x="870" y="376" class="s">run_ner() uses DEPENDENCIES +</text>
+  <text x="870" y="396" class="s">Azure OpenAI for each query</text>
+  <text x="848" y="450" class="cap">Runtime NEVER touches Snowflake/SQL/Elastic.</text>
+  <text x="848" y="470" class="cap">It only reads the pre-generated files + calls the AI.</text>
+
+  <!-- edges -->
+  <path class="edge" d="M385 240 C430 280 440 320 468 330"/>
+  <path class="edge" d="M385 365 H468"/>
+  <path class="edge" d="M385 490 C430 450 440 400 468 380"/>
+  <path class="edge" d="M770 350 H828"/>
+  <text x="775" y="342" class="cap">init() load</text>
+</svg>
